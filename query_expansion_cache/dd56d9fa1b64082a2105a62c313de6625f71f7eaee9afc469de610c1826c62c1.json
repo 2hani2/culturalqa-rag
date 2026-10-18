@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What percussion instrument is used in Pala theatre?",
+    "Which percussion instrument is used in Pala theatre?",
+    "What percussion instrument is played in Pala theatre?",
+    "Which drum is used in Pala theatre?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

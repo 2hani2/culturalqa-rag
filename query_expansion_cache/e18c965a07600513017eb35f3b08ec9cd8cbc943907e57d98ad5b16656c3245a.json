@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who is credited with writing Betaal Pachisi in the Vikram and Betaal collection?",
+    "Who wrote Betaal Pachisi in the Vikram and Betaal collection?",
+    "Betaal Pachisi author in the Vikram and Betaal collection",
+    "Credit for writing Betaal Pachisi in the Vikram and Betaal collection"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What alternative name is used for Manipuri dance?",
+    "Alternative name for Manipuri dance",
+    "What is another name for Manipuri dance",
+    "Manipuri dance also known as"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

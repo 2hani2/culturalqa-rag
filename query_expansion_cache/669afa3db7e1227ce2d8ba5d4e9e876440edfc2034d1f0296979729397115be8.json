@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the southern Indian international township associated with forest conservation and a vision of harmony?",
+    "southern Indian international township forest conservation vision of harmony",
+    "international township in southern India focused on forest conservation and harmony vision",
+    "southern India township for forest conservation and harmonious vision"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

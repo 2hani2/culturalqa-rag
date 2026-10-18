@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who wrote the story The Trinity in the collection?",
+    "Who is the author of the story 'The Trinity' in the collection?",
+    "Who wrote the story 'The Trinity' in the collection?",
+    "Who authored the story titled The Trinity in the collection?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

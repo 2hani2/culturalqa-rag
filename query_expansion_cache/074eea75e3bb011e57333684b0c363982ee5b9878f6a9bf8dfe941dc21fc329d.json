@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who is named as Bhanumati's father in the source?",
+    "Who is listed as Bhanumati's father in the source?",
+    "Which person is named as Bhanumati's father in the source?",
+    "Who is identified as Bhanumati's father in the source?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

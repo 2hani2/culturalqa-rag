@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which national park in Ormanjhi is named after a freedom fighter?",
+    "Ormanjhi national park named after freedom fighter",
+    "Freedom fighter named national park in Ormanjhi",
+    "Which national park in Ormanjhi honors a freedom fighter?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

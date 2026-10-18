@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Bihar freedom fighter founded the Janata Party in the collection?",
+    "Bihar freedom fighter who founded the Janata Party",
+    "Which freedom fighter from Bihar established the Janata Party?",
+    "Janata Party founder among Bihar freedom fighters"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

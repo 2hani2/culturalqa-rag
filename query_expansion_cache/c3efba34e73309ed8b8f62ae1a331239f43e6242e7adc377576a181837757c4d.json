@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What are the dolls called whose heads move while their bodies remain still?",
+    "dolls with moving heads only",
+    "dolls that rotate heads but not bodies",
+    "dolls where head moves but body stays still"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

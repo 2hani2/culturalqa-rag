@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What other name is given to Eid ul-Azha?",
+    "What is another name for Eid ul-Azha?",
+    "What is Eid ul-Azha also called?",
+    "What is the alternative name for Eid ul-Azha?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

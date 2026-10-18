@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What method preserves meat for long periods in Naga kitchens?",
+    "How do Naga people preserve meat for long periods?",
+    "Traditional Naga meat preservation techniques for long-term storage",
+    "Naga kitchen methods for preserving meat over extended periods"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who helped defend Ladakh in 1948 and later became India's ambassador to Mongolia?",
+    "Who assisted in defending Ladakh in 1948 and later served as India's ambassador to Mongolia?",
+    "Which Indian officer helped defend Ladakh in 1948 and later became ambassador to Mongolia?",
+    "Name the person who defended Ladakh in 1948 and later was India's ambassador to Mongolia."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

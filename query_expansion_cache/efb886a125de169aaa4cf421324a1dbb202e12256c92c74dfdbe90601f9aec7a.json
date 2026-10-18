@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Name the two-piece Assamese garment worn in Muga silk during Bihu.",
+    "What is the two-piece Assamese garment worn in Muga silk during Bihu?",
+    "Which two-piece Assamese garment is traditionally worn in Muga silk during Bihu?",
+    "Name the two-piece Assamese attire made of Muga silk that is worn during Bihu."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

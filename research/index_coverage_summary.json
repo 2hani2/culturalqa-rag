@@ -1,0 +1,47 @@
+{
+  "DOSA": {
+    "raw_records": 630,
+    "records_with_indexed_content": 630,
+    "fully_indexed_records": 630,
+    "missing_records": 0,
+    "partial_records": 0,
+    "character_coverage": 1.0,
+    "report_chunks": 32
+  },
+  "SCALE": {
+    "raw_records": 695,
+    "records_with_indexed_content": 695,
+    "fully_indexed_records": 695,
+    "missing_records": 0,
+    "partial_records": 0,
+    "character_coverage": 1.0,
+    "report_chunks": 21
+  },
+  "DRISHTIKON": {
+    "raw_records": 64290,
+    "records_with_indexed_content": 64290,
+    "fully_indexed_records": 64286,
+    "missing_records": 0,
+    "partial_records": 4,
+    "character_coverage": 0.9986822076960764,
+    "report_chunks": 29
+  },
+  "DIWALI": {
+    "raw_records": 8817,
+    "records_with_indexed_content": 8817,
+    "fully_indexed_records": 8817,
+    "missing_records": 0,
+    "partial_records": 0,
+    "character_coverage": 1.0,
+    "report_chunks": 31
+  },
+  "Indian Cultural Dataset": {
+    "raw_records": 96,
+    "records_with_indexed_content": 96,
+    "fully_indexed_records": 11,
+    "missing_records": 0,
+    "partial_records": 85,
+    "character_coverage": 0.04244890887146248,
+    "report_chunks": 9
+  }
+}

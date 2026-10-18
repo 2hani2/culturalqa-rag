@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What leaf did Sati eat during her penance before giving up food altogether?",
+    "Which leaf did Sati consume during her penance before renouncing food?",
+    "What leaf did Sati eat while in penance before she gave up all food?",
+    "During her penance, which leaf did Sati eat before abandoning food entirely?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which pungent allium is paired with chili and ginger in Naga cooking?",
+    "pungent allium used with chili and ginger in Naga cuisine",
+    "allium paired with chili and ginger in Naga cooking",
+    "which allium is commonly used with chili and ginger in Naga dishes"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

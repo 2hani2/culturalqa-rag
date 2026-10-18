@@ -1,0 +1,1807 @@
+{
+  "train": [
+    {
+      "query": "Which cultural artifact matches these clues? It is a sweet made of coconut, milk and sugar. It is native to Karnataka. It is soft and flaky.",
+      "positive_ref": "DOSA#264",
+      "negative_ref": "DOSA#243"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this ritual is like a verbal confirmation for a punjabi wedding this is usually celebrated with exchange of sweets and gifts",
+      "positive_ref": "DOSA#427",
+      "negative_ref": "DOSA#522"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a famous dance form that is usually performed at temples in kerala the performer of this dance form wears bright red colors",
+      "positive_ref": "DOSA#302",
+      "negative_ref": "DOSA#427"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a famous festival celebrated with grandeur in thrissur this festival involves a performance by elephants",
+      "positive_ref": "DOSA#294",
+      "negative_ref": "DRISHTIKON#1984"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a very famous temple it's a pandyan thing The temple's name is almost synonymous to a place",
+      "positive_ref": "DOSA#467",
+      "negative_ref": "DOSA#1"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The product that Kannauj is famous for.",
+      "positive_ref": "DOSA#580",
+      "negative_ref": "SCALE#584"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A wedding ritual where a pink dupatta  is used to cover the girl's head. In this ritual mother's brother gives ornaments like Nath, payal, bichue to the bride to be and rice is showered on the girl as a form of blessing",
+      "positive_ref": "DOSA#211",
+      "negative_ref": "DOSA#185"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is an art form depicting different kind of religious history these paintings also depict village life of bihar",
+      "positive_ref": "DOSA#98",
+      "negative_ref": "DOSA#196"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a type of Mekhela Chador usually made of bright green or red.",
+      "positive_ref": "DOSA#48",
+      "negative_ref": "DOSA#465"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The more advanced or difficult steps of Garba",
+      "positive_ref": "DOSA#185",
+      "negative_ref": "Indian Cultural Dataset#28"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A sweet dish made of raw rice flour, sugar and ghee",
+      "positive_ref": "DOSA#43",
+      "negative_ref": "DOSA#580"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A traditional kurta that has a closed high neck and  less embroidery. It is also something that grooms wear.",
+      "positive_ref": "DOSA#562",
+      "negative_ref": "DIWALI#6065"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? Paintings done by the tribes in Jharkhand and depict animals and plants. It depicts the harvesting festival of Jharkhand. One of these paintings depict weddings and are done on walls.",
+      "positive_ref": "DOSA#232",
+      "negative_ref": "DOSA#302"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a fried breakfast item. It is commonly consumed with Tea. Eaten every Sunday morning and Gujarati's cannot skip it.",
+      "positive_ref": "DOSA#159",
+      "negative_ref": "DOSA#1"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this temple is the place of worship for Buddhists this temple is located in bodh gaya",
+      "positive_ref": "DOSA#99",
+      "negative_ref": "DOSA#580"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? a cold drink made of mangoes this is usually had during  summers and during ganesh chaturthi",
+      "positive_ref": "DOSA#336",
+      "negative_ref": "SCALE#322"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The most famous Vishnu temple this is the richest place of worship",
+      "positive_ref": "DOSA#1",
+      "negative_ref": "DOSA#99"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The name for each earthen  pot in a three earther pot arrangement for drinking water.",
+      "positive_ref": "DOSA#214",
+      "negative_ref": "Indian Cultural Dataset#74"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a traditional garment worn over Mekhala Chador",
+      "positive_ref": "DOSA#42",
+      "negative_ref": "DOSA#174"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this dish is a variant of dosa this dish is quite protein rich",
+      "positive_ref": "DOSA#487",
+      "negative_ref": "DOSA#159"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? it is a place that is associated with sai baba it is situated near nashik",
+      "positive_ref": "DOSA#329",
+      "negative_ref": "DOSA#534"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A very famous festival that happens in a desert and is used to promote tourism",
+      "positive_ref": "DOSA#168",
+      "negative_ref": "SCALE#22"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The most famous temple in Chhattisgarh. This temple has the remains of Gond land. It is also called as Chhattisgarh's khajurao.",
+      "positive_ref": "DOSA#119",
+      "negative_ref": "DOSA#406"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a famous chutney in tamil families this is mostly made of tomato",
+      "positive_ref": "DOSA#488",
+      "negative_ref": "Indian Cultural Dataset#28"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is an essential punjabi jewellery worn by women this is usually worn by women during a folk dance performance on their heads it consists of one centerpiece flanked by two flowers on either side",
+      "positive_ref": "DOSA#407",
+      "negative_ref": "DOSA#371"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A form of art made on the floor with rice paste or pitha This art is especially made for Mannosa.",
+      "positive_ref": "DOSA#358",
+      "negative_ref": "SCALE#365"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The local rice beer",
+      "positive_ref": "DOSA#253",
+      "negative_ref": "DOSA#460"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The celebration done after one month of not consuming any non-vegetarian food",
+      "positive_ref": "DOSA#371",
+      "negative_ref": "DRISHTIKON#1422"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A go to street food delicacy of Delhi NCR. It is made with white dough There are multiple variations but is usually served with Chutney",
+      "positive_ref": "DOSA#132",
+      "negative_ref": "DOSA#463"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? It is a traditional saree Worn by women The place where it is worn is near to chennai This place where it is worn has lots of temples",
+      "positive_ref": "DOSA#460",
+      "negative_ref": "DOSA#294"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a place of worship for sikhs",
+      "positive_ref": "DOSA#413",
+      "negative_ref": "DOSA#262"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A desset made during rajjo and Rath Yatra",
+      "positive_ref": "DOSA#378",
+      "negative_ref": "SCALE#639"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a sweet dish usually made on ugadi.",
+      "positive_ref": "DOSA#535",
+      "negative_ref": "DOSA#611"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A very famous automobile company that established Jamshedpur.",
+      "positive_ref": "DOSA#240",
+      "negative_ref": "DIWALI#6065"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this day happens after a kannada wedding during this day the groom's family hosts a lunch for all the guests the meal usually has to be a non-vegetarian meal",
+      "positive_ref": "DOSA#281",
+      "negative_ref": "DOSA#168"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? It is very famous park in Jameshedpur It is a common tourist  spot where many festivals and exhibitions are held. Kite festival at Makar Sankranti takes place here",
+      "positive_ref": "DOSA#227",
+      "negative_ref": "DRISHTIKON#1422"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The girl rests for 5-11 days in a room. She usually wears white and puts turmeric over her bosy before bathing. After 11 days the girl takes a bath with turmeric and oil. After that a celebration is held. The girl sits on a gramd chair and there are sweets, fruits kept around her. Akshanthulu (rice and turmeric) is put on her head as a form of blessing",
+      "positive_ref": "DOSA#534",
+      "negative_ref": "DOSA#185"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a variant of pongal that is salty in taste this variant is made using ghee",
+      "positive_ref": "DOSA#479",
+      "negative_ref": "SCALE#426"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? it’s a tamil epic book One amongst the 5 epic tamil books Tamil movie exist on this book Tamil superstar vishal acted in the above movie",
+      "positive_ref": "DOSA#468",
+      "negative_ref": "DOSA#262"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A rice-based porridge that is had during upwaas.",
+      "positive_ref": "DOSA#174",
+      "negative_ref": "DRISHTIKON#3126"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A rangoli made with different colors that are organically sourced",
+      "positive_ref": "DOSA#379",
+      "negative_ref": "DOSA#211"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a very beautiful valley. The aerial view of the valley is quite scenic and there are watersports at this location.",
+      "positive_ref": "DOSA#243",
+      "negative_ref": "DOSA#26"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a dessert item that is primarily made using carrots",
+      "positive_ref": "DOSA#423",
+      "negative_ref": "DOSA#407"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A ritual done by the mother at the birth of a boy where she worships the well",
+      "positive_ref": "DOSA#212",
+      "negative_ref": "DOSA#47"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? It is usually a part of men's attire It is a kind of Long cloth",
+      "positive_ref": "DOSA#465",
+      "negative_ref": "DOSA#119"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The name itself is a variation of Rabindranath tagore's famous painting on Mother India. The name is the Bengali version.",
+      "positive_ref": "DOSA#611",
+      "negative_ref": "DRISHTIKON#530"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a type of embroidery wire like threads are used this kind of embridery is mostly used for wedding dresses this is more popular is punjabi muslim families",
+      "positive_ref": "DOSA#406",
+      "negative_ref": "DOSA#468"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a seasonal bengali sweet dish this dish is prepared from date palm jaggery and khoi",
+      "positive_ref": "DOSA#622",
+      "negative_ref": "DRISHTIKON#1308"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The rasam made of horsegram",
+      "positive_ref": "DOSA#26",
+      "negative_ref": "DOSA#463"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A very famous eatery in Banglore near Malleshwaram that is famous for Benne Masala Dosa. Mostly famous for breakfast and closes down in the afternoon to open up again in the evening. It is very crowded during 8:30-12:00 and people usually awaut in a queue outside to get the food there.",
+      "positive_ref": "DOSA#262",
+      "negative_ref": "DOSA#119"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The silk that is made of silk worms feed on mulberry silk",
+      "positive_ref": "DOSA#47",
+      "negative_ref": "DOSA#406"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A festival primarily celebrated in Warangal district which is celebrated annually",
+      "positive_ref": "DOSA#532",
+      "negative_ref": "DIWALI#6219"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? This is a Bull riding festival",
+      "positive_ref": "DOSA#463",
+      "negative_ref": "DOSA#281"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A food made on special occasions. It is also consumed after fasting",
+      "positive_ref": "DOSA#196",
+      "negative_ref": "SCALE#97"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? these kind of sarees are quite famous in north karnataka these sarees look like silk sarees this saree is usually worn by people on special occasions",
+      "positive_ref": "DOSA#282",
+      "negative_ref": "DOSA#407"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this is a Traditional Saree It is not royal and cheaper than other sarees. This is hand woven.",
+      "positive_ref": "DOSA#605",
+      "negative_ref": "DOSA#379"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? it's a festival and an edible breakfast item. On this day a clay pot is decorated with Vibhuti and Kumkum, and two two manga inji or turmeric plants are tied around it.  Rice water is boiled over in it and then food is cooked in this boiling rice water.",
+      "positive_ref": "DOSA#475",
+      "negative_ref": "DOSA#227"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? It is a rite of passage for boys in Hindu Brahmins. It is conducted between the age of 8-16. It signifies the boys entering the first of the four ashramas of Hindu life.",
+      "positive_ref": "DOSA#268",
+      "negative_ref": "DRISHTIKON#3120"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A ritual done before the wedding at the boy's place",
+      "positive_ref": "DOSA#522",
+      "negative_ref": "DOSA#196"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this spread of meal is usually eaten during onam this spread has multiple dishes and the number of dishes varies according to the festival being celebrated in kerala",
+      "positive_ref": "DOSA#301",
+      "negative_ref": "DIWALI#3311"
+    },
+    {
+      "query": "What is the translation of jawahar municipal stadium?",
+      "positive_ref": "SCALE#434",
+      "negative_ref": "SCALE#443"
+    },
+    {
+      "query": "What is the translation of champakulam moolam boat race?",
+      "positive_ref": "SCALE#391",
+      "negative_ref": "SCALE#306"
+    },
+    {
+      "query": "What is the translation of dangmei grace?",
+      "positive_ref": "SCALE#538",
+      "negative_ref": "SCALE#103"
+    },
+    {
+      "query": "What is the translation of madhushravani?",
+      "positive_ref": "SCALE#393",
+      "negative_ref": "DOSA#227"
+    },
+    {
+      "query": "What is the translation of dim shorshe?",
+      "positive_ref": "SCALE#97",
+      "negative_ref": "SCALE#538"
+    },
+    {
+      "query": "What is the translation of ritha machher bhuna?",
+      "positive_ref": "SCALE#143",
+      "negative_ref": "SCALE#82"
+    },
+    {
+      "query": "What is the translation of pune pistons?",
+      "positive_ref": "SCALE#628",
+      "negative_ref": "SCALE#257"
+    },
+    {
+      "query": "What is the translation of swaraj?",
+      "positive_ref": "SCALE#210",
+      "negative_ref": "DRISHTIKON#186"
+    },
+    {
+      "query": "What is the translation of makara jyothi?",
+      "positive_ref": "SCALE#387",
+      "negative_ref": "SCALE#143"
+    },
+    {
+      "query": "What is the translation of calcutta cricket and football club?",
+      "positive_ref": "SCALE#626",
+      "negative_ref": "DRISHTIKON#2045"
+    },
+    {
+      "query": "What is the translation of phiran?",
+      "positive_ref": "SCALE#62",
+      "negative_ref": "SCALE#679"
+    },
+    {
+      "query": "What is the translation of official language movement (assam)?",
+      "positive_ref": "SCALE#211",
+      "negative_ref": "DOSA#532"
+    },
+    {
+      "query": "What is the translation of rottela panduga?",
+      "positive_ref": "SCALE#326",
+      "negative_ref": "SCALE#564"
+    },
+    {
+      "query": "What is the translation of saileswar temple?",
+      "positive_ref": "SCALE#396",
+      "negative_ref": "DRISHTIKON#1422"
+    },
+    {
+      "query": "What is the translation of tomato diye chingrir patla jhol?",
+      "positive_ref": "SCALE#121",
+      "negative_ref": "SCALE#487"
+    },
+    {
+      "query": "What is the translation of rajasthani lehariya kurti?",
+      "positive_ref": "SCALE#9",
+      "negative_ref": "DIWALI#5266"
+    },
+    {
+      "query": "What is the translation of mithila state movement?",
+      "positive_ref": "SCALE#259",
+      "negative_ref": "SCALE#62"
+    },
+    {
+      "query": "What is the translation of lauriya-areraj ashoka pillar?",
+      "positive_ref": "SCALE#401",
+      "negative_ref": "DIWALI#5914"
+    },
+    {
+      "query": "What is the translation of kolhapuri saaj?",
+      "positive_ref": "SCALE#20",
+      "negative_ref": "SCALE#683"
+    },
+    {
+      "query": "What is the translation of dabang mumbai?",
+      "positive_ref": "SCALE#638",
+      "negative_ref": "SCALE#92"
+    },
+    {
+      "query": "What is the translation of natarajan c?",
+      "positive_ref": "SCALE#522",
+      "negative_ref": "SCALE#127"
+    },
+    {
+      "query": "What is the translation of madhuri mehta?",
+      "positive_ref": "SCALE#586",
+      "negative_ref": "DRISHTIKON#76"
+    },
+    {
+      "query": "What is the translation of patna pirates?",
+      "positive_ref": "SCALE#639",
+      "negative_ref": "SCALE#228"
+    },
+    {
+      "query": "What is the translation of indian national women's weightlifting team?",
+      "positive_ref": "SCALE#683",
+      "negative_ref": "DOSA#534"
+    },
+    {
+      "query": "What is the translation of border security force sc?",
+      "positive_ref": "SCALE#614",
+      "negative_ref": "SCALE#306"
+    },
+    {
+      "query": "What is the translation of easdon?",
+      "positive_ref": "SCALE#564",
+      "negative_ref": "SCALE#428"
+    },
+    {
+      "query": "What is the translation of mizo vakiria?",
+      "positive_ref": "SCALE#34",
+      "negative_ref": "SCALE#382"
+    },
+    {
+      "query": "What is the translation of bharat arun?",
+      "positive_ref": "SCALE#524",
+      "negative_ref": "DRISHTIKON#2563"
+    },
+    {
+      "query": "What is the translation of shamshergadh fort?",
+      "positive_ref": "SCALE#428",
+      "negative_ref": "SCALE#62"
+    },
+    {
+      "query": "What is the translation of mooli paratha?",
+      "positive_ref": "SCALE#177",
+      "negative_ref": "DIWALI#2985"
+    },
+    {
+      "query": "What is the translation of sri balaji vidyapeeth?",
+      "positive_ref": "SCALE#487",
+      "negative_ref": "SCALE#614"
+    },
+    {
+      "query": "What is the translation of rajim kumbh mela?",
+      "positive_ref": "SCALE#361",
+      "negative_ref": "DRISHTIKON#3572"
+    },
+    {
+      "query": "What is the translation of putreshwar mahadev temple?",
+      "positive_ref": "SCALE#404",
+      "negative_ref": "SCALE#523"
+    },
+    {
+      "query": "What is the translation of aseb sc?",
+      "positive_ref": "SCALE#640",
+      "negative_ref": "Indian Cultural Dataset#71"
+    },
+    {
+      "query": "What is the translation of church and convent of st. monica?",
+      "positive_ref": "SCALE#483",
+      "negative_ref": "SCALE#121"
+    },
+    {
+      "query": "What is the translation of hartalika teej?",
+      "positive_ref": "SCALE#382",
+      "negative_ref": "DRISHTIKON#3341"
+    },
+    {
+      "query": "What is the translation of temple jewellery kamarband?",
+      "positive_ref": "SCALE#74",
+      "negative_ref": "SCALE#248"
+    },
+    {
+      "query": "What is the translation of bateshwar shiva temple?",
+      "positive_ref": "SCALE#443",
+      "negative_ref": "DOSA#132"
+    },
+    {
+      "query": "What is the translation of ghadar mutiny?",
+      "positive_ref": "SCALE#276",
+      "negative_ref": "SCALE#121"
+    },
+    {
+      "query": "What is the translation of ambedkar jayanti?",
+      "positive_ref": "SCALE#306",
+      "negative_ref": "DOSA#1"
+    },
+    {
+      "query": "What is the translation of gargi banerji?",
+      "positive_ref": "SCALE#513",
+      "negative_ref": "SCALE#322"
+    },
+    {
+      "query": "What is the translation of aamir gani?",
+      "positive_ref": "SCALE#523",
+      "negative_ref": "DRISHTIKON#3349"
+    },
+    {
+      "query": "What is the translation of baluchari sari?",
+      "positive_ref": "SCALE#22",
+      "negative_ref": "SCALE#564"
+    },
+    {
+      "query": "What is the translation of mirchi ka salan?",
+      "positive_ref": "SCALE#127",
+      "negative_ref": "DRISHTIKON#2235"
+    },
+    {
+      "query": "What is the translation of deep sengupta?",
+      "positive_ref": "SCALE#498",
+      "negative_ref": "SCALE#97"
+    },
+    {
+      "query": "What is the translation of why waste??",
+      "positive_ref": "SCALE#228",
+      "negative_ref": "SCALE#606"
+    },
+    {
+      "query": "What is the translation of raita?",
+      "positive_ref": "SCALE#103",
+      "negative_ref": "SCALE#482"
+    },
+    {
+      "query": "What is the translation of abhijit kunte?",
+      "positive_ref": "SCALE#585",
+      "negative_ref": "Indian Cultural Dataset#19"
+    },
+    {
+      "query": "What is the translation of banjara choker?",
+      "positive_ref": "SCALE#92",
+      "negative_ref": "SCALE#82"
+    },
+    {
+      "query": "What is the translation of aizawl f.c.?",
+      "positive_ref": "SCALE#606",
+      "negative_ref": "DRISHTIKON#3349"
+    },
+    {
+      "query": "What is the translation of 2021 tripura riots?",
+      "positive_ref": "SCALE#257",
+      "negative_ref": "SCALE#396"
+    },
+    {
+      "query": "What is the translation of dukhi mallik's mosque?",
+      "positive_ref": "SCALE#426",
+      "negative_ref": "Indian Cultural Dataset#69"
+    },
+    {
+      "query": "What is the translation of national statistics day?",
+      "positive_ref": "SCALE#322",
+      "negative_ref": "SCALE#564"
+    },
+    {
+      "query": "What is the translation of chinakkathoor pooram?",
+      "positive_ref": "SCALE#365",
+      "negative_ref": "DIWALI#848"
+    },
+    {
+      "query": "What is the translation of jamiat ulema-e-hind?",
+      "positive_ref": "SCALE#248",
+      "negative_ref": "SCALE#626"
+    },
+    {
+      "query": "What is the translation of anthony amalraj?",
+      "positive_ref": "SCALE#584",
+      "negative_ref": "DRISHTIKON#1308"
+    },
+    {
+      "query": "What is the translation of indian national cerebral palsy football team?",
+      "positive_ref": "SCALE#679",
+      "negative_ref": "SCALE#387"
+    },
+    {
+      "query": "What is the translation of madisar?",
+      "positive_ref": "SCALE#82",
+      "negative_ref": "DRISHTIKON#240"
+    },
+    {
+      "query": "What is the translation of saag paneer?",
+      "positive_ref": "SCALE#169",
+      "negative_ref": "SCALE#585"
+    },
+    {
+      "query": "What is the translation of chapora fort?",
+      "positive_ref": "SCALE#482",
+      "negative_ref": "Indian Cultural Dataset#6"
+    },
+    {
+      "query": "Q4: In Jat marriages, where do the bride and groom typically come from as shown in the image?",
+      "positive_ref": "DRISHTIKON#2045",
+      "negative_ref": "DRISHTIKON#1524"
+    },
+    {
+      "query": "Just as the image of the ancient epic evokes the essence of a timeless saga revered in its region, what narrative, similar to the Mahabharata, serves as a cultural epicenter for its own land, embodying the ethos and heritage through its storytelling?",
+      "positive_ref": "DRISHTIKON#4243",
+      "negative_ref": "DRISHTIKON#2562"
+    },
+    {
+      "query": "Which Indian state celebrates the festival shown in the image where farmers worship agricultural tools decorated with sprouting paddy plants and flower garlands?",
+      "positive_ref": "DRISHTIKON#380",
+      "negative_ref": "DRISHTIKON#4143"
+    },
+    {
+      "query": "Q8: What significant archaeological culture shown in the image has been found in Haryana, particularly at Rakhi Garhi?",
+      "positive_ref": "DRISHTIKON#2036",
+      "negative_ref": "DIWALI#4903"
+    },
+    {
+      "query": "In which Indian state is the Dhoti, also known as Pancha, a traditional garment for men, as shown in the image?",
+      "positive_ref": "DRISHTIKON#1022",
+      "negative_ref": "DRISHTIKON#2655"
+    },
+    {
+      "query": "Imagine a journey from the high plateaus of the Kham region, where snowy peaks brush the heavens, and where spirituality is woven into the very fabric of everyday life. Long ago, a group of people, as depicted in the image, set forth from this rugged land, carrying with them ideas of Mahayana Buddhism, which emphasizes the path of the bodhisattva. As they traversed the mighty Himalayas into Sikkim, they carried not only their belief system but also rich traditions, rituals, and a sense of spirituality that would eventually permeate the region.\n\nTheir arrival in Sikkim marked the beginning of a cultural synergy that would shape the identity of the land, as they brought with them a distinctive blend of Tibetan customs and beliefs. When you think of transformation through cultural exchange, this group's influence on the spiritual landscape of Sikkim is profound, and it's visible in the monasteries and cultural practices that trace their lineage to these highland pilgrims. Take note of the cultural attire and practices depicted in the image to identify which group this is.",
+      "positive_ref": "DRISHTIKON#2408",
+      "negative_ref": "Indian Cultural Dataset#53"
+    },
+    {
+      "query": "Imagine you are journeying through the heart of India, known for its diverse culinary traditions. While exploring this central region, you might stumble upon a delicacy that marries sugar with sesame seeds to create a sweet, crunchy treat. This locale is celebrated for rich cultural tapestries and historical narratives that often blend into its gastronomic heritage. As referenced in the image, recognizing this state is easier when you acknowledge its central location and its profound impact on the country's cultural diversity and traditional flavors. Such a sweet delight is not only a piece of confectionery but also an emblem of its regional origin, lying at the central core of the Indian subcontinent. Which state could we be exploring?",
+      "positive_ref": "DRISHTIKON#2563",
+      "negative_ref": "DRISHTIKON#1728"
+    },
+    {
+      "query": "Where is the festival referenced in the image celebrated, involving water-offering rituals to Buddha statues and traditional boat races by the Tai Khampti community?",
+      "positive_ref": "DRISHTIKON#240",
+      "negative_ref": "DIWALI#3311"
+    },
+    {
+      "query": "Imagine you're invited to a joyous gathering under the gentle sway of palm trees, with fragrant jasmine threads adorning the scene. As you observe, there's an enchanting moment where a young couple, draped in elegantly woven attire of pure white and golden patterns, exchanges rings amid heartfelt blessings from a circle of elders. The setting, vibrant with smiles and a festive spirit, reflects traditions deeply rooted in the coastal lands, where the serene backwaters meet the vast Arabian Sea. This pre-wedding ritual, cherished by a community known for their rich cultural tapestry, is captured in this scene as referenced in the image. Which lush, southern region renowned for its monsoon-drenched beauty and spice-laden landscapes does this ceremony belong to?",
+      "positive_ref": "DRISHTIKON#2830",
+      "negative_ref": "DRISHTIKON#2562"
+    },
+    {
+      "query": "The cultural festival depicted in the image is celebrated with grand public pandals, elaborate processions, and vibrant idol immersions, particularly associated with the city that serves as the capital of the Indian state where the festival of Ganesh Chaturthi, a significant Hindu event introduced under the Maratha ruler Chhatrapati Shivaji Maharaj, is most famously observed. What is the name of this state, historically known for its association with warrior rulers and renowned for its coastal city hosting major festivities?",
+      "positive_ref": "DRISHTIKON#3304",
+      "negative_ref": "SCALE#62"
+    },
+    {
+      "query": "In which Indian state is the image depicted in given image, the birth anniversary of Chhatrapati Shivaji Maharaj, celebrated with grand processions and cultural programs?",
+      "positive_ref": "DRISHTIKON#1304",
+      "negative_ref": "DRISHTIKON#1026"
+    },
+    {
+      "query": "To determine the Union Territory where the depicted Church, constructed in the 17th century, is located, explore the cultural and historical significance of Portuguese influence in the western coastal regions of India, particularly considering regions like Daman and Diu, as referenced in the image of the cultural structure.",
+      "positive_ref": "DRISHTIKON#3464",
+      "negative_ref": "Indian Cultural Dataset#45"
+    },
+    {
+      "query": "In the rich tapestry of India's cultural history, there exists a fascinating story of maritime powers that, in their quest to expand overseas, left behind indelible marks on foreign lands. Imagine, if you will, a coastal enclave that echoes with echoes of yesterday, where the skies are punctuated by the grand beauty of an architectural relic that has witnessed centuries pass by. This church, as referenced in the image, is a gem of Indo-European synthesis, constructed during a time when explorers and merchants sailed overseas, blending their heritage with local traditions. Today, this region is governed not as a singular state, but rather a smaller administrative unit, a peaceful confluence of landmasses brought together by history beyond the seas, speaking a language of old trades and conquests.",
+      "positive_ref": "DRISHTIKON#2739",
+      "negative_ref": "DRISHTIKON#2408"
+    },
+    {
+      "query": "What Indian state, historically known for its rich cultural tapestry, where diverse communities like the Garo and Manipuri live alongside indigenous tribes in the verdant forests, as referenced in the image, became an official state in 1972 as part of the Northeast Reorganization Act?",
+      "positive_ref": "DRISHTIKON#3172",
+      "negative_ref": "DOSA#407"
+    },
+    {
+      "query": "How did François Martin's role and contributions as depicted in the cultural artifact shown in the image influence the architectural and political landscape of Puducherry during the French colonial era in 1701?",
+      "positive_ref": "DRISHTIKON#3528",
+      "negative_ref": "DRISHTIKON#2430"
+    },
+    {
+      "query": "The question could be: Imagine a region in the heart of a vast subcontinent, characterized by its rich history and diversity. This place is known for its mouth-watering chaats as depicted in the image, involving a delightful combination of tangy, spicy, and sweet elements that tantalize the taste buds. This central land is also famed for its bustling markets, forts, and deep cultural heritage. A dish that combines puffed puris and spicy potatoes, usually savored in bustling streets and at vibrant fairs, is reminiscent of this place. Which region does this cuisine belong to?",
+      "positive_ref": "DRISHTIKON#2562",
+      "negative_ref": "DOSA#475"
+    },
+    {
+      "query": "In which Indian state is the image depicted in given image celebrated as the Marathi New Year, marking the beginning of the traditional lunar calendar?",
+      "positive_ref": "DRISHTIKON#1308",
+      "negative_ref": "DRISHTIKON#3304"
+    },
+    {
+      "query": "In Uttarakhand, which of the following language as referenced in the image is commonly spoken in the mountainous regions, emphasizing family and kinship ties?",
+      "positive_ref": "DRISHTIKON#76",
+      "negative_ref": "SCALE#586"
+    },
+    {
+      "query": "Consider the location that today is a place of historical reflection and memory, as seen in the image of a structure that once confined individuals who were pivotal in the fight against colonial rule. Visitors engage with stories of resilience against oppression, paying homage through a sound and light show that brings to life the tales of the past, from imprisonment to eventual independence. This performance is situated on an archipelago known for its coral reefs and beaches, adding a backdrop of tropical beauty to the historical narrative.",
+      "positive_ref": "DRISHTIKON#2235",
+      "negative_ref": "DRISHTIKON#2827"
+    },
+    {
+      "query": "In which way does the Garhwali culture, akin to a distinct thread in the intricate tapestry of Uttarakhand, preserve its ancestral practices as symbolized in the image?",
+      "positive_ref": "DRISHTIKON#3572",
+      "negative_ref": "DIWALI#6065"
+    },
+    {
+      "query": "In which Indian state is depicted closely associated with the worship of Lord Mailara (a form of Shiva)?",
+      "positive_ref": "DRISHTIKON#1500",
+      "negative_ref": "DRISHTIKON#1274"
+    },
+    {
+      "query": "Which state's cuisine is characterized by the use of the ingredient shown in the image in gravies, chutneys, and sweets?",
+      "positive_ref": "DRISHTIKON#1984",
+      "negative_ref": "DOSA#535"
+    },
+    {
+      "query": "In which region, known for its breathtaking mountainous landscapes, can one find communities that still hold onto age-old wisdom, particularly when it comes to healing practices that rely on local flora such as the one depicted in the image? This area, nestled at the foothills of one of the world's most iconic mountain ranges, has long been a repository of herbal knowledge passed down through generations. The use of such plants in everyday health remedies speaks volumes of the deep connection between the inhabitants and their natural environment, showcasing a harmonious relationship where nature serves as both pharmacy and sanctuary.",
+      "positive_ref": "DRISHTIKON#2143",
+      "negative_ref": "DRISHTIKON#3954"
+    },
+    {
+      "query": "Which state is depicted in image that is renowned for its rich tradition of narrative dances like Yakshagana, that blend elaborate storytelling, music, and drama, often rooted in mythology?",
+      "positive_ref": "DRISHTIKON#1422",
+      "negative_ref": "DIWALI#7948"
+    },
+    {
+      "query": "In which state's traditional economy were the routes shown in the image through high Himalayan passes historically significant before modern transportation?",
+      "positive_ref": "DRISHTIKON#541",
+      "negative_ref": "DRISHTIKON#1274"
+    },
+    {
+      "query": "How can the vibrant, distinctive headgear as referenced in the image be likened to a crown that signifies regional pride and identity, similar to how kilts represent Scottish heritage, within a specific state in India?",
+      "positive_ref": "DRISHTIKON#3954",
+      "negative_ref": "Indian Cultural Dataset#60"
+    },
+    {
+      "query": "The famous depicted Gali shown in the image is located in which city?",
+      "positive_ref": "DRISHTIKON#1728",
+      "negative_ref": "DRISHTIKON#2949"
+    },
+    {
+      "query": "In which state do artisans create intricate textiles as referenced in the image using hand-painted or block-printed techniques, often depicting scenes from Hindu epics?",
+      "positive_ref": "DRISHTIKON#187",
+      "negative_ref": "DRISHTIKON#2830"
+    },
+    {
+      "query": "Imagine a setting where the ambitions of a newly independent nation are taking shape through bold architectural innovations. As a city develops to serve as the capital of two states, it becomes a symbol of progress and unity. Dominating this vision are structures that embody the philosophy of open spaces, light, and functionality, championed by a Swiss-French genius of modernism. The structures depicted in the image stand as monuments to a futuristic vision realized half a century ago, serving as the epicenter for legislative and judicial activities. The expansive plazas and identifiable geometric forms reflect an era of optimism and forward-thinking, as referenced in the image. Which city, crafted with such foresight, becomes the administrative heart of Punjab and Haryana while deeply rooted in internationalist architectural style?",
+      "positive_ref": "DRISHTIKON#2320",
+      "negative_ref": "DRISHTIKON#3866"
+    },
+    {
+      "query": "Which Indian state is renowned for the wooden toys as shown in the image, crafted in the Krishna district near Vijayawada using softwood from nearby hills?",
+      "positive_ref": "DRISHTIKON#186",
+      "negative_ref": "DOSA#580"
+    },
+    {
+      "query": "In which Indian state is the destival depited in the image celebrated with folk parades and traditional dances, observed?",
+      "positive_ref": "DRISHTIKON#1337",
+      "negative_ref": "DRISHTIKON#3613"
+    },
+    {
+      "query": "What is the connection between the cultural artifact depicted in the image—linked to religious practices in Nagaland—and the second most practiced faith in the region after Christianity? Consider how the demographic composition of Nagaland, where Christianity is predominant, and cultural influences from neighboring regions impact this statistic.",
+      "positive_ref": "DRISHTIKON#3120",
+      "negative_ref": "DOSA#522"
+    },
+    {
+      "query": "In which state didthe image depicted in given image rule, with King Bhoja as one of its most famous rulers?",
+      "positive_ref": "DRISHTIKON#1263",
+      "negative_ref": "DRISHTIKON#3613"
+    },
+    {
+      "query": "In which Indian state is weaving the Gadwal Sari considered a vital component of cultural heritage, especially near Hyderabad, as illustrated in the image?",
+      "positive_ref": "DRISHTIKON#1026",
+      "negative_ref": "Indian Cultural Dataset#18"
+    },
+    {
+      "query": "Drawing from their rich cultural heritage as seen in the image of their traditional boat-building, which region inhabited by tribal communities, who are known for crafting dugout canoes from single tree trunks, forms a crucial part of India's maritime boundaries?",
+      "positive_ref": "DRISHTIKON#2949",
+      "negative_ref": "DRISHTIKON#2890"
+    },
+    {
+      "query": "Which famous Karnataka city was the center of the depicted Movement during the 12th century?",
+      "positive_ref": "DRISHTIKON#1524",
+      "negative_ref": "DRISHTIKON#1308"
+    },
+    {
+      "query": "Just as the blending of textures creates the unique beauty of a woven tapestry as referenced in the image, which multicultural Himalayan state artfully weaves together the distinctive threads of Tamang and Gurug languages to enrich its cultural identity?",
+      "positive_ref": "DRISHTIKON#3866",
+      "negative_ref": "DRISHTIKON#970"
+    },
+    {
+      "query": "Which state is home to the location shown in the image, a center of Neo-Vaishnavite culture and Sattriya dance?",
+      "positive_ref": "DRISHTIKON#1890",
+      "negative_ref": "DRISHTIKON#797"
+    },
+    {
+      "query": "Which Indian state has cultural narratives that revolve around demons, witches, and gods, shaping the local worldview, as illustrated in the image?",
+      "positive_ref": "DRISHTIKON#1113",
+      "negative_ref": "DRISHTIKON#240"
+    },
+    {
+      "query": "In which state do the Korku tribal men wear a traditional the image depicted in given image?",
+      "positive_ref": "DRISHTIKON#1274",
+      "negative_ref": "DRISHTIKON#1337"
+    },
+    {
+      "query": "Which Union Territory was merged with depicted Haveli in January 2020?",
+      "positive_ref": "DRISHTIKON#1846",
+      "negative_ref": "DRISHTIKON#187"
+    },
+    {
+      "query": "Q29: The Kurukshetra region is often associated with what traditional observance shown in the image?",
+      "positive_ref": "DRISHTIKON#2043",
+      "negative_ref": "SCALE#522"
+    },
+    {
+      "query": "The hand gesture shown symbolizes respect and is an integral part of cultural practices in Karnataka. Considering Karnataka's historical significance in South Indian culture, what traditional greeting, as referenced in the image, does this gesture represent that is commonly used to show respect and good intentions?",
+      "positive_ref": "DRISHTIKON#3349",
+      "negative_ref": "DRISHTIKON#186"
+    },
+    {
+      "query": "In which state is the image depicted in given image held, featuring devotional singing, dancing, and a marketplace for silverware and textiles?",
+      "positive_ref": "DRISHTIKON#1238",
+      "negative_ref": "DOSA#427"
+    },
+    {
+      "query": "Which region does not embrace the Hornbill Festival but instead celebrates a cultural gathering akin to the one depicted in the image, where tribal unity is exemplified through rituals involving rice beer and animal offerings?",
+      "positive_ref": "DRISHTIKON#3613",
+      "negative_ref": "DRISHTIKON#3341"
+    },
+    {
+      "query": "In the vast, arid landscapes of the Himalayas, there exists a body of water that captures the imagination of travelers and locals alike. As the sun journeys across the sky, this lake, as referenced in the image, transforms like a chameleon, reflecting hues that range from azure to turquoise. This spectacle isn't merely a visual delight but also a cultural tapestry interwoven with the tales of the land. Its name is synonymous with this geographical marvel, much like a beloved character takes center stage in a play, showcasing nature's artistry in the region where snow-kissed mountains stand resolutely in the background. Can you identify this lake that plays with the colors of the sky?",
+      "positive_ref": "DRISHTIKON#2691",
+      "negative_ref": "DRISHTIKON#3528"
+    },
+    {
+      "query": "What is the connection between the evolution of the traditional martial sport seen in the image and its origins in warfare practices within Himachal Pradesh, and how is it integrated into the cultural festivals and rituals of the region?",
+      "positive_ref": "DRISHTIKON#2997",
+      "negative_ref": "DRISHTIKON#1263"
+    },
+    {
+      "query": "Which region of India hosts spiritual ceremonies and large pilgrim congregations along the riverbanks during the Ardha Mela, a significant event that symbolizes midway between two Kumbh Melas, as depicted in the image of the grand cultural gathering along the river?",
+      "positive_ref": "DRISHTIKON#3341",
+      "negative_ref": "SCALE#361"
+    },
+    {
+      "query": "In the tapestry of human ambition, what path parallels the summit of perseverance and is represented in the imagery of Ladakh's lofty passageways? As referenced in the image.",
+      "positive_ref": "DRISHTIKON#4143",
+      "negative_ref": "DRISHTIKON#1263"
+    },
+    {
+      "query": "Identify the state known for hosting the music festival shown in the image, which uniquely combines tribal folk performances with contemporary music, set against the backdrop of an area recognized by UNESCO as part of its tentative list for heritage sites, known for its rich cultural diversity and vibrant traditions.",
+      "positive_ref": "DRISHTIKON#2890",
+      "negative_ref": "DOSA#282"
+    },
+    {
+      "query": "Which part of southern India, associated with the Nizam of Hyderabad, was officially recognized as a separate state on June 2, 2014, as shown in the image?",
+      "positive_ref": "DRISHTIKON#970",
+      "negative_ref": "DRISHTIKON#2430"
+    },
+    {
+      "query": "The image showcases a renowned beach in India where visitors can experience the unique freedom of driving directly along the sandy shores, a rare feature that sets it apart. This beach is nestled in a coastal state known for its lush landscapes, backwaters, and an annual cultural event involving elaborate decorated boats gliding through waters, much like a choreographed dance. Additionally, this region is famed for its monsoons and a rich tradition of Ayurveda. As referenced in the image, this place is widely recognized for its blend of natural beauty and cultural heritage, drawing visitors from near and far to experience its tranquil beaches and verdant surroundings.",
+      "positive_ref": "DRISHTIKON#2827",
+      "negative_ref": "DRISHTIKON#1263"
+    },
+    {
+      "query": "In which city is the depicted Gardens of the Rashtrapati Bhavan located?",
+      "positive_ref": "DRISHTIKON#1813",
+      "negative_ref": "DRISHTIKON#4129"
+    },
+    {
+      "query": "In Nagaland, a region known for its unique culinary traditions, which fermented ingredient pictured in the image is used to enhance the flavor of both pork and fish dishes, much like how other fermentation techniques have been historically utilized in Asian cuisines to develop complex flavors?",
+      "positive_ref": "DRISHTIKON#3126",
+      "negative_ref": "Indian Cultural Dataset#47"
+    },
+    {
+      "query": "In a fashion world where attire represents identity, what might the Goncha symbolize within Tibetan culture as referenced in the image of the traditional attire?",
+      "positive_ref": "DRISHTIKON#4129",
+      "negative_ref": "DRISHTIKON#1113"
+    },
+    {
+      "query": "Boxer depicted in the image who has won medals at Asian Games and World Championships, represents which Indian state?",
+      "positive_ref": "DRISHTIKON#797",
+      "negative_ref": "SCALE#523"
+    },
+    {
+      "query": "Consider a region in the southern part of India, where a historical movement led to the carving out of a new political entity, officially recognized in the middle of the year 2014. This area was once part of a larger neighboring state but has long had its own distinct identity, both culturally and linguistically.\n\nIf you envision a vibrant cultural tapestry of festivals like Bonalu and Bathukamma, and a longstanding demand for separate statehood voiced by a dedicated leader who assumed the role of the first Chief Minister upon its formation, then you are likely considering the heartland that emerged as a new state during this period, as referenced in the image. This entity has Hyderabad as its capital, a city known for its historic mosques, palaces, and a thriving tech industry.",
+      "positive_ref": "DRISHTIKON#2430",
+      "negative_ref": "DRISHTIKON#3304"
+    },
+    {
+      "query": "Which state's traditional beliefs include worshipping mountain deities like the one shown in the image and local devtas during seasonal ceremonies?",
+      "positive_ref": "DRISHTIKON#530",
+      "negative_ref": "DIWALI#4707"
+    },
+    {
+      "query": "Consider the vibrant tapestry of festivals where the traditions of chhau dance interplay with ancient rituals. Here, an image of a cultural artifact often showcases the rich heritage of the Santhal tribe, whose stories are woven into the very fabric of the land. As depicted in the image, this region is known for lush green forests and rolling hills that serve as the backdrop for a sacred space dedicated to the warrior goddess known for her fierce energy. This state in Eastern India is a confluence of tribal culture and spiritual devotion, harmonizing the rhythm of nature with the beat of its cultural heart.",
+      "positive_ref": "DRISHTIKON#2655",
+      "negative_ref": "DRISHTIKON#4143"
+    },
+    {
+      "query": "Which region of the United States, similar to how the cultural and political landscape evolved from the influence of a founding leader as referenced in the image, became a pivotal area for change and growth in the nation's early history?",
+      "positive_ref": "DRISHTIKON#3926",
+      "negative_ref": "SCALE#639"
+    },
+    {
+      "query": "Describe Baisakhi from Haryana.",
+      "positive_ref": "DIWALI#2244",
+      "negative_ref": "DIWALI#635"
+    },
+    {
+      "query": "Describe Gandikota Fort from Andhra Pradesh.",
+      "positive_ref": "DIWALI#7511",
+      "negative_ref": "Indian Cultural Dataset#39"
+    },
+    {
+      "query": "Describe Yak Milk Cheese from Arunachal Pradesh.",
+      "positive_ref": "DIWALI#2715",
+      "negative_ref": "DIWALI#6479"
+    },
+    {
+      "query": "Describe Goravara Kunitha from Karnataka.",
+      "positive_ref": "DIWALI#643",
+      "negative_ref": "DOSA#264"
+    },
+    {
+      "query": "Describe Chhambha from Himachal Pradesh.",
+      "positive_ref": "DIWALI#590",
+      "negative_ref": "DIWALI#7230"
+    },
+    {
+      "query": "Describe Assaru from Lakshadweep.",
+      "positive_ref": "DIWALI#8203",
+      "negative_ref": "DRISHTIKON#2691"
+    },
+    {
+      "query": "Describe Pumpkin Oambal from Nagaland.",
+      "positive_ref": "DIWALI#3311",
+      "negative_ref": "DIWALI#5167"
+    },
+    {
+      "query": "Describe Maram from Manipur.",
+      "positive_ref": "DIWALI#5266",
+      "negative_ref": "DOSA#185"
+    },
+    {
+      "query": "Describe Yadavindra Gardens from Haryana.",
+      "positive_ref": "DIWALI#1500",
+      "negative_ref": "DIWALI#5266"
+    },
+    {
+      "query": "Describe Ranihaar from Telangana.",
+      "positive_ref": "DIWALI#6239",
+      "negative_ref": "DIWALI#8203"
+    },
+    {
+      "query": "Describe Jhabli from Chhattisgarh.",
+      "positive_ref": "DIWALI#5914",
+      "negative_ref": "DIWALI#2985"
+    },
+    {
+      "query": "Describe Lalnunpuii from Mizoram.",
+      "positive_ref": "DIWALI#8530",
+      "negative_ref": "DRISHTIKON#1890"
+    },
+    {
+      "query": "Describe Vallam Kali from Kerala.",
+      "positive_ref": "DIWALI#4707",
+      "negative_ref": "DIWALI#7948"
+    },
+    {
+      "query": "Describe Parab Dance from Chhattisgarh.",
+      "positive_ref": "DIWALI#463",
+      "negative_ref": "DOSA#460"
+    },
+    {
+      "query": "Describe Wood Carving from Kerala.",
+      "positive_ref": "DIWALI#5639",
+      "negative_ref": "DIWALI#7948"
+    },
+    {
+      "query": "Describe Kartika Pournami from Andhra Pradesh.",
+      "positive_ref": "DIWALI#1928",
+      "negative_ref": "Indian Cultural Dataset#19"
+    },
+    {
+      "query": "Describe Sharbat from Haryana.",
+      "positive_ref": "DIWALI#7948",
+      "negative_ref": "DIWALI#8203"
+    },
+    {
+      "query": "Describe Gandhinagar from Gujarat.",
+      "positive_ref": "DIWALI#4501",
+      "negative_ref": "DOSA#212"
+    },
+    {
+      "query": "Describe Paniya from Tamil Nadu.",
+      "positive_ref": "DIWALI#5400",
+      "negative_ref": "DIWALI#461"
+    },
+    {
+      "query": "Describe Anarsa from Bihar.",
+      "positive_ref": "DIWALI#2795",
+      "negative_ref": "Indian Cultural Dataset#38"
+    },
+    {
+      "query": "Describe Bhismaknagar Fort from Arunachal Pradesh.",
+      "positive_ref": "DIWALI#7518",
+      "negative_ref": "DIWALI#1242"
+    },
+    {
+      "query": "Describe Chuda Bhaja from Odisha.",
+      "positive_ref": "DIWALI#3360",
+      "negative_ref": "DOSA#227"
+    },
+    {
+      "query": "Describe Anita from Delhi.",
+      "positive_ref": "DIWALI#8745",
+      "negative_ref": "DIWALI#202"
+    },
+    {
+      "query": "Describe Islam from Chhattisgarh.",
+      "positive_ref": "DIWALI#6416",
+      "negative_ref": "Indian Cultural Dataset#85"
+    },
+    {
+      "query": "Describe Saddo from Goa.",
+      "positive_ref": "DIWALI#6702",
+      "negative_ref": "DIWALI#5050"
+    },
+    {
+      "query": "Describe Pochampally Ikat Weaving from Telangana.",
+      "positive_ref": "DIWALI#4872",
+      "negative_ref": "SCALE#97"
+    },
+    {
+      "query": "Describe Paknam from Manipur.",
+      "positive_ref": "DIWALI#3189",
+      "negative_ref": "DIWALI#1500"
+    },
+    {
+      "query": "Describe Wearing Rings on Second Toe from Telangana.",
+      "positive_ref": "DIWALI#4875",
+      "negative_ref": "Indian Cultural Dataset#88"
+    },
+    {
+      "query": "Describe Pakoras from Chandigarh.",
+      "positive_ref": "DIWALI#3814",
+      "negative_ref": "DIWALI#3516"
+    },
+    {
+      "query": "Describe Kathputli from Rajasthan.",
+      "positive_ref": "DIWALI#955",
+      "negative_ref": "SCALE#614"
+    },
+    {
+      "query": "Describe Lakshmi Kadiyam from Andhra Pradesh.",
+      "positive_ref": "DIWALI#5834",
+      "negative_ref": "DIWALI#7948"
+    },
+    {
+      "query": "Describe Christianity from Nagaland.",
+      "positive_ref": "DIWALI#6506",
+      "negative_ref": "Indian Cultural Dataset#70"
+    },
+    {
+      "query": "Describe Nagpuri from Jharkhand.",
+      "positive_ref": "DIWALI#5167",
+      "negative_ref": "DIWALI#6219"
+    },
+    {
+      "query": "Describe Rotla and Saak from Dadra and Nagar Haveli and Dama.",
+      "positive_ref": "DIWALI#3865",
+      "negative_ref": "DIWALI#6065"
+    },
+    {
+      "query": "Describe Pazham Pori from Kerala.",
+      "positive_ref": "DIWALI#3090",
+      "negative_ref": "DIWALI#463"
+    },
+    {
+      "query": "Describe Ghatwari Dance from Jharkhand.",
+      "positive_ref": "DIWALI#635",
+      "negative_ref": "Indian Cultural Dataset#10"
+    },
+    {
+      "query": "Describe Appam from Tamil Nadu.",
+      "positive_ref": "DIWALI#3516",
+      "negative_ref": "DIWALI#202"
+    },
+    {
+      "query": "Describe Chandrakor Bindi from Maharashtra.",
+      "positive_ref": "DIWALI#6065",
+      "negative_ref": "SCALE#22"
+    },
+    {
+      "query": "Describe Paambadam from Tamil Nadu.",
+      "positive_ref": "DIWALI#6206",
+      "negative_ref": "DIWALI#8352"
+    },
+    {
+      "query": "Describe Pagri from Haryana.",
+      "positive_ref": "DIWALI#7230",
+      "negative_ref": "DRISHTIKON#1274"
+    },
+    {
+      "query": "Describe Chhipla Jaat from Uttarakhand.",
+      "positive_ref": "DIWALI#4903",
+      "negative_ref": "DIWALI#4872"
+    },
+    {
+      "query": "Describe Pipal Patti from Punjab.",
+      "positive_ref": "DIWALI#6134",
+      "negative_ref": "DIWALI#8530"
+    },
+    {
+      "query": "Describe Ardh Kumbh Mela from Uttar Pradesh.",
+      "positive_ref": "DIWALI#2450",
+      "negative_ref": "DIWALI#3814"
+    },
+    {
+      "query": "Describe Metal Crafts from West Bengal.",
+      "positive_ref": "DIWALI#5775",
+      "negative_ref": "Indian Cultural Dataset#40"
+    },
+    {
+      "query": "Describe Shakha Pola from West Bengal.",
+      "positive_ref": "DIWALI#6285",
+      "negative_ref": "DIWALI#3814"
+    },
+    {
+      "query": "Describe Kala Apong from Arunachal Pradesh.",
+      "positive_ref": "DIWALI#7897",
+      "negative_ref": "SCALE#391"
+    },
+    {
+      "query": "Describe Bage from Jharkhand.",
+      "positive_ref": "DIWALI#8352",
+      "negative_ref": "DIWALI#1928"
+    },
+    {
+      "query": "Describe Ger Dance from Chhattisgarh.",
+      "positive_ref": "DIWALI#461",
+      "negative_ref": "SCALE#584"
+    },
+    {
+      "query": "Describe Thousand Pillar Temple, Warangal from Andhra Pradesh.",
+      "positive_ref": "DIWALI#7504",
+      "negative_ref": "DIWALI#590"
+    },
+    {
+      "query": "Describe Lasingphee from Tripura.",
+      "positive_ref": "DIWALI#202",
+      "negative_ref": "DRISHTIKON#3126"
+    },
+    {
+      "query": "Describe Nyishi from Arunachal Pradesh.",
+      "positive_ref": "DIWALI#5050",
+      "negative_ref": "DIWALI#7511"
+    },
+    {
+      "query": "Describe Khomlainai from Assam.",
+      "positive_ref": "DIWALI#4131",
+      "negative_ref": "Indian Cultural Dataset#78"
+    },
+    {
+      "query": "Describe Hinduism from Lakshadweep.",
+      "positive_ref": "DIWALI#6615",
+      "negative_ref": "DIWALI#5639"
+    },
+    {
+      "query": "Describe Fagua Dance from West Bengal.",
+      "positive_ref": "DIWALI#1242",
+      "negative_ref": "SCALE#322"
+    },
+    {
+      "query": "Describe Chudamani from Gujarat.",
+      "positive_ref": "DIWALI#5932",
+      "negative_ref": "DIWALI#2244"
+    },
+    {
+      "query": "Describe Chheih Lam from Mizoram.",
+      "positive_ref": "DIWALI#848",
+      "negative_ref": "DOSA#534"
+    },
+    {
+      "query": "Describe Chintaak from Telangana.",
+      "positive_ref": "DIWALI#6219",
+      "negative_ref": "DIWALI#7897"
+    },
+    {
+      "query": "Describe Pitha from Jharkhand.",
+      "positive_ref": "DIWALI#2985",
+      "negative_ref": "DOSA#413"
+    },
+    {
+      "query": "Describe Neera from Telangana.",
+      "positive_ref": "DIWALI#8093",
+      "negative_ref": "DIWALI#5639"
+    },
+    {
+      "query": "Describe Tribal Religions from Madhya Pradesh.",
+      "positive_ref": "DIWALI#6479",
+      "negative_ref": "DOSA#281"
+    },
+    {
+      "query": "What does the article titled INDIAN FREEDOM explain?",
+      "positive_ref": "Indian Cultural Dataset#60",
+      "negative_ref": "Indian Cultural Dataset#11"
+    },
+    {
+      "query": "What does the article titled For other books, see Mahabharata (disambiguation) § Literature . explain?",
+      "positive_ref": "Indian Cultural Dataset#54",
+      "negative_ref": "DOSA#1"
+    },
+    {
+      "query": "What does the article titled Figure 1.1 explain?",
+      "positive_ref": "Indian Cultural Dataset#9",
+      "negative_ref": "Indian Cultural Dataset#81"
+    },
+    {
+      "query": "What does the article titled Ancient Sanskrit epic This article is about the Sanskrit epic. explain?",
+      "positive_ref": "Indian Cultural Dataset#33",
+      "negative_ref": "DRISHTIKON#2890"
+    },
+    {
+      "query": "What does the article titled Character from the epic Mahabharata For the sister of Uttara, see Uttarā (Mahabharata) . explain?",
+      "positive_ref": "Indian Cultural Dataset#88",
+      "negative_ref": "Indian Cultural Dataset#80"
+    },
+    {
+      "query": "What does the article titled The Kohl-eyed Muse explain?",
+      "positive_ref": "Indian Cultural Dataset#80",
+      "negative_ref": "Indian Cultural Dataset#8"
+    },
+    {
+      "query": "What does the article titled 15th century Sanskrit text The Ananda Ramayana is authored by Valmiki Maharishi . explain?",
+      "positive_ref": "Indian Cultural Dataset#14",
+      "negative_ref": "Indian Cultural Dataset#69"
+    },
+    {
+      "query": "What does the article titled How do I explain the word? explain?",
+      "positive_ref": "Indian Cultural Dataset#16",
+      "negative_ref": "DRISHTIKON#2143"
+    },
+    {
+      "query": "What does the article titled A Temporary Matter explain?",
+      "positive_ref": "Indian Cultural Dataset#7",
+      "negative_ref": "Indian Cultural Dataset#93"
+    },
+    {
+      "query": "What does the article titled The Virangana in North Indian History: Myth and Popular Culture explain?",
+      "positive_ref": "Indian Cultural Dataset#38",
+      "negative_ref": "Indian Cultural Dataset#7"
+    },
+    {
+      "query": "What does the article titled RADHA’S PREM explain?",
+      "positive_ref": "Indian Cultural Dataset#21",
+      "negative_ref": "Indian Cultural Dataset#24"
+    },
+    {
+      "query": "What does the article titled Not to be confused with Manipura (Mahabharata) . explain?",
+      "positive_ref": "Indian Cultural Dataset#65",
+      "negative_ref": "Indian Cultural Dataset#10"
+    },
+    {
+      "query": "What does the article titled This article is about the Sakas in the Mahabharata . explain?",
+      "positive_ref": "Indian Cultural Dataset#79",
+      "negative_ref": "Indian Cultural Dataset#7"
+    },
+    {
+      "query": "What does the article titled Major goddess in Hinduism and consort of Rama For other uses, see Sita (disambiguation) . explain?",
+      "positive_ref": "Indian Cultural Dataset#45",
+      "negative_ref": "Indian Cultural Dataset#77"
+    },
+    {
+      "query": "What does the article titled This article needs additional citations for verification . explain?",
+      "positive_ref": "Indian Cultural Dataset#24",
+      "negative_ref": "Indian Cultural Dataset#10"
+    },
+    {
+      "query": "What does the article titled 2013 novel by Christopher C. explain?",
+      "positive_ref": "Indian Cultural Dataset#95",
+      "negative_ref": "Indian Cultural Dataset#9"
+    },
+    {
+      "query": "What does the article titled You and I first met on a narrow hospital bed, lying side by side, astounded by the world as well as by each other. Our parents were not friends, just  explain?",
+      "positive_ref": "Indian Cultural Dataset#69",
+      "negative_ref": "Indian Cultural Dataset#95"
+    },
+    {
+      "query": "What does the article titled  explain?",
+      "positive_ref": "Indian Cultural Dataset#57",
+      "negative_ref": "Indian Cultural Dataset#9"
+    },
+    {
+      "query": "What does the article titled The personal magnetism of Lord Shiva is truly fascinating. He breaks all stereotypes, He is the Supreme God, yet a Yogi who is far far away from mater explain?",
+      "positive_ref": "Indian Cultural Dataset#31",
+      "negative_ref": "Indian Cultural Dataset#64"
+    },
+    {
+      "query": "What does the article titled •BYJU'S explain?",
+      "positive_ref": "Indian Cultural Dataset#74",
+      "negative_ref": "DIWALI#3814"
+    },
+    {
+      "query": "What does the article titled Ancient Hindu kingdom of India This article is about the historic kingdom. explain?",
+      "positive_ref": "Indian Cultural Dataset#47",
+      "negative_ref": "Indian Cultural Dataset#79"
+    },
+    {
+      "query": "What does the article titled King in a Sanskrit epic Fictional character Bahlika Information Family Pratipa (father), Sunanda (mother), Devapi , Shantanu (brothers) Children Somad explain?",
+      "positive_ref": "Indian Cultural Dataset#55",
+      "negative_ref": "DOSA#26"
+    },
+    {
+      "query": "What does the article titled The Mahabharata ( French : Le Mahabharata ) is a French play, based on the Sanskrit epic Mahābhārata , by Jean-Claude Carrière , which was first stage explain?",
+      "positive_ref": "Indian Cultural Dataset#59",
+      "negative_ref": "Indian Cultural Dataset#14"
+    },
+    {
+      "query": "What does the article titled 1984 drama novel by M.T Vasudevan Nair Randamoozham The cover for the 30th edition Author M. explain?",
+      "positive_ref": "Indian Cultural Dataset#58",
+      "negative_ref": "DIWALI#4903"
+    },
+    {
+      "query": "What does the article titled War described in the Hindu epic Mahabharata This article may contain an excessive amount of intricate detail that may interest only a particular audie explain?",
+      "positive_ref": "Indian Cultural Dataset#8",
+      "negative_ref": "Indian Cultural Dataset#59"
+    },
+    {
+      "query": "What does the article titled Index explain?",
+      "positive_ref": "Indian Cultural Dataset#40",
+      "negative_ref": "DIWALI#3516"
+    },
+    {
+      "query": "What does the article titled Kingdom described in the Mahabharata This article is about the kingdom of Kalinga in Indian epic literature. explain?",
+      "positive_ref": "Indian Cultural Dataset#89",
+      "negative_ref": "Indian Cultural Dataset#49"
+    },
+    {
+      "query": "What does the article titled FALL2010|51 KRISHNAANDRADHA explain?",
+      "positive_ref": "Indian Cultural Dataset#49",
+      "negative_ref": "DIWALI#6479"
+    },
+    {
+      "query": "What does the article titled Major Indian epic This article is about the Sanskrit epic. explain?",
+      "positive_ref": "Indian Cultural Dataset#46",
+      "negative_ref": "Indian Cultural Dataset#81"
+    },
+    {
+      "query": "What does the article titled Part of a series on Dvaita Saints Madhvacharya Padmanabha Tirtha Narahari Tirtha Akshobhya Tirtha Jayatirtha Sripadaraja Vyasatirtha Vadiraja Tirtha R explain?",
+      "positive_ref": "Indian Cultural Dataset#42",
+      "negative_ref": "DOSA#371"
+    },
+    {
+      "query": "What does the article titled The Complete Mahabharata in English explain?",
+      "positive_ref": "Indian Cultural Dataset#2",
+      "negative_ref": "Indian Cultural Dataset#78"
+    },
+    {
+      "query": "What does the article titled +44 (0)7866 424 803 info@runjeetsingh.com runjeetsingh.comTHE GODDESS: explain?",
+      "positive_ref": "Indian Cultural Dataset#70",
+      "negative_ref": "DOSA#47"
+    },
+    {
+      "query": "What does the article titled “Krsna Book”  by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada. explain?",
+      "positive_ref": "Indian Cultural Dataset#39",
+      "negative_ref": "Indian Cultural Dataset#33"
+    },
+    {
+      "query": "What does the article titled The Great Panc hatantra T ales explain?",
+      "positive_ref": "Indian Cultural Dataset#85",
+      "negative_ref": "DIWALI#3189"
+    },
+    {
+      "query": "What does the article titled Guru Disciple RelationshipGuru Disciple Relationship explain?",
+      "positive_ref": "Indian Cultural Dataset#82",
+      "negative_ref": "Indian Cultural Dataset#91"
+    },
+    {
+      "query": "What does the article titled www.ijcrt.org                                                                    © 2020 IJCRT | Volume 8, Issue 10 October 2 020 | ISSN: 2320-2882 explain?",
+      "positive_ref": "Indian Cultural Dataset#18",
+      "negative_ref": "DRISHTIKON#3126"
+    },
+    {
+      "query": "What does the article titled List of beings in the Mahabharata and their avataras This article has multiple issues. explain?",
+      "positive_ref": "Indian Cultural Dataset#41",
+      "negative_ref": "Indian Cultural Dataset#64"
+    },
+    {
+      "query": "What does the article titled 53 explain?",
+      "positive_ref": "Indian Cultural Dataset#10",
+      "negative_ref": "DOSA#605"
+    },
+    {
+      "query": "What does the article titled Ancient Telugu epic This article needs additional citations for verification . explain?",
+      "positive_ref": "Indian Cultural Dataset#76",
+      "negative_ref": "Indian Cultural Dataset#95"
+    },
+    {
+      "query": "What does the article titled In Hindu stories and beliefs, there is a special and much-loved couple: Shiva and Parvati. Shiva, often just called Shiva, is a really important god i explain?",
+      "positive_ref": "Indian Cultural Dataset#12",
+      "negative_ref": "SCALE#276"
+    },
+    {
+      "query": "What does the article titled Look up Mahabharata in Wiktionary, the free dictionary. explain?",
+      "positive_ref": "Indian Cultural Dataset#28",
+      "negative_ref": "Indian Cultural Dataset#79"
+    },
+    {
+      "query": "What does the article titled SUDHA\tMURTY explain?",
+      "positive_ref": "Indian Cultural Dataset#86",
+      "negative_ref": "Indian Cultural Dataset#82"
+    },
+    {
+      "query": "What does the article titled New Delhi explain?",
+      "positive_ref": "Indian Cultural Dataset#5",
+      "negative_ref": "Indian Cultural Dataset#46"
+    },
+    {
+      "query": "What does the article titled Princess in the Mahabharata Fictional character Amba Mahabharata character Amba Information Gender Female Family Parents Kashya (Father) Kausalya (Mot explain?",
+      "positive_ref": "Indian Cultural Dataset#93",
+      "negative_ref": "SCALE#211"
+    },
+    {
+      "query": "What does the article titled AIJRA Vol. III Issue II www.ijcms2015.co  ISSN 2455-5967 explain?",
+      "positive_ref": "Indian Cultural Dataset#78",
+      "negative_ref": "Indian Cultural Dataset#49"
+    },
+    {
+      "query": "What does the article titled Shiva was sitting under a banyan tree, determined not to let anything dissuade him of the tapas (self-imposed exile) he was undertaking for penance. A explain?",
+      "positive_ref": "Indian Cultural Dataset#43",
+      "negative_ref": "SCALE#640"
+    },
+    {
+      "query": "What does the article titled AKBAR\tAND\tBIRBAL explain?",
+      "positive_ref": "Indian Cultural Dataset#71",
+      "negative_ref": "Indian Cultural Dataset#57"
+    },
+    {
+      "query": "What does the article titled Purna Vidya 1 Panchatantra Stories explain?",
+      "positive_ref": "Indian Cultural Dataset#91",
+      "negative_ref": "DIWALI#6219"
+    },
+    {
+      "query": "What does the article titled For other books, see Mahabharata (disambiguation) § Literature . explain?",
+      "positive_ref": "Indian Cultural Dataset#6",
+      "negative_ref": "Indian Cultural Dataset#69"
+    },
+    {
+      "query": "What does the article titled BHAGAVAD -GITA in ENGLISH (Source) explain?",
+      "positive_ref": "Indian Cultural Dataset#17",
+      "negative_ref": "DOSA#468"
+    },
+    {
+      "query": "What does the article titled Labyrinthos Archive   1 Indian Board Games, Pavements & Labyrinths explain?",
+      "positive_ref": "Indian Cultural Dataset#27",
+      "negative_ref": "Indian Cultural Dataset#46"
+    },
+    {
+      "query": "What does the article titled Puranas explain?",
+      "positive_ref": "Indian Cultural Dataset#19",
+      "negative_ref": "Indian Cultural Dataset#86"
+    },
+    {
+      "query": "What does the article titled 1 explain?",
+      "positive_ref": "Indian Cultural Dataset#64",
+      "negative_ref": "Indian Cultural Dataset#14"
+    },
+    {
+      "query": "What does the article titled HISTORY OF MEDIEV AL INDIA explain?",
+      "positive_ref": "Indian Cultural Dataset#77",
+      "negative_ref": "DOSA#358"
+    },
+    {
+      "query": "What does the article titled introduction explain?",
+      "positive_ref": "Indian Cultural Dataset#96",
+      "negative_ref": "Indian Cultural Dataset#86"
+    },
+    {
+      "query": "What does the article titled Mother of Dhritarashtra in epic Mahabharata Ambika Kuru Queen Spouse Vichitravirya Issue Dhritarashtra House Hastinapura Dynasty Kashi (by birth) Kuru explain?",
+      "positive_ref": "Indian Cultural Dataset#83",
+      "negative_ref": "Indian Cultural Dataset#41"
+    },
+    {
+      "query": "What does the article titled For historical Indo-Iranian people, see Khasas . explain?",
+      "positive_ref": "Indian Cultural Dataset#81",
+      "negative_ref": "Indian Cultural Dataset#77"
+    },
+    {
+      "query": "What does the article titled 1 explain?",
+      "positive_ref": "Indian Cultural Dataset#25",
+      "negative_ref": "DOSA#98"
+    },
+    {
+      "query": "What does the article titled This article is about Peter Brook's 1989 film. explain?",
+      "positive_ref": "Indian Cultural Dataset#11",
+      "negative_ref": "Indian Cultural Dataset#80"
+    },
+    {
+      "query": "What does the article titled Copyright © 2024 by Author/s and Licensed by Kuey. This is an open access article distributed under the Creative Commons Attr ibution explain?",
+      "positive_ref": "Indian Cultural Dataset#53",
+      "negative_ref": "DRISHTIKON#4243"
+    }
+  ],
+  "dev": [
+    {
+      "query": "Which cultural artifact matches these clues? it is another sweet dish this dish is made using sugar or jaggery with cold milk this is a standard dish during south karnataka weddings",
+      "positive_ref": "DOSA#287",
+      "negative_ref": "DOSA#12"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A light weight good quality cotton saree",
+      "positive_ref": "DOSA#12",
+      "negative_ref": "SCALE#367"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The puja done by business people where they pray and close the account books.",
+      "positive_ref": "DOSA#189",
+      "negative_ref": "DOSA#113"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The most common dress worn by married women in Chhattisgarh.",
+      "positive_ref": "DOSA#113",
+      "negative_ref": "DRISHTIKON#3244"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A dance primarily done by the Yadavs on Mandai and Deepavali",
+      "positive_ref": "DOSA#114",
+      "negative_ref": "DOSA#545"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? this dish is more common in north karnataka this is made of corn flour",
+      "positive_ref": "DOSA#276",
+      "negative_ref": "DIWALI#1728"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? The name for the local alcohol.",
+      "positive_ref": "DOSA#545",
+      "negative_ref": "DOSA#12"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A wedding ritual where 7 earthen  katori (bowls) containing some sweets are stacked",
+      "positive_ref": "DOSA#209",
+      "negative_ref": "DRISHTIKON#3244"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? the traditional dance of the Boro people",
+      "positive_ref": "DOSA#78",
+      "negative_ref": "DOSA#517"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? very famous mixed vegetable eaten during uttarayan",
+      "positive_ref": "DOSA#153",
+      "negative_ref": "DRISHTIKON#1224"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? A traditional dress usually worn by women before marriage.",
+      "positive_ref": "DOSA#517",
+      "negative_ref": "DOSA#153"
+    },
+    {
+      "query": "Which cultural artifact matches these clues? These are the gamusa that are used to give as a gift or used to felicitate",
+      "positive_ref": "DOSA#39",
+      "negative_ref": "DOSA#12"
+    },
+    {
+      "query": "What is the translation of armed forces flag day?",
+      "positive_ref": "SCALE#354",
+      "negative_ref": "SCALE#553"
+    },
+    {
+      "query": "What is the translation of turai ki sabzi?",
+      "positive_ref": "SCALE#176",
+      "negative_ref": "DRISHTIKON#3860"
+    },
+    {
+      "query": "What is the translation of cripps mission?",
+      "positive_ref": "SCALE#280",
+      "negative_ref": "SCALE#593"
+    },
+    {
+      "query": "What is the translation of brihadeeswarar temple?",
+      "positive_ref": "SCALE#476",
+      "negative_ref": "DRISHTIKON#1981"
+    },
+    {
+      "query": "What is the translation of 2015 gujarat flood?",
+      "positive_ref": "SCALE#252",
+      "negative_ref": "SCALE#593"
+    },
+    {
+      "query": "What is the translation of amit panghal?",
+      "positive_ref": "SCALE#508",
+      "negative_ref": "Indian Cultural Dataset#29"
+    },
+    {
+      "query": "What is the translation of independence day?",
+      "positive_ref": "SCALE#324",
+      "negative_ref": "SCALE#553"
+    },
+    {
+      "query": "What is the translation of pitru paksha?",
+      "positive_ref": "SCALE#367",
+      "negative_ref": "Indian Cultural Dataset#67"
+    },
+    {
+      "query": "What is the translation of dokra?",
+      "positive_ref": "SCALE#68",
+      "negative_ref": "SCALE#324"
+    },
+    {
+      "query": "What is the translation of jim vickers?",
+      "positive_ref": "SCALE#553",
+      "negative_ref": "DRISHTIKON#2717"
+    },
+    {
+      "query": "What is the translation of anirudhha mayekar?",
+      "positive_ref": "SCALE#593",
+      "negative_ref": "SCALE#280"
+    },
+    {
+      "query": "What is the translation of automobiles in the chowmahalla palace?",
+      "positive_ref": "SCALE#449",
+      "negative_ref": "DOSA#113"
+    },
+    {
+      "query": "Which region's cuisine is famous for using the ingredients referenced in the image for tempering dishes?",
+      "positive_ref": "DRISHTIKON#1981",
+      "negative_ref": "DRISHTIKON#2717"
+    },
+    {
+      "query": "The nutritious finger millet dish shown in the image , is a staple food in which Indian state?",
+      "positive_ref": "DRISHTIKON#1424",
+      "negative_ref": "Indian Cultural Dataset#1"
+    },
+    {
+      "query": "In which city can you find the prominent historical monument that serves as a grand archway commemorating the sacrifices of soldiers during World War I, as referenced in the image? This monumental structure, a symbolic edifice of national pride, stands in the capital where the administrative heart of a populous South Asian nation beats. This bustling metropolis has been the center of power through several empires and remains a focal point of cultural and political activity today.",
+      "positive_ref": "DRISHTIKON#2717",
+      "negative_ref": "DRISHTIKON#1424"
+    },
+    {
+      "query": "How does the wooden craft of a region, similar to Chhattisgarh's ancestral tributes as referenced in the image, use symbolic motifs to honor lineage and cultural heritage?",
+      "positive_ref": "DRISHTIKON#3645",
+      "negative_ref": "DRISHTIKON#1981"
+    },
+    {
+      "query": "In a tapestry woven with the threads of cultural identity and tradition, what is the fabric of communication that connects the Limbu community of Sikkim, as referenced in the image?",
+      "positive_ref": "DRISHTIKON#3860",
+      "negative_ref": "DRISHTIKON#2717"
+    },
+    {
+      "query": "Considering the cultural mosaic of India, if we were to trace back the roots of the movement depicted by the statue in the image, to which region often linked with enlightenment and spiritual awakening would it be akin, similar to how Athens symbolizes philosophy in Greece? The answer is: Bihar.",
+      "positive_ref": "DRISHTIKON#3923",
+      "negative_ref": "DOSA#545"
+    },
+    {
+      "query": "The image depicts a classical form of folk singing that narrates tales of valor and romance, reminiscent of the traditional storytelling art forms prevalent in the Indian subcontinent. Considering regional history, which Indian state, known for its warrior kings and vibrant culture, could this musical tradition, as referenced in the image, belong to?",
+      "positive_ref": "DRISHTIKON#3244",
+      "negative_ref": "DRISHTIKON#2717"
+    },
+    {
+      "query": "In the same way that Kali Puja in West Bengal symbolizes the empowerment of women through worship, which Indian state hosts a festival every 12 years where tribal women lead a unique hunting ritual, invoking a sense of women's empowerment, as referenced in the image?",
+      "positive_ref": "DRISHTIKON#4098",
+      "negative_ref": "DRISHTIKON#3806"
+    },
+    {
+      "query": "Which type of printing, a favorite art in Rajasthan, is depicted in the image?",
+      "positive_ref": "DRISHTIKON#1224",
+      "negative_ref": "DRISHTIKON#4098"
+    },
+    {
+      "query": "In the cultural fabric of Khasi traditions, which village near Cherrapunji in Meghalaya, akin to a jewel, symbolizes the ingenuity and harmony with nature as represented by their famed living-root bridges, much like in the image?",
+      "positive_ref": "DRISHTIKON#3806",
+      "negative_ref": "DOSA#78"
+    },
+    {
+      "query": "Which Indian state is known for itsthe image depicted in given image, where folk singers narrate heroic tales with the accompaniment of the Ravanhatta instrument?",
+      "positive_ref": "DRISHTIKON#1220",
+      "negative_ref": "DRISHTIKON#3244"
+    },
+    {
+      "query": "Where did the tradition of the performers shown in the image originate, narrating heroic ballads with one-string instrument accompaniment?",
+      "positive_ref": "DRISHTIKON#646",
+      "negative_ref": "DIWALI#4287"
+    },
+    {
+      "query": "Describe Gamha Purnima from Odisha.",
+      "positive_ref": "DIWALI#6861",
+      "negative_ref": "DIWALI#4001"
+    },
+    {
+      "query": "Describe Muya Bai Wahan from Tripura.",
+      "positive_ref": "DIWALI#3637",
+      "negative_ref": "SCALE#508"
+    },
+    {
+      "query": "Describe Sinhagad Fort from Maharashtra.",
+      "positive_ref": "DIWALI#7662",
+      "negative_ref": "DIWALI#4743"
+    },
+    {
+      "query": "Describe Khong Kangjei (Manipuri Hockey) from Manipur.",
+      "positive_ref": "DIWALI#4287",
+      "negative_ref": "DOSA#39"
+    },
+    {
+      "query": "Describe Asol-Tale Aap from Andaman and Nicobar Islands.",
+      "positive_ref": "DIWALI#4458",
+      "negative_ref": "DIWALI#1728"
+    },
+    {
+      "query": "Describe Bhutte Ka Kees from Madhya Pradesh.",
+      "positive_ref": "DIWALI#3108",
+      "negative_ref": "DOSA#114"
+    },
+    {
+      "query": "Describe Kikli from Punjab.",
+      "positive_ref": "DIWALI#4346",
+      "negative_ref": "DIWALI#6861"
+    },
+    {
+      "query": "Describe Thanjavur from Tamil Nadu.",
+      "positive_ref": "DIWALI#1728",
+      "negative_ref": "DIWALI#3637"
+    },
+    {
+      "query": "Describe Nimso Kerung from Assam.",
+      "positive_ref": "DIWALI#348",
+      "negative_ref": "DIWALI#6861"
+    },
+    {
+      "query": "Describe Khambir from Ladakh.",
+      "positive_ref": "DIWALI#4001",
+      "negative_ref": "DOSA#39"
+    },
+    {
+      "query": "Describe Nat Sankirtana from Manipur.",
+      "positive_ref": "DIWALI#4743",
+      "negative_ref": "DIWALI#6861"
+    },
+    {
+      "query": "Describe Singju from Manipur.",
+      "positive_ref": "DIWALI#3214",
+      "negative_ref": "Indian Cultural Dataset#34"
+    },
+    {
+      "query": "What does the article titled Role of Hindu deity Krishna in the Mahabharata This article needs additional citations for verification . explain?",
+      "positive_ref": "Indian Cultural Dataset#73",
+      "negative_ref": "Indian Cultural Dataset#35"
+    },
+    {
+      "query": "What does the article titled Ramayana is one of the two major Sanskrit ancient epics (Itihasas) of Hindu literature. It was composed by sage Valmiki. This is a list of important f explain?",
+      "positive_ref": "Indian Cultural Dataset#92",
+      "negative_ref": "SCALE#324"
+    },
+    {
+      "query": "What does the article titled SUDHA\tMURTY explain?",
+      "positive_ref": "Indian Cultural Dataset#36",
+      "negative_ref": "Indian Cultural Dataset#1"
+    },
+    {
+      "query": "What does the article titled This article includes a list of references , related reading , or external links , but its sources remain unclear because it lacks inline citations . explain?",
+      "positive_ref": "Indian Cultural Dataset#35",
+      "negative_ref": "Indian Cultural Dataset#67"
+    },
+    {
+      "query": "What does the article titled 1 explain?",
+      "positive_ref": "Indian Cultural Dataset#50",
+      "negative_ref": "Indian Cultural Dataset#92"
+    },
+    {
+      "query": "What does the article titled Radha Krishna - A Never Ending Love Tale explain?",
+      "positive_ref": "Indian Cultural Dataset#1",
+      "negative_ref": "DRISHTIKON#3806"
+    },
+    {
+      "query": "What does the article titled What Are The Puranas? explain?",
+      "positive_ref": "Indian Cultural Dataset#34",
+      "negative_ref": "Indian Cultural Dataset#75"
+    },
+    {
+      "query": "What does the article titled LORD SIVA AND HIS WORSHIP explain?",
+      "positive_ref": "Indian Cultural Dataset#29",
+      "negative_ref": "DOSA#545"
+    },
+    {
+      "query": "What does the article titled People mentioned in ancient Indian literature This article is about the people in ancient Indian literature. explain?",
+      "positive_ref": "Indian Cultural Dataset#30",
+      "negative_ref": "Indian Cultural Dataset#75"
+    },
+    {
+      "query": "What does the article titled This article needs additional citations for verification . explain?",
+      "positive_ref": "Indian Cultural Dataset#67",
+      "negative_ref": "DIWALI#3108"
+    },
+    {
+      "query": "What does the article titled Classical Dance of India explain?",
+      "positive_ref": "Indian Cultural Dataset#75",
+      "negative_ref": "Indian Cultural Dataset#13"
+    },
+    {
+      "query": "What does the article titled RUSKIN\tBOND’S\tfirst\tnovel, explain?",
+      "positive_ref": "Indian Cultural Dataset#13",
+      "negative_ref": "DIWALI#1728"
+    }
+  ],
+  "label_type": "weak source-derived pairs; sampled negatives are not human relevance judgements"
+}

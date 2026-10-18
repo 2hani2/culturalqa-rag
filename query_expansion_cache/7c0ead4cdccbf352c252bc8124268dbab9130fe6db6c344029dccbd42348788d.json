@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Bihar folk song is sung by women to celebrate the birth of a child?",
+    "Bihar folk song sung by women for newborn celebration",
+    "women sing Bihar folk song for birth of child",
+    "Bihar folk song for celebrating birth sung by women"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which silk is also called Endi or Errandi and is produced without killing the silkworm?",
+    "silk called Endi or Errandi produced without killing silkworm",
+    "Endi silk Errandi silk non-violent silkworm rearing",
+    "what is Endi or Errandi silk and how is it produced without killing silkworm"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

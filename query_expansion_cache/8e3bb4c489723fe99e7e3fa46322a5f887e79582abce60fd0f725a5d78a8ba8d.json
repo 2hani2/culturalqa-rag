@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What classroom subject is discussed in the article on folk tales of North East India?",
+    "Which subject is covered in the article about folk tales of North East India?",
+    "What subject is discussed in the article on folk tales of North East India?",
+    "Which classroom subject is mentioned in the article on folk tales of North East India?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

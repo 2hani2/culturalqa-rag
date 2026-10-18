@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which state is associated with folk theatre about migration and caste and with the ancient educational centre Nalanda?",
+    "Which Indian state is linked to folk theatre about migration and caste and the ancient Nalanda educational centre?",
+    "State associated with folk theatre on migration and caste and the ancient Nalanda university",
+    "Which state has folk theatre on migration and caste and the historic Nalanda centre?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

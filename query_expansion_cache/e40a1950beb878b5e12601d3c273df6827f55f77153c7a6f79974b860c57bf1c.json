@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which deity is ceremonially married to the Tulsi plant in Tulsi Vivah?",
+    "Which deity is married to the Tulsi plant in the Tulsi Vivah ceremony?",
+    "Tulsi Vivah: which god is ceremonially married to the Tulsi plant?",
+    "Deity married to Tulsi plant during Tulsi Vivah"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

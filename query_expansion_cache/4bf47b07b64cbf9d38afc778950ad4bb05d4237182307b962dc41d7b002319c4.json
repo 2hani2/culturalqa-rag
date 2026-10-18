@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for lili das?",
+    "Which Hindi translation does the collection provide for lili das?",
+    "What Hindi version does the collection offer for lili das?",
+    "What Hindi translation is given by the collection for lili das?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

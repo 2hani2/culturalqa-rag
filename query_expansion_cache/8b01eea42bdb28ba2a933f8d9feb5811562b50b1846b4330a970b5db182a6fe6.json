@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "During which festival is Rathwa Ni Gher performed?",
+    "Which festival features the performance of Rathwa Ni Gher?",
+    "During which festival is the Rathwa Ni Gher dance performed?",
+    "At what festival is Rathwa Ni Gher performed?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

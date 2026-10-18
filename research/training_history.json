@@ -1,0 +1,110 @@
+{
+  "simple": {
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.1319898046553135,
+        "dev_hinge": 0.14328154921531677,
+        "dev_pairwise_accuracy": 0.699999988079071
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.07725674994289874,
+        "dev_hinge": 0.11520367115736008,
+        "dev_pairwise_accuracy": 0.800000011920929
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.058684520050883295,
+        "dev_hinge": 0.08032047003507614,
+        "dev_pairwise_accuracy": 0.8833333253860474
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.060736680403351784,
+        "dev_hinge": 0.10382980853319168,
+        "dev_pairwise_accuracy": 0.8166666626930237
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.040340925380587575,
+        "dev_hinge": 0.09139435738325119,
+        "dev_pairwise_accuracy": 0.8166666626930237
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.03152335309423506,
+        "dev_hinge": 0.061789438128471375,
+        "dev_pairwise_accuracy": 0.8999999761581421
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.022262176685035228,
+        "dev_hinge": 0.1209520623087883,
+        "dev_pairwise_accuracy": 0.8166666626930237
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.025477457977831363,
+        "dev_hinge": 0.09359434247016907,
+        "dev_pairwise_accuracy": 0.800000011920929
+      }
+    ],
+    "training_seconds": 0.5793217910104431,
+    "checkpoint": "./checkpoints/simple_fusion.pt"
+  },
+  "moe": {
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.1351140558719635,
+        "dev_hinge": 0.09748152643442154,
+        "dev_pairwise_accuracy": 0.8333333134651184
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.07719439715147018,
+        "dev_hinge": 0.10541347414255142,
+        "dev_pairwise_accuracy": 0.7166666388511658
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.05045648142695427,
+        "dev_hinge": 0.07770977169275284,
+        "dev_pairwise_accuracy": 0.8500000238418579
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.03612829092890024,
+        "dev_hinge": 0.08629307895898819,
+        "dev_pairwise_accuracy": 0.8500000238418579
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.027490646205842496,
+        "dev_hinge": 0.06982261687517166,
+        "dev_pairwise_accuracy": 0.8333333134651184
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.018883013376034798,
+        "dev_hinge": 0.05980684608221054,
+        "dev_pairwise_accuracy": 0.8999999761581421
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.012876781815612049,
+        "dev_hinge": 0.0703945904970169,
+        "dev_pairwise_accuracy": 0.8999999761581421
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.010946574644185603,
+        "dev_hinge": 0.06468749791383743,
+        "dev_pairwise_accuracy": 0.8666666746139526
+      }
+    ],
+    "training_seconds": 6.559089542002766,
+    "checkpoint": "./checkpoints/moe_fusion.pt"
+  }
+}

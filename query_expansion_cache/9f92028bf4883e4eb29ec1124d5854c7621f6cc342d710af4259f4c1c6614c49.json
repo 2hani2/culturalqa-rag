@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "In which Indian state is the ancient university Nalanda located?",
+    "Nalanda ancient university location Indian state",
+    "Which state in India houses Nalanda university",
+    "Nalanda university Indian state location"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

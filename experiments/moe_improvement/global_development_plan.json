@@ -1,0 +1,23 @@
+{
+  "selection_fold": "dev",
+  "test_used": false,
+  "query_count": 60,
+  "global_candidate_k": 12,
+  "branch_k": 8,
+  "query_expansion": false,
+  "image_features_enabled": true,
+  "positive_injection": false,
+  "candidate_pool_shared": true,
+  "all_five_datasets_searched": true,
+  "models": "Existing MoE/simple plus each of 8 listwise trials selected by fusion-only and residual diagnostic development metrics.",
+  "residual_alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "selection": "Maximum dev MRR@12, then Hit@3, then prefer smaller alpha. Dev was used for candidate training selection too; no unbiased test claim."
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation is supplied for bandaya movement?",
+    "Hindi translation of bandaya movement",
+    "What is the Hindi term for bandaya movement?",
+    "How is bandaya movement translated into Hindi"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

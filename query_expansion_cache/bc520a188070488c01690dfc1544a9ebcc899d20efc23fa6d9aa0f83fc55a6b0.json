@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who is named as the father of King Bharata in the Mahabharata account?",
+    "Father of King Bharata in Mahabharata",
+    "Who is the father of King Bharata according to Mahabharata",
+    "Name of King Bharata's father in the Mahabharata"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

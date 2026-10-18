@@ -1,0 +1,7 @@
+mode,k,text_questions,exact_answers,not_exact_with_labelled_answer_text_in_context,not_exact_without_labelled_answer_text_in_context,no_answer_outputs
+without_moe,3,100,65,31,4,13
+without_moe,6,100,60,37,3,10
+simple_fusion,3,100,30,15,55,33
+simple_fusion,6,100,43,27,30,13
+with_moe,3,100,28,12,60,34
+with_moe,6,100,38,28,34,16

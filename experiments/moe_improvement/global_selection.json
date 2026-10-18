@@ -1,0 +1,18 @@
+{
+  "simple": {
+    "label": "existing_simple",
+    "checkpoint": "checkpoints/simple_fusion.pt",
+    "checkpoint_sha256": "752361c349451add9033c0151b3d7db105a70795454a9869dbae85d404cea0c9",
+    "alpha": 0.0,
+    "selection_fold": "dev",
+    "test_used": false
+  },
+  "moe": {
+    "label": "moe_existing_checkpoint_tau0.1_fusion",
+    "checkpoint": "experiments/moe_improvement/moe_existing_checkpoint_tau0.1_fusion.pt",
+    "checkpoint_sha256": "ee3889b2eb7741caa550b093e6b65c237aa4201e4d89badf75c328107dccb2dc",
+    "alpha": 0.25,
+    "selection_fold": "dev",
+    "test_used": false
+  }
+}

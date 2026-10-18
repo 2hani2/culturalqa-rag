@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the illusionary duplicate of Sita abducted by Ravana called?",
+    "What is the name of the illusionary duplicate of Sita that Ravana abducted?",
+    "What is the illusionary duplicate of Sita called in the Ramayana?",
+    "What is the term for the duplicate Sita that Ravana abducted?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

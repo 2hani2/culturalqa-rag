@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which culture makes rice-paste floor patterns during Lakshmi Puja?",
+    "Which culture creates rice paste floor designs for Lakshmi Puja?",
+    "Which community makes rice paste floor patterns during Lakshmi Puja?",
+    "Which tradition uses rice paste floor patterns in Lakshmi Puja?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

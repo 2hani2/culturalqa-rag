@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What name does the collection give to the heritage well in Patan, Gujarat?",
+    "What name does the collection use for the heritage well in Patan, Gujarat?",
+    "How does the collection refer to the heritage well in Patan, Gujarat?",
+    "What designation does the collection assign to the heritage well in Patan, Gujarat?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

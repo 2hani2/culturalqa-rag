@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What city contains Sana Konung, the Royal Palace of Manipur?",
+    "Which city houses Sana Konung, the Royal Palace of Manipur?",
+    "In which city is Sana Konung, the Royal Palace of Manipur located?",
+    "Where can one find Sana Konung, the Royal Palace of Manipur?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who was Sati's father in the story of Shiva and Sati?",
+    "Father of Sati in the Shiva and Sati myth",
+    "Who is Sati's father in Hindu mythology",
+    "Name of Sati's father in the story of Shiva"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

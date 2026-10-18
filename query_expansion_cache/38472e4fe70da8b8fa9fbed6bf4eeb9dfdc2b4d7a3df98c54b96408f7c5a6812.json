@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for bhawanipore f.c.?",
+    "Hindi translation provided by the collection for Bhawanipore FC",
+    "What Hindi translation does the collection list for Bhawanipore F.C.?",
+    "Which Hindi translation does the collection offer for Bhawanipore FC?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

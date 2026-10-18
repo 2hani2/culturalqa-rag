@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'हैदराबाद एफसी' in the collection?",
+    "Which item in the collection matches the Hindi phrase 'हैदराबाद एफसी'?",
+    "What is the item that corresponds to the Hindi wording 'हैदराबाद एफसी' in the collection?",
+    "Which entry in the collection is associated with the Hindi term 'हैदराबाद एफसी'?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

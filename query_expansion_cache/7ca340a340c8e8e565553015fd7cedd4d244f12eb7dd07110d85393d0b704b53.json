@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the Hindi rendering of the landmark tarpan ghat park?",
+    "Hindi name of Tarpan Ghat Park",
+    "Tarpan Ghat Park Hindi translation",
+    "How to say Tarpan Ghat Park in Hindi"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

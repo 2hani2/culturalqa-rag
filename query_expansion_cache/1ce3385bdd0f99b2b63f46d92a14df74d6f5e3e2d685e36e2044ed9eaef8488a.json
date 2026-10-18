@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who gave Karna his Kavacha armour at birth?",
+    "Who gave Karna his Kavacha armor at birth?",
+    "Who gave Karna his Kavacha at birth?",
+    "Who gave Karna his Kavacha armor when he was born?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

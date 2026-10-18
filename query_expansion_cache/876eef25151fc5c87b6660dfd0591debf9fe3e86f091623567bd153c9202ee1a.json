@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What material is called Baith in Assamese?",
+    "Which material is referred to as Baith in Assamese?",
+    "What material is known as Baith in Assamese?",
+    "What is Baith material in Assamese?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

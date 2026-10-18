@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Uttarakhand temple is associated with medieval architecture in the collection?",
+    "What Uttarakhand temple in the collection features medieval architecture?",
+    "Which temple in Uttarakhand is known for its medieval architecture?",
+    "Which temple in the Uttarakhand collection is associated with medieval architecture?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

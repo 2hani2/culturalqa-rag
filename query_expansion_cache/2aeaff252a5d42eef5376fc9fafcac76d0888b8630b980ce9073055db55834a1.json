@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'अरुणाचल प्रदेश का गाले पाचा' in the collection?",
+    "Which item in the collection matches the Hindi phrase 'अरुणाचल प्रदेश का गाले पाचा'?",
+    "What item in the collection corresponds to the Hindi wording 'अरुणाचल प्रदेश का गाले पाचा'?",
+    "Which item in the collection is associated with the Hindi phrase 'अरुणाचल प्रदेश का गाले पाचा'?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

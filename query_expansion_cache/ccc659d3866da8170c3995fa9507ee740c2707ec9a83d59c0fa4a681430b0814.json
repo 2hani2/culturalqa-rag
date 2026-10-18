@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "Which Nellore-region textile combines cotton and silk with jamdani weaving?",
+    "Nellore textile cotton silk jamdani weaving",
+    "Nellore cotton silk jamdani textile"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

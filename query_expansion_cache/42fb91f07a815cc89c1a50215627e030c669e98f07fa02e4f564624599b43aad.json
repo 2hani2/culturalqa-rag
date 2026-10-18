@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which drawing tool is used for hand-painted Srikalahasti Kalamkari designs?",
+    "hand-painted Srikalahasti Kalamkari drawing tool",
+    "drawing instrument used in Srikalahasti Kalamkari art",
+    "tool used for hand-painted Srikalahasti Kalamkari designs"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

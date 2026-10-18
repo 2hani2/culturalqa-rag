@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What dish is described as the State Food of Uttarakhand?",
+    "What is the state food of Uttarakhand?",
+    "Which dish is Uttarakhand's state food?",
+    "Uttarakhand state food dish"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

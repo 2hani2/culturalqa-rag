@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which high-altitude lake in Ladakh is described as known for birdlife?",
+    "high altitude lake in Ladakh known for birdlife",
+    "birdlife lake Ladakh high altitude",
+    "Ladakh lake famous for birds high altitude"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

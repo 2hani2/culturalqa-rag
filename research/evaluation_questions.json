@@ -1,0 +1,814 @@
+{
+  "description": "Thirty authored text questions and six visually checked image questions from test groups. Source-verified positives; not exhaustive relevance judgements or independent human expert review.",
+  "split_manifest": "research/split_manifest.json",
+  "queries": [
+    {
+      "id": "test_text_01",
+      "task": "text",
+      "question": "Which beach in Visakhapatnam is described as a venue for Navy air shows?",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#2"
+      ],
+      "expected_answers": [
+        "Rushi konda beach"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#2",
+      "label_source": "raw_records_cache.json DOSA#2; answer and support checked against the downloaded record",
+      "source_text_sha256": "5563fb10496bc5ef9adc1f44ae836e70630e191656d8dd6facf4ff0cfcbcfefa",
+      "source_evidence": "Artifact: Rushi konda beach. State: Andhra Pradesh (original). Description: A tourist beach in Vishakhapatnam.\nNavy air show takes place",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_02",
+      "task": "text",
+      "question": "What is the name of the fort near Tirupati in the artifact collection?",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#13"
+      ],
+      "expected_answers": [
+        "chandragiri fort"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#13",
+      "label_source": "raw_records_cache.json DOSA#13; answer and support checked against the downloaded record",
+      "source_text_sha256": "a60c7d261d00de9c6a146f2078f2885fdebebdd97e44ae4a0997c9eaa4be8a5d",
+      "source_evidence": "Artifact: chandragiri fort. State: Andhra Pradesh (original). Description: A fort near Tirupati",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_03",
+      "task": "text",
+      "question": "What are the dolls called whose heads move while their bodies remain still?",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#19"
+      ],
+      "expected_answers": [
+        "Buttabomma"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#19",
+      "label_source": "raw_records_cache.json DOSA#19; answer and support checked against the downloaded record",
+      "source_text_sha256": "0236c0f3642517e9de39820533c1f08a168fed15087d3575e27a7e5d3bc297ae",
+      "source_evidence": "Artifact: Buttabomma. State: Andhra Pradesh (expanded). Description: The dolls whose head moves while body is still.",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_04",
+      "task": "text",
+      "question": "Name the two-piece Assamese garment worn in Muga silk during Bihu.",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#34"
+      ],
+      "expected_answers": [
+        "Mekhla Chador"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#34",
+      "label_source": "raw_records_cache.json DOSA#34; answer and support checked against the downloaded record",
+      "source_text_sha256": "46d44113e84cc5fd87c2459e06d41b24801c338d89fef77b15757f8b797512e3",
+      "source_evidence": "Artifact: Mekhla Chador. State: Assam (original). Description: The most popular two piece garment in Assam.\nThe ones made of Muga silk is worn on Bihu.\nBrides wear it in white shade w",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_05",
+      "task": "text",
+      "question": "Which minimalist Bihu celebration takes place in October with prayers for a good harvest?",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#67"
+      ],
+      "expected_answers": [
+        "kati bihu"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#67",
+      "label_source": "raw_records_cache.json DOSA#67; answer and support checked against the downloaded record",
+      "source_text_sha256": "fe73381cf24bb6acd12dd84ec889fff983e0dfb47b64e56c2d138a29eea20e58",
+      "source_evidence": "Artifact: kati bihu. State: Assam (expanded). Description: This occurs in October when people pray for good harvest.\nThe most minimalist Bihu.",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_06",
+      "task": "text",
+      "question": "What names does the collection give for a rice wine from Assam?",
+      "target_dataset": "DOSA",
+      "relevant_records": [
+        "DOSA#74"
+      ],
+      "expected_answers": [
+        "xaaj and rohi"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DOSA#74",
+      "label_source": "raw_records_cache.json DOSA#74; answer and support checked against the downloaded record",
+      "source_text_sha256": "bf87c893b196f5c1f72e98b1ad701b3993e694a9e0df4a8cb628048d5777b91f",
+      "source_evidence": "Artifact: xaaj and rohi. State: Assam (expanded). Description: This is a rice wine made in Assam",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_07",
+      "task": "text",
+      "question": "What alternative style name is given to Pedana Kalamkari?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#7"
+      ],
+      "expected_answers": [
+        "Machilipatnam style"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#7",
+      "label_source": "raw_records_cache.json DIWALI#7; answer and support checked against the downloaded record",
+      "source_text_sha256": "751f9b2e76c7a9647658ea493e7ed1b29a091dad4085a9157ab702e97c861e6c",
+      "source_evidence": "Concept: Pedana Kalamkari. Facet: textiles. State: Andhra Pradesh. Description: Also known as Machilipatnam style, this form of Kalamkari involves vegetable-dyed block-painting on fabric. It is produced in Pedana town and is known for its intricate designs and natural colo",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_08",
+      "task": "text",
+      "question": "Which drawing tool is used for hand-painted Srikalahasti Kalamkari designs?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#8"
+      ],
+      "expected_answers": [
+        "kalam",
+        "pen",
+        "kalam (pen)"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#8",
+      "label_source": "raw_records_cache.json DIWALI#8; answer and support checked against the downloaded record",
+      "source_text_sha256": "dc7ad1a0cea3ba9063189ec0e7e136b1d4c947082c6ba89a67f797e8441df5c3",
+      "source_evidence": "Concept: Srikalahasti Kalamkari. Facet: textiles. State: Andhra Pradesh. Description: This style of Kalamkari is characterized by hand-painted designs using a kalam (pen). Originating fro",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_09",
+      "task": "text",
+      "question": "Which Indian state is associated with the Sherdukpen Shawl?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#12"
+      ],
+      "expected_answers": [
+        "Arunachal Pradesh"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#12",
+      "label_source": "raw_records_cache.json DIWALI#12; answer and support checked against the downloaded record",
+      "source_text_sha256": "a100fd4ee3c6748a0a7a2a0a7bb1f90d47bc96c7a5641ad4f8b1200cf26ed583",
+      "source_evidence": "Concept: Sherdukpen Shawl. Facet: textiles. State: Arunachal Pradesh. Description: The Sherdukpen community weaves shawls known for their unique patterns and vibrant colors, often incorporating symbolic motifs that represent the",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_10",
+      "task": "text",
+      "question": "Which silk is also called Endi or Errandi and is produced without killing the silkworm?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#20"
+      ],
+      "expected_answers": [
+        "Eri Silk"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#20",
+      "label_source": "raw_records_cache.json DIWALI#20; answer and support checked against the downloaded record",
+      "source_text_sha256": "0384114102a3d74adff4505cce2a40cb53f03ad643b063cab7c7a6c119e29f84",
+      "source_evidence": "Concept: Eri Silk. Facet: textiles. State: Assam. Description: Also known as Endi or Errandi, Eri silk is soft, warm, and durable. It is often referred to as 'Ahimsa silk' becau",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_11",
+      "task": "text",
+      "question": "What is the Assamese garment worn under the Mekhela and over the upper body?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#24"
+      ],
+      "expected_answers": [
+        "Riha"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#24",
+      "label_source": "raw_records_cache.json DIWALI#24; answer and support checked against the downloaded record",
+      "source_text_sha256": "1d2a85f3f84a98db9b69cd7b6be36825d8444ac800c7a1980f983c3476b83866",
+      "source_evidence": "Concept: Riha. Facet: textiles. State: Assam. Description: Part of the traditional three-piece attire worn by Assamese women, the Riha is worn under the Mekhela and over the",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_12",
+      "task": "text",
+      "question": "Which plant supplies the roots used to dye Aal-Dyed Handloom Fabrics?",
+      "target_dataset": "DIWALI",
+      "relevant_records": [
+        "DIWALI#37"
+      ],
+      "expected_answers": [
+        "Morinda citrifolia"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DIWALI#37",
+      "label_source": "raw_records_cache.json DIWALI#37; answer and support checked against the downloaded record",
+      "source_text_sha256": "09656d9ef09744994df1adbd44b03a6afa1152b67f214f29961952c11e2d285b",
+      "source_evidence": "sgarh. Description: Dating back to the 16th century, these textiles are dyed using the roots of the Morinda citrifolia plant, known locally as 'aal'. Predominantly produced in the Bastar region, these fabrics are traditionally used as saris by tribal women and as turbans or sho",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_13",
+      "task": "text",
+      "question": "Name the two rivers whose confluence at Devprayag forms the Ganges.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#27"
+      ],
+      "expected_answers": [
+        "Alaknanda-Bhagirathi",
+        "Alaknanda and Bhagirathi"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#27",
+      "label_source": "raw_records_cache.json DRISHTIKON#27; answer and support checked against the downloaded record",
+      "source_text_sha256": "5427041e1b05f2b0d14085022dbcd12d15ea39693c2ea0004401742c8659aab2",
+      "source_evidence": "n Sense): Which two rivers meet at Devprayag to form the Ganges as referenced in the image? Answer: Alaknanda-Bhagirathi",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_14",
+      "task": "text",
+      "question": "What instruments are predominantly used during Bhuta Kola performances?",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#1462"
+      ],
+      "expected_answers": [
+        "Drum (Dolu) and Cymbals (Taal)"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#1462",
+      "label_source": "raw_records_cache.json DRISHTIKON#1462; answer and support checked against the downloaded record",
+      "source_text_sha256": "90ca60a4ef9d8faa7c1620ea2fb6823341beffb0524e38c7f8476bf7bd53557d",
+      "source_evidence": "ch instruments depicted in the image are predominantly used during Bhuta Kola performances? Answer: Drum (Dolu) and Cymbals (Taal)",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_15",
+      "task": "text",
+      "question": "What is the Ladakhi dance performed with wooden shields and swords called?",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#1676"
+      ],
+      "expected_answers": [
+        "Shondol"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#1676",
+      "label_source": "raw_records_cache.json DRISHTIKON#1676; answer and support checked against the downloaded record",
+      "source_text_sha256": "cf0c07684db1edc91bcd82a38cd7bc6bc3f084fae22cfc01fc52b946241cfd59",
+      "source_evidence": "ich dance form depicted in the image in Ladakh is performed with wooden shields and swords? Answer: Shondol",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_16",
+      "task": "text",
+      "question": "Which state is associated with folk theatre about migration and caste and with the ancient educational centre Nalanda?",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#2468"
+      ],
+      "expected_answers": [
+        "Bihar"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#2468",
+      "label_source": "raw_records_cache.json DRISHTIKON#2468; answer and support checked against the downloaded record",
+      "source_text_sha256": "7682e2bf89ef437a8a9dd32bd55ca61a3b3fd715ed5b04fa6d404b5029b905e0",
+      "source_evidence": "Question (English, Bihar, Dance and Music): Consider the Indian region, historically associated with rich traditions and myths, where the distinctive folk theater, as referenced in the",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_17",
+      "task": "text",
+      "question": "What is the southern Indian international township associated with forest conservation and a vision of harmony?",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#2817"
+      ],
+      "expected_answers": [
+        "Auroville"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#2817",
+      "label_source": "raw_records_cache.json DRISHTIKON#2817; answer and support checked against the downloaded record",
+      "source_text_sha256": "0731df2131e08ca0c272d50e02fcca8435ca9f9f7b5a3e2fc196bb1cc7bdbeb5",
+      "source_evidence": "is pioneering ecologically-conscience community that cherishes its diverse green ecosystem? Answer: Auroville",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_18",
+      "task": "text",
+      "question": "In which Indian state is the ancient university Nalanda located?",
+      "target_dataset": "DRISHTIKON",
+      "relevant_records": [
+        "DRISHTIKON#3195"
+      ],
+      "expected_answers": [
+        "Bihar"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "DRISHTIKON#3195",
+      "label_source": "raw_records_cache.json DRISHTIKON#3195; answer and support checked against the downloaded record",
+      "source_text_sha256": "3f88c897e4be7b39f07d869a27c526b2eb57ba41ab61fc7d2d7c2c25aa48f275",
+      "source_evidence": "Question (English, Bihar, Cultural Commonsense): What is the name of the Indian state, referenced in the image as the location of the renowned ancient university that significantly con",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_19",
+      "task": "text",
+      "question": "Who illustrated the 42-issue Amar Chitra Katha Mahabharata comic series?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#3"
+      ],
+      "expected_answers": [
+        "Dilip Kadam"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#3",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#3; answer and support checked against the downloaded record",
+      "source_text_sha256": "c278c47dab235df37179c6fa374626b71720714f46ad406e843d8a0e6913c182",
+      "source_evidence": "dra • Mihir Lal Mitra • Sumona Roy • Mohan Swaminathan • Shubha Kandhekar • Margie Sastry Artist(s) Dilip Kadam Editor(s) Anant Pai Collected editions Volume 1 ISBN 978-81-905990-4-7 Volume 2 ISBN 978-81-905990-2-3 Volume 3 ISBN 978-81-905990-3-0 Mahabharata (also known ",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_20",
+      "task": "text",
+      "question": "Who was Sati's father in the story of Shiva and Sati?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#4"
+      ],
+      "expected_answers": [
+        "Daksha Prajāpati",
+        "Daksha"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#4",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#4; answer and support checked against the downloaded record",
+      "source_text_sha256": "cf973cf9e4e200b1bcc4eeb0ed14bc2e47aaff8f3afbd8e8bbe6a2d1072fe678",
+      "source_evidence": "ook human birth at \nthe suggestion of Brahmā, the Lord of Creation.   She was born as a daughter of Daksha Prajāpati, a son \nof Brahmā .  In asking the Goddess Sati to take human birth, Brahmā's plan was that she would entice \nShiva with humble devotions bringing him out of h",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_21",
+      "task": "text",
+      "question": "Who is named as the father of King Bharata in the Mahabharata account?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#26"
+      ],
+      "expected_answers": [
+        "Dushyanta"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#26",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#26; answer and support checked against the downloaded record",
+      "source_text_sha256": "58c3a590c46fe730033e9e7f917ac8147ea7da952b084c8f44d7386961081538",
+      "source_evidence": "ahabharata. Category: mahabharata\nContent: Bharata Painting of Bharata, Raja Ravi Varma Predecessor Dushyanta Successor Bhumanyu Texts Mahabharata Genealogy Parents Dushyanta (father), Shakuntala (mother) Spouse Sunanda Two unnamed wives Children Bhumanyu , Bharadvaja ",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_22",
+      "task": "text",
+      "question": "Who taught music and dance to Uttara before her marriage to Abhimanyu?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#48"
+      ],
+      "expected_answers": [
+        "Arjuna"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#48",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#48; answer and support checked against the downloaded record",
+      "source_text_sha256": "1e1b12d764ec52b4a46f5175607d4026d3cc7ea5fe8b7e3a59c272c3d6d14adc",
+      "source_evidence": "ent a year in concealment during their exile.\n\nDuring this period, she learned music and dance from Arjuna , the third Pandava, and later married his son, Abhimanyu .\n\nUttarā was widowed at a young age during the Kurukshetra War .\n\nFollowing the Pandavas' victory in",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_23",
+      "task": "text",
+      "question": "What was Bhanumati's home kingdom before she married Duryodhana?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#72"
+      ],
+      "expected_answers": [
+        "Kalinga"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#72",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#72; answer and support checked against the downloaded record",
+      "source_text_sha256": "964f8879ee75c353df2799b107000f5f295d58d085b64dd7ce1f2dc70d8304f1",
+      "source_evidence": "ly Chitrangada (father) Spouse Duryodhana Children Lakshmana Kumara (son) Lakshmana (daughter) Home Kalinga (by birth) Hastinapur (by marriage) Bhanumati is folk name of the wife of Duryodhana —the main antagonist of the Hindu epic Mahabharata .\n\nIn the epic itself, ",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_24",
+      "task": "text",
+      "question": "Who is credited with writing Betaal Pachisi in the Vikram and Betaal collection?",
+      "target_dataset": "Indian Cultural Dataset",
+      "relevant_records": [
+        "Indian Cultural Dataset#90"
+      ],
+      "expected_answers": [
+        "Somdev Bhatt"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "Indian Cultural Dataset#90",
+      "label_source": "raw_records_cache.json Indian Cultural Dataset#90; answer and support checked against the downloaded record",
+      "source_text_sha256": "1e70a01a9f9c4ab0b05514890b18f0307d6b3ba8ba00bf51d0f425a12cf49dfa",
+      "source_evidence": "ies  Stories  Stories  Stories        \nBetaal Pachisi written nearly 2,500 years ago by Ma hakavi  \nSomdev Bhatt, are spellbinding stories told to the wise King \nVikramaditya by the wily ghost Betaal. The tales of  Vikram \nand Betaal possess a wealth of pageantry and sple",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_25",
+      "task": "text",
+      "question": "How is likcham written in the Hindi translation field?",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#8"
+      ],
+      "expected_answers": [
+        "लिक्चम"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#8",
+      "label_source": "raw_records_cache.json SCALE#8; answer and support checked against the downloaded record",
+      "source_text_sha256": "c2fac9cb3772a9bd59e4e34808ef0d838a79c808e667401b8f4a2312738ca83e",
+      "source_evidence": "Item: likcham. Translation: लिक्चम. Domain: Clothing And Accessories",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_26",
+      "task": "text",
+      "question": "Give the Hindi wording for the dish matar mushroom.",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#96"
+      ],
+      "expected_answers": [
+        "मटर मशरूम"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#96",
+      "label_source": "raw_records_cache.json SCALE#96; answer and support checked against the downloaded record",
+      "source_text_sha256": "e0bd90443d5de5348daafcd27b76a523ed55fa1dc7a87da21ffcc61ce2340d5e",
+      "source_evidence": "Item: matar mushroom. Translation: मटर मशरूम. Domain: Cuisine",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_27",
+      "task": "text",
+      "question": "What Hindi translation is supplied for bandaya movement?",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#199"
+      ],
+      "expected_answers": [
+        "बंदया आंदोलन"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#199",
+      "label_source": "raw_records_cache.json SCALE#199; answer and support checked against the downloaded record",
+      "source_text_sha256": "817ea564ee775ad24a66640b8569b1ef11b3a8c360d1c3d64f440a5f16656438",
+      "source_evidence": "Item: bandaya movement. Translation: बंदया आंदोलन. Domain: Historical Events",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_28",
+      "task": "text",
+      "question": "How does the collection translate the festival name karva chauth into Hindi?",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#296"
+      ],
+      "expected_answers": [
+        "करवा चौथ"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#296",
+      "label_source": "raw_records_cache.json SCALE#296; answer and support checked against the downloaded record",
+      "source_text_sha256": "3326b0015bd497d048ba38490dfb6c9a8869c4fc464f03cf009447df89ad7d58",
+      "source_evidence": "Item: karva chauth. Translation: करवा चौथ. Domain: Holidays And Festivals",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_29",
+      "task": "text",
+      "question": "What is the Hindi rendering of the landmark tarpan ghat park?",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#400"
+      ],
+      "expected_answers": [
+        "तर्पण घाट पार्क"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#400",
+      "label_source": "raw_records_cache.json SCALE#400; answer and support checked against the downloaded record",
+      "source_text_sha256": "17652c8767a4fcf3197454bbe2d8925339f049f02e87cd934aba24f940f27e70",
+      "source_evidence": "Item: tarpan ghat park. Translation: तर्पण घाट पार्क. Domain: Landmarks",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_text_30",
+      "task": "text",
+      "question": "How is the sports-person name deepak amarnath represented in Hindi?",
+      "target_dataset": "SCALE",
+      "relevant_records": [
+        "SCALE#504"
+      ],
+      "expected_answers": [
+        "दीपक अमरनाथ"
+      ],
+      "evaluation_role": "group_heldout_source_verified",
+      "gold_record_ref": "SCALE#504",
+      "label_source": "raw_records_cache.json SCALE#504; answer and support checked against the downloaded record",
+      "source_text_sha256": "7fccb15c972fa981f1174f01a7b99f93272a5bef145279942afa079356a367ec",
+      "source_evidence": "Item: deepak amarnath. Translation: दीपक अमरनाथ. Domain: Sports People",
+      "source_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "text_only",
+      "question_author": "Authored for evaluation independently of the training anchors"
+    },
+    {
+      "id": "test_image_01",
+      "task": "image",
+      "question": "Find a photograph of the Devprayag river valley.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Alaknanda_devprayag.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#27",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": ""
+    },
+    {
+      "id": "test_image_02",
+      "task": "image",
+      "question": "Find a Bhuta Kola ritual performer wearing a large ornate gold costume.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/bhuta_kola.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#1462",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": ""
+    },
+    {
+      "id": "test_image_03",
+      "task": "image",
+      "question": "Find Shondol dancers performing outdoors in Ladakh.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Shondol.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#1676",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": ""
+    },
+    {
+      "id": "test_image_04",
+      "task": "image",
+      "question": "Find a photograph of a traditional Indian wedding with a bride and groom.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/thali_ceremony.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#1959",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": "Native Pongal QA is attached to a wedding photo; this image query uses the actual wedding content."
+    },
+    {
+      "id": "test_image_05",
+      "task": "image",
+      "question": "Find an aerial photograph of forest buildings with solar panels at Sadhana Forest.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Sadhna_Forest.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#2817",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": ""
+    },
+    {
+      "id": "test_image_06",
+      "task": "image",
+      "question": "Find a photograph of ancient Nalanda red-brick ruins.",
+      "target_dataset": "DRISHTIKON",
+      "relevant_images": [
+        "data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Nalanda_Mahavihara_01.jpg"
+      ],
+      "gold_record_ref": "DRISHTIKON#3195",
+      "evaluation_role": "group_heldout_source_verified",
+      "label_source": "Downloaded image directly inspected; one verified positive image",
+      "source_verified": true,
+      "visual_content_verified": true,
+      "human_reviewed": false,
+      "relevance_complete": false,
+      "fold": "test",
+      "modality": "image_associated",
+      "annotation_note": ""
+    }
+  ]
+}

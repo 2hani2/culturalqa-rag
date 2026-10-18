@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What mined material helped Dhanbad become an industrial area?",
+    "What material was mined that contributed to Dhanbad's industrial development?",
+    "Which mined resource made Dhanbad an industrial hub?",
+    "What mining product helped Dhanbad become an industrial area?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

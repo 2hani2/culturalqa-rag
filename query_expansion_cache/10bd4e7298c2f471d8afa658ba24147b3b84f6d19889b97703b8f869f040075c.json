@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for jalfrezi?",
+    "Hindi translation of jalfrezi according to the collection",
+    "What does the collection translate jalfrezi into Hindi?",
+    "Hindi equivalent of jalfrezi as per the collection"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

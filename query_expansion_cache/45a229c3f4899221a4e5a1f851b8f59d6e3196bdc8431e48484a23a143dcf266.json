@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Haryana wedding ritual invites the maternal uncle to the wedding?",
+    "Which Haryana wedding ritual involves inviting the maternal uncle?",
+    "In Haryana weddings, which ritual invites the maternal uncle?",
+    "Haryana wedding ritual that invites maternal uncle to the wedding"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

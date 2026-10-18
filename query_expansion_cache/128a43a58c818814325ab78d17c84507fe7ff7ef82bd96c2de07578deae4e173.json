@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "How is the sports-person name deepak amarnath represented in Hindi?",
+    "How is Deepak Amarnath's name written in Hindi?",
+    "Deepak Amarnath का नाम हिंदी में कैसे लिखा जाता है?",
+    "Deepak Amarnath का नाम हिंदी में क्या लिखा जाता है?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Vishnu temple is located in Vishnupur?",
+    "Vishnu temple in Vishnupur",
+    "Temple of Vishnu located in Vishnupur",
+    "Which Vishnu temple is in Vishnupur"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

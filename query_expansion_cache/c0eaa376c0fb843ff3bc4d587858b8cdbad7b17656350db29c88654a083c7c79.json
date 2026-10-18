@@ -1,0 +1,8 @@
+{
+  "queries": [
+    "What material are the vegetable-coloured blankets from Warangal made of?",
+    "What is the composition of the vegetable-coloured blankets from Warangal?",
+    "What fabric is used for the vegetable-coloured blankets from Warangal?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

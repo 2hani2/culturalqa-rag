@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which plant supplies the roots used to dye Aal-Dyed Handloom Fabrics?",
+    "What plant provides the roots used for dyeing Aal-Dyed Handloom Fabrics?",
+    "Which plant's roots are used to dye Aal-Dyed Handloom Fabrics?",
+    "From which plant are the roots obtained for dyeing Aal-Dyed Handloom Fabrics?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who coauthored Traditional games in India: Their origin and status in progressive era with Dr. Rajesh Dhauta?",
+    "Who co-authored 'Traditional Games in India: Their Origin and Status in Progressive Era' with Dr. Rajesh Dhauta?",
+    "Which co-author worked with Dr. Rajesh Dhauta on 'Traditional Games in India: Their Origin and Status in Progressive Era'?",
+    "Name the co-author of the book 'Traditional Games in India: Their Origin and Status in Progressive Era' alongside Dr. Rajesh Dhauta?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

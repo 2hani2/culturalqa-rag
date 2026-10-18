@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Karnataka dish prepared for Ugadi has both sweet and savoury variants?",
+    "Karnataka Ugadi dish with sweet and savory versions",
+    "Ugadi Karnataka dish sweet and savory variants",
+    "Which Karnataka dish for Ugadi has sweet and savory options"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

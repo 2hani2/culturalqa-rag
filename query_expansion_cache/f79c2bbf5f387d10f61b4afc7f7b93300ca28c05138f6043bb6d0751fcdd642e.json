@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for assamese japi?",
+    "Hindi translation of Assamese japi according to the collection",
+    "Collection's Hindi equivalent for Assamese japi",
+    "What Hindi word does the collection list for Assamese japi"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

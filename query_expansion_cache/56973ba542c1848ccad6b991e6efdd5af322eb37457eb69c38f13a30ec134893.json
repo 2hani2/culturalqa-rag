@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the tie-dye technique used for Sambalpuri Ikat called?",
+    "What is the tie-dye technique used in Sambalpuri Ikat called?",
+    "What is the name of the tie-dye method used for Sambalpuri Ikat?",
+    "How is the tie-dye technique for Sambalpuri Ikat referred to?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

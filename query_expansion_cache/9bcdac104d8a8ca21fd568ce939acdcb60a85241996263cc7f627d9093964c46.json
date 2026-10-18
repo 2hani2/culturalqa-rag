@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the Assamese garment worn under the Mekhela and over the upper body?",
+    "Assamese garment worn under Mekhela over upper body",
+    "What is the Assamese garment worn under Mekhela for the upper body",
+    "Assamese clothing worn under Mekhela covering the upper body"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

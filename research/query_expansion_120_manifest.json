@@ -1,0 +1,1211 @@
+{
+  "created_at": "2026-10-14T09:10:49.718287+00:00",
+  "model": "openai/gpt-oss-20b",
+  "suite_sha256": "6b56c133d05512c4ff5e040383e9cc62d5b18a387c2a6e70f70330e0415e3289",
+  "text_queries": 100,
+  "new_expansions": 70,
+  "gold_answers_sent": false,
+  "source_evidence_sent": false,
+  "image_query_expansion": false,
+  "timing_note": "API preparation is separate from cached evaluation latency. Evaluation logs cache hits and uses shared phrasings.",
+  "queries": [
+    {
+      "query_id": "test_text_01",
+      "question_sha256": "945e3cd5cbc89d9a086d80f6341652cf028afc1015bf7b39f4b739f677f1597a",
+      "queries": [
+        "Which beach in Visakhapatnam is described as a venue for Navy air shows?",
+        "Which beach in Visakhapatnam hosts Navy air shows?",
+        "What beach in Visakhapatnam is used for Navy air shows?",
+        "Name the beach in Visakhapatnam that serves as a venue for Navy air shows."
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "e77067de141b9d1e78007c3ac2aaf5b222b094636a79a8890b837c97c41cbe2f"
+    },
+    {
+      "query_id": "test_text_02",
+      "question_sha256": "1a5f6a2fa7cea7eedc779f82d0bb79cde7efdb229a0e6207459f2f91452b32d6",
+      "queries": [
+        "What is the name of the fort near Tirupati in the artifact collection?",
+        "Which fort near Tirupati is included in the artifact collection?",
+        "Name the fort close to Tirupati that is part of the artifact collection.",
+        "What fort near Tirupati is featured in the artifact collection?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "23a77dff484c2697b608740507783a5223f2eaad5c902e0f9ee42e7ebf37897d"
+    },
+    {
+      "query_id": "test_text_03",
+      "question_sha256": "e01237d3d46f51ff68e12f419d7abc9157d46de08ace5e115e92caa8fa19d26b",
+      "queries": [
+        "What are the dolls called whose heads move while their bodies remain still?",
+        "dolls with moving heads only",
+        "dolls that rotate heads but not bodies",
+        "dolls where head moves but body stays still"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "5d5f53c15d163673f6fc96db82e00c3ab57a3b4a579e833e653c8c63cd56cd51"
+    },
+    {
+      "query_id": "test_text_04",
+      "question_sha256": "3b750ac5e849590cc20b05cb6b8fd2b4cb270bdec1baf9e97e7cbffd53668f0f",
+      "queries": [
+        "Name the two-piece Assamese garment worn in Muga silk during Bihu.",
+        "What is the two-piece Assamese garment worn in Muga silk during Bihu?",
+        "Which two-piece Assamese garment is traditionally worn in Muga silk during Bihu?",
+        "Name the two-piece Assamese attire made of Muga silk that is worn during Bihu."
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "25aa6ff6f90148fb2688439acdb838b7d93a71d6e0688d7aaed296e870a1040b"
+    },
+    {
+      "query_id": "test_text_05",
+      "question_sha256": "e40543185a06923e2b5cf139b2727f5d1e63a7f55532e1289c3ab54b132ce1f7",
+      "queries": [
+        "Which minimalist Bihu celebration takes place in October with prayers for a good harvest?",
+        "What minimalist Bihu festival occurs in October and includes prayers for a bountiful harvest?",
+        "Which Bihu celebration in October is minimalistic and involves prayers for a good harvest?",
+        "Which October Bihu festival is minimalistic and features prayers for a good harvest?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "26b51de61e80336cf957e798367b9d5d66aa9edba04fbe034f13a89077f2254e"
+    },
+    {
+      "query_id": "test_text_06",
+      "question_sha256": "9d07221e5fb23d19fa3fe3053b0d71dc7d15772c57f0f8325bc5bce400763f07",
+      "queries": [
+        "What names does the collection give for a rice wine from Assam?",
+        "What are the names used by the collection for a rice wine from Assam?",
+        "Which names does the collection assign to a rice wine from Assam?",
+        "How does the collection refer to a rice wine from Assam?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "32040fe89fb78afa6bb3e48718290ff7a74ed097505e28961567bf2331399b9e"
+    },
+    {
+      "query_id": "test_text_07",
+      "question_sha256": "2bd998de6f91fd29faf6243652facfed6fd0c013ae4b785edceac761bd4a059f",
+      "queries": [
+        "What alternative style name is given to Pedana Kalamkari?",
+        "What is another name for Pedana Kalamkari style?",
+        "Which alternative style name is used for Pedana Kalamkari?",
+        "What alternative name is given to the Pedana Kalamkari style?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "db4cbdf3e9826ebabe27e06057657abd93325a966f72dc435404f173be4ec08c"
+    },
+    {
+      "query_id": "test_text_08",
+      "question_sha256": "70fc59dc64c0dec6be559282dae7ea796986e2ce14c2e835c2ed5e5cf4c1f3dc",
+      "queries": [
+        "Which drawing tool is used for hand-painted Srikalahasti Kalamkari designs?",
+        "hand-painted Srikalahasti Kalamkari drawing tool",
+        "drawing instrument used in Srikalahasti Kalamkari art",
+        "tool used for hand-painted Srikalahasti Kalamkari designs"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "b6e38665a651eb1b74443cf60e6ee97899f0ec865bd3088e92ea96b94505b547"
+    },
+    {
+      "query_id": "test_text_09",
+      "question_sha256": "2a816696465ba69b3eef08b6136f83fd6f7edb9d897505117db0662c06b45f68",
+      "queries": [
+        "Which Indian state is associated with the Sherdukpen Shawl?",
+        "Sherdukpen shawl Indian state",
+        "Sherdukpen shawl origin state",
+        "Sherdukpen shawl from which Indian state"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "fffe54e5994ce25d830a941e2fa5530c765219dc4f69ef8086e9bcdc3209c296"
+    },
+    {
+      "query_id": "test_text_10",
+      "question_sha256": "f8e9f7521780ffd36fd6e3ef3db32c5a7876d233a2f50060fd792f4aa1e02047",
+      "queries": [
+        "Which silk is also called Endi or Errandi and is produced without killing the silkworm?",
+        "silk called Endi or Errandi produced without killing silkworm",
+        "Endi silk Errandi silk non-violent silkworm rearing",
+        "what is Endi or Errandi silk and how is it produced without killing silkworm"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "783593bdde294dd23e5874fb04277f8837fb83dbed923953b650de4585b0139a"
+    },
+    {
+      "query_id": "test_text_11",
+      "question_sha256": "a00a1e29791103a6f34530d287d757e4e99fa61422d9ddadf44968e95f8df0e7",
+      "queries": [
+        "What is the Assamese garment worn under the Mekhela and over the upper body?",
+        "Assamese garment worn under Mekhela over upper body",
+        "What is the Assamese garment worn under Mekhela for the upper body",
+        "Assamese clothing worn under Mekhela covering the upper body"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "7358438b6560d8bce4a5c473dda2d0c74bb75eeddd32b3c7a978244364f45a76"
+    },
+    {
+      "query_id": "test_text_12",
+      "question_sha256": "78530547fe2259c6ec0a2dc7aa8f51df4162bee4ec3031152a8c4b0bfcf204c9",
+      "queries": [
+        "Which plant supplies the roots used to dye Aal-Dyed Handloom Fabrics?",
+        "What plant provides the roots used for dyeing Aal-Dyed Handloom Fabrics?",
+        "Which plant's roots are used to dye Aal-Dyed Handloom Fabrics?",
+        "From which plant are the roots obtained for dyeing Aal-Dyed Handloom Fabrics?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "993ad3bdb3fd0c3262d44b51d5fa3191fbd41856de9fb2afe547ea0af3cf1cab"
+    },
+    {
+      "query_id": "test_text_13",
+      "question_sha256": "61e01265991942a29c1b9b9247331d0efccd8aa4f5d5d07deeba316c5cae6f22",
+      "queries": [
+        "Name the two rivers whose confluence at Devprayag forms the Ganges.",
+        "Which rivers meet at Devprayag to form the Ganges?",
+        "What are the two rivers that converge at Devprayag to create the Ganges?",
+        "Identify the rivers that merge at Devprayag to form the Ganges."
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "52ee4a34ff8425f4a485c45a022f62d6eaa8435dea3f48d8132a5498f8d104f7"
+    },
+    {
+      "query_id": "test_text_14",
+      "question_sha256": "9115e0c80734b22e6ca9ec45c8444cf4a7e0f2a8f7e961d56d98514caa7be683",
+      "queries": [
+        "What instruments are predominantly used during Bhuta Kola performances?",
+        "Bhuta Kola instruments used",
+        "Instruments used in Bhuta Kola performances",
+        "Which instruments are predominantly used during Bhuta Kola"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "c05677e2812db2b514310170e65a796889f643079bb61269567fa4c7e0c3ebd8"
+    },
+    {
+      "query_id": "test_text_15",
+      "question_sha256": "14671bfb5f6b608e51d0b501803c8fa66e588fb1eed08b5afb72d6cb75d12e46",
+      "queries": [
+        "What is the Ladakhi dance performed with wooden shields and swords called?",
+        "Ladakhi dance with wooden shields and swords",
+        "Ladakhi shield and sword dance name",
+        "Ladakhi traditional dance using wooden shields and swords"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "c01a98f2fe135ce35673c9ec471b36abcd4862c2e66db66387d4e9d0ca382dbf"
+    },
+    {
+      "query_id": "test_text_16",
+      "question_sha256": "8ebafd0909751fedb049419550b8a0156baffaef7ef9c9e554625dbf3a0b2707",
+      "queries": [
+        "Which state is associated with folk theatre about migration and caste and with the ancient educational centre Nalanda?",
+        "Which Indian state is linked to folk theatre about migration and caste and the ancient Nalanda educational centre?",
+        "State associated with folk theatre on migration and caste and the ancient Nalanda university",
+        "Which state has folk theatre on migration and caste and the historic Nalanda centre?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "746a512c845a7429380fb83dc82c5b8ffa753d827acda64c7a24cdbad0e1b459"
+    },
+    {
+      "query_id": "test_text_17",
+      "question_sha256": "33e5ec1fa3f19de4ae31fa1a82350a153b926893b9a72d78823c081bf4137baf",
+      "queries": [
+        "What is the southern Indian international township associated with forest conservation and a vision of harmony?",
+        "southern Indian international township forest conservation vision of harmony",
+        "international township in southern India focused on forest conservation and harmony vision",
+        "southern India township for forest conservation and harmonious vision"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "5bd20fc672c3e6a022bb6285cf1c9690e8f60dfa0095933bd3c06272759328bb"
+    },
+    {
+      "query_id": "test_text_18",
+      "question_sha256": "4686c6421f0a08018d0e2790cbbc06a8ac49931105ff3d66b3ad1e714a8c3a57",
+      "queries": [
+        "In which Indian state is the ancient university Nalanda located?",
+        "Nalanda ancient university location Indian state",
+        "Which state in India houses Nalanda university",
+        "Nalanda university Indian state location"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "1d494ddd8d58bf2414a3a7b55228cc6290ed4583bd7e4f59e59b9035a4ac8002"
+    },
+    {
+      "query_id": "test_text_19",
+      "question_sha256": "4cd90a33fb48ebedb8566bac2d4bdebc64f0cbd11daf98920ec832874a005278",
+      "queries": [
+        "Who illustrated the 42-issue Amar Chitra Katha Mahabharata comic series?",
+        "Amar Chitra Katha Mahabharata comic series illustrator",
+        "Illustrator of the 42-issue Amar Chitra Katha Mahabharata series",
+        "Who drew the 42-issue Amar Chitra Katha Mahabharata comics?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "b3b82290bac921f7ad1c665ffba6022f619a6f654c904408c8015d98db971c14"
+    },
+    {
+      "query_id": "test_text_20",
+      "question_sha256": "54dd3c86723c40cdeaebf834eee7a9cae9a490ae46e301b3bc2816c1a4c19508",
+      "queries": [
+        "Who was Sati's father in the story of Shiva and Sati?",
+        "Father of Sati in the Shiva and Sati myth",
+        "Who is Sati's father in Hindu mythology",
+        "Name of Sati's father in the story of Shiva"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "6c909b12a004e11a72219cf7946d3ab7f75c49d4cb469278086ac62a1caf331a"
+    },
+    {
+      "query_id": "test_text_21",
+      "question_sha256": "66fda7b4b2473b9c61d730948f3509b3a0e776716ba34c9ee324d1be55e582a8",
+      "queries": [
+        "Who is named as the father of King Bharata in the Mahabharata account?",
+        "Father of King Bharata in Mahabharata",
+        "Who is the father of King Bharata according to Mahabharata",
+        "Name of King Bharata's father in the Mahabharata"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "1ee079a68bf18c6a9fdc1c1de3b7c4805b8ae595176f1c01a10e200856df92e8"
+    },
+    {
+      "query_id": "test_text_22",
+      "question_sha256": "2009d02bbb5bacd0457f8ac5a278dbe4ed8a55fa08a15fde6795e3899e0eff88",
+      "queries": [
+        "Who taught music and dance to Uttara before her marriage to Abhimanyu?",
+        "Uttara music dance teacher before marriage to Abhimanyu",
+        "Who taught Uttara music and dance before she married Abhimanyu",
+        "Music and dance instructor of Uttara prior to her marriage to Abhimanyu"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "fc4f0c5a611da491fb902937716bd0991be1f852d306b7354ebe80d7b7d53055"
+    },
+    {
+      "query_id": "test_text_23",
+      "question_sha256": "776bc17b1ad4bfd0797a378681afede92b62c58969b5937f69073c8a8ec1726a",
+      "queries": [
+        "What was Bhanumati's home kingdom before she married Duryodhana?",
+        "Where was Bhanumati from before marrying Duryodhana?",
+        "What kingdom did Bhanumati belong to before her marriage to Duryodhana?",
+        "Which kingdom was Bhanumati's home before she married Duryodhana?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "9a8b58f98f70e1f195c60797119f3df856c09fa96aab2dc5064a41bfefbf17b9"
+    },
+    {
+      "query_id": "test_text_24",
+      "question_sha256": "7dc115d16d9511d08ffd58ecb51749b7eec98ffa4e8ea40f8795edc2bb082781",
+      "queries": [
+        "Who is credited with writing Betaal Pachisi in the Vikram and Betaal collection?",
+        "Who wrote Betaal Pachisi in the Vikram and Betaal collection?",
+        "Betaal Pachisi author in the Vikram and Betaal collection",
+        "Credit for writing Betaal Pachisi in the Vikram and Betaal collection"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "07aa925e38f71834c017a79fe3ec9e665f1199e9d7bdd433c5c1dc28b7639282"
+    },
+    {
+      "query_id": "test_text_25",
+      "question_sha256": "c3494d6d2a80f319b65bff8a20f9837d722f87ce6dad8f13268e28241bed4245",
+      "queries": [
+        "How is likcham written in the Hindi translation field?",
+        "What is the Hindi translation of likcham?",
+        "How is likcham spelled in Hindi?",
+        "In Hindi, how do you write likcham?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "e28a9fddcfabf0dd0218ed4dc1c6bf3f9acc780ed0262f31ab6d3118ae26e948"
+    },
+    {
+      "query_id": "test_text_26",
+      "question_sha256": "ce44ee1797f729400d613c2ec789e43f7c694e9a83209e42a82e70ee3befcaf1",
+      "queries": [
+        "Give the Hindi wording for the dish matar mushroom.",
+        "Hindi name for matar mushroom dish",
+        "Hindi translation of matar mushroom dish",
+        "How to say matar mushroom in Hindi"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "57f0e686eaab36ff5ffe8d546b86a4acb1ffc6513d6cb956ec932827ed524610"
+    },
+    {
+      "query_id": "test_text_27",
+      "question_sha256": "41b3e8db290a7dcc3ae5938a17ebc767524e8bf5a86dc4beae0203f82ee8fd4d",
+      "queries": [
+        "What Hindi translation is supplied for bandaya movement?",
+        "Hindi translation of bandaya movement",
+        "What is the Hindi term for bandaya movement?",
+        "How is bandaya movement translated into Hindi"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "4a06c07598518febe84c122692ba0b1135b9512a573a83184b7871e2bb77eb18"
+    },
+    {
+      "query_id": "test_text_28",
+      "question_sha256": "7e17a5da4dc2acb47fe73a6f1d50852ed4873aef521a5a1f422dceb83dfe06c0",
+      "queries": [
+        "How does the collection translate the festival name karva chauth into Hindi?",
+        "What is the Hindi translation of the festival name Karva Chauth?",
+        "How is Karva Chauth translated into Hindi in the collection?",
+        "In the collection, how is the festival name Karva Chauth rendered in Hindi?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "d40e44341ab67c7163a1b0b9e6af24f703913770a465f49b7bbe560d95b9a8b3"
+    },
+    {
+      "query_id": "test_text_29",
+      "question_sha256": "107c6251ed91adb8ce858842b56fbcccaccc6d09841f38c5d48935205a4f32b9",
+      "queries": [
+        "What is the Hindi rendering of the landmark tarpan ghat park?",
+        "Hindi name of Tarpan Ghat Park",
+        "Tarpan Ghat Park Hindi translation",
+        "How to say Tarpan Ghat Park in Hindi"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "3012742e1cacab8c8f29967641398cb1a5022b082fe527a755e5a3aedc16786a"
+    },
+    {
+      "query_id": "test_text_30",
+      "question_sha256": "e019a83b2559cce5f37b72f5bffb146a31214cc0ccc46bb94d3eb1d89bde7412",
+      "queries": [
+        "How is the sports-person name deepak amarnath represented in Hindi?",
+        "How is Deepak Amarnath's name written in Hindi?",
+        "Deepak Amarnath का नाम हिंदी में कैसे लिखा जाता है?",
+        "Deepak Amarnath का नाम हिंदी में क्या लिखा जाता है?"
+      ],
+      "reused_existing_cache": true,
+      "cache_sha256": "3da90067e183a2e1880ec22930ed6f52953522ad1367e45a29c5246bedc93db5"
+    },
+    {
+      "query_id": "large_text_001",
+      "question_sha256": "dadc26b0819e6266edcbe4f1f453447dacd9ba9027aad9f7feba43f513cea9a6",
+      "queries": [
+        "What material is called Baith in Assamese?",
+        "Which material is referred to as Baith in Assamese?",
+        "What material is known as Baith in Assamese?",
+        "What is Baith material in Assamese?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "c4e52f3bb60faa90f31690d8db1dc4bb15a1e3339a661f8860ca744228d97bd6"
+    },
+    {
+      "query_id": "large_text_002",
+      "question_sha256": "f69b61f86ac31d955d7c5bc844098a3d9cd428cdba5ef4038518f14ab6e13b30",
+      "queries": [
+        "Which dance does the collection associate with Assam tea cultivators?",
+        "What dance is linked to Assam tea growers in the collection?",
+        "Which dance is connected to tea cultivators in Assam according to the collection?",
+        "Which dance does the collection associate with Assam tea plantation workers?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "32097e2d2dd6a0206d5160ed725033a8a39f6fa88c7ff81a8f559e2fc78707b6"
+    },
+    {
+      "query_id": "large_text_003",
+      "question_sha256": "b9637fd5c106b698617d37cb43e953cc143133a0d661598868b79bbc23c94706",
+      "queries": [
+        "Which Bihar freedom fighter founded the Janata Party in the collection?",
+        "Bihar freedom fighter who founded the Janata Party",
+        "Which freedom fighter from Bihar established the Janata Party?",
+        "Janata Party founder among Bihar freedom fighters"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "9f88b746bbe4ee428d93e33453b17e47ca4bf6658150f3dd1b4d738c2aaabf15"
+    },
+    {
+      "query_id": "large_text_004",
+      "question_sha256": "b9bba82f87dfdc7f31b392bb1c123c759d046f04553a95fa76a0cb66ec523624",
+      "queries": [
+        "What Bihar folk song is sung by women to celebrate the birth of a child?",
+        "Bihar folk song sung by women for newborn celebration",
+        "women sing Bihar folk song for birth of child",
+        "Bihar folk song for celebrating birth sung by women"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "68b3d0edb6fd005604d7a1405feb2945c1a1650fc28273fc009e9ed7137231f3"
+    },
+    {
+      "query_id": "large_text_005",
+      "question_sha256": "c9f3774216e2dc0cdc1b29fabc7aa37a973be557e8945665dfabc5de20fc6e9c",
+      "queries": [
+        "What name does the collection give to the heritage well in Patan, Gujarat?",
+        "What name does the collection use for the heritage well in Patan, Gujarat?",
+        "How does the collection refer to the heritage well in Patan, Gujarat?",
+        "What designation does the collection assign to the heritage well in Patan, Gujarat?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "ec5563b682e410cef8d0a7e0e3734d7c4d431d1f5e8fa2858611ec5efaa0ea91"
+    },
+    {
+      "query_id": "large_text_006",
+      "question_sha256": "5379b1e0cc2262e424a119b74527b39181ab5700a44a6a07c237570f81f97352",
+      "queries": [
+        "Which Gujarati newborn ritual involves feeding the baby jaggery water?",
+        "Which Gujarati newborn ritual includes feeding the baby jaggery water?",
+        "What is the Gujarati newborn ceremony where the baby is given jaggery water?",
+        "Which Gujarati baby ritual involves feeding the infant jaggery water?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "56cb963882cfef714e46954ad433aaeb1d5bab0d73ab984f0a987f3e5519f4de"
+    },
+    {
+      "query_id": "large_text_007",
+      "question_sha256": "961573d8e9271757aaf65feba1a51f22f024a235a56b594b0e852a252cef47d1",
+      "queries": [
+        "What Haryana wedding ritual invites the maternal uncle to the wedding?",
+        "Which Haryana wedding ritual involves inviting the maternal uncle?",
+        "In Haryana weddings, which ritual invites the maternal uncle?",
+        "Haryana wedding ritual that invites maternal uncle to the wedding"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "1daea20e9033a3300aa8694af72381db25d2fbc3c054ba2db21a44a684552f88"
+    },
+    {
+      "query_id": "large_text_008",
+      "question_sha256": "4b95f3126d0f5ff20a60bdec90ba9b17fdb08ae9721c2918b67862ce7b6e4ee5",
+      "queries": [
+        "Which national park in Ormanjhi is named after a freedom fighter?",
+        "Ormanjhi national park named after freedom fighter",
+        "Freedom fighter named national park in Ormanjhi",
+        "Which national park in Ormanjhi honors a freedom fighter?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "539aa44afc37c403bdbef43b48788ac4bdca31cd3412b09332a34a1356bdec1f"
+    },
+    {
+      "query_id": "large_text_009",
+      "question_sha256": "95576cd33d3214a9aa5b2d8b27110234d13342badc644adb4b371a289a877f81",
+      "queries": [
+        "What mined material helped Dhanbad become an industrial area?",
+        "What material was mined that contributed to Dhanbad's industrial development?",
+        "Which mined resource made Dhanbad an industrial hub?",
+        "What mining product helped Dhanbad become an industrial area?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "4fbe497314050c3bdba28c74f435066c9f2003f2bdb45f2710aa38458682a180"
+    },
+    {
+      "query_id": "large_text_010",
+      "question_sha256": "d6a187ee7c71c8f3951b249bfd18b289d59ff78993635803353605fe47234365",
+      "queries": [
+        "Which Karnataka dish prepared for Ugadi has both sweet and savoury variants?",
+        "Karnataka Ugadi dish with sweet and savory versions",
+        "Ugadi Karnataka dish sweet and savory variants",
+        "Which Karnataka dish for Ugadi has sweet and savory options"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "b255a609471e14bffb7b18792e224fa92823ae9e380106e2d28bd3aa698b3e2f"
+    },
+    {
+      "query_id": "large_text_011",
+      "question_sha256": "9f4fab2a70b44ace4fbad4b0d1b50085ceccb27df2b3496b65f816970f81d22c",
+      "queries": [
+        "Which alcoholic drink in Kerala is made using coconut?",
+        "Kerala alcoholic beverage made from coconut",
+        "Coconut-based alcoholic drink in Kerala",
+        "Which coconut drink is alcoholic in Kerala"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "f6151ae868b48704e3844a31461d981d3bdceec5580e88bdd3f587bb0b694ce9"
+    },
+    {
+      "query_id": "large_text_012",
+      "question_sha256": "cd6c29406c79930f5ab9bbd2da8d17930da83b4dac5ec5194ae147e7cfd6eac5",
+      "queries": [
+        "What percussion instrument is used in Pala theatre?",
+        "Which percussion instrument is used in Pala theatre?",
+        "What percussion instrument is played in Pala theatre?",
+        "Which drum is used in Pala theatre?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "1961629645ceba440dd0f42f563ea530d47bd13b669d4ea80b3ba4feaa0f87bd"
+    },
+    {
+      "query_id": "large_text_013",
+      "question_sha256": "f3ede1d6010a9f864b8e4420401a6ded9fe9c82615ab2b5380f1ac52ab576f4f",
+      "queries": [
+        "Which Jaipur monument is described as having many windows?",
+        "Which monument in Jaipur is known for its many windows?",
+        "What Jaipur monument is described as having many windows?",
+        "Which Jaipur monument is famous for its numerous windows?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "e53e19cd1ae649241fc79590a996d1c5fa33a6925b329b326b3a8fb77eb4cae5"
+    },
+    {
+      "query_id": "large_text_014",
+      "question_sha256": "53dfa0ea88bbb29740b8ff8d539d503a70615c2461a4912642dffc8fa7fc1874",
+      "queries": [
+        "What material are the vegetable-coloured blankets from Warangal made of?",
+        "What is the composition of the vegetable-coloured blankets from Warangal?",
+        "What fabric is used for the vegetable-coloured blankets from Warangal?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "6af01ea903f26483429d91cc33b7f728de8f352d6b48da3e5a5833b91cbb39cd"
+    },
+    {
+      "query_id": "large_text_015",
+      "question_sha256": "b3f158a3002dafa333d685d7b0e8a3be5fef25ec88f9f4c1fc88709d560a18d6",
+      "queries": [
+        "What is the tie-dye technique used for Sambalpuri Ikat called?",
+        "What is the tie-dye technique used in Sambalpuri Ikat called?",
+        "What is the name of the tie-dye method used for Sambalpuri Ikat?",
+        "How is the tie-dye technique for Sambalpuri Ikat referred to?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "b932b4b935e4752e564aab4ccce41f0519cf6c65cb6f5b8235fa8821378b5412"
+    },
+    {
+      "query_id": "large_text_016",
+      "question_sha256": "6136342118cb1447151dfd40c616ffe51880a46925f7516a45864d371ebc5921",
+      "queries": [
+        "What long robe is traditionally worn by Sikh men during religious ceremonies?",
+        "long robe worn by Sikh men in religious ceremonies",
+        "Sikh men's traditional long robe",
+        "Sikh religious ceremony robe"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "ff3b939cbbab349b05ce50c73bcd983e986a1157de29b698badb4d93bc7388b9"
+    },
+    {
+      "query_id": "large_text_017",
+      "question_sha256": "ba05ea339b765dd21a77f0985c26c5edbd12060a163eb52c3d4e231d543a0630",
+      "queries": [
+        "During which festival is Rathwa Ni Gher performed?",
+        "Which festival features the performance of Rathwa Ni Gher?",
+        "During which festival is the Rathwa Ni Gher dance performed?",
+        "At what festival is Rathwa Ni Gher performed?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "16dc2572f0365a004034cc61edf7ed9763b529cbc8073c6db0a135f3a7dc16a6"
+    },
+    {
+      "query_id": "large_text_018",
+      "question_sha256": "68c7affb42224716aaa659b766d22a29fde9c9b15f129542cb1fdaae458343f3",
+      "queries": [
+        "Which high-altitude lake in Ladakh is described as known for birdlife?",
+        "high altitude lake in Ladakh known for birdlife",
+        "birdlife lake Ladakh high altitude",
+        "Ladakh lake famous for birds high altitude"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "4579de26d7adbd7546ea2914b30bcc0b927ed74e8f32c22d1a8b57673e33b88b"
+    },
+    {
+      "query_id": "large_text_019",
+      "question_sha256": "4325b2109fc4aae9a1d3628215d5fea2c6cf8f4dc9df4a080179a6c473230823",
+      "queries": [
+        "What other name is given to Eid ul-Azha?",
+        "What is another name for Eid ul-Azha?",
+        "What is Eid ul-Azha also called?",
+        "What is the alternative name for Eid ul-Azha?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "6e0008aaeaa44353f8bc193fc1fa136f836d3e4a759c25bee61b391e8ae577a0"
+    },
+    {
+      "query_id": "large_text_020",
+      "question_sha256": "9ea3b8f86bbcdfe460b71cb0fa6bd66d65a0a5bd41f383021888fdfe3de34ce6",
+      "queries": [
+        "Which Odisha festival celebrates womanhood and the onset of the monsoon?",
+        "Odisha festival celebrating womanhood and monsoon onset",
+        "Which festival in Odisha marks womanhood and monsoon arrival",
+        "Odisha festival for women and monsoon season"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "9c4514a5041a33d9856720d82d14f351454664003124d18a65a642c9bdebd512"
+    },
+    {
+      "query_id": "large_text_021",
+      "question_sha256": "54a4e2a4368470869cfb526bad710673e0ce08d52e68ff27af0e9b1c8f8e1b71",
+      "queries": [
+        "What Sikkim food consists of fermented bamboo shoot?",
+        "Sikkim dish with fermented bamboo shoots",
+        "Sikkim food containing fermented bamboo shoots",
+        "What is the Sikkim dish that uses fermented bamboo shoots?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "e445f41f26e7a2c3f30c2c10fb9171b4d8aecbc664a1906f7732d399cf3b4ebc"
+    },
+    {
+      "query_id": "large_text_022",
+      "question_sha256": "d81284323c1aeb2028456a85d411669a795d39d14145143308c6e009f9172152",
+      "queries": [
+        "How many pits are on the wooden board used for Vamana Guntalu?",
+        "Number of pits on the wooden board used in Vamana Guntalu",
+        "How many holes are there on the wooden board used for Vamana Guntalu?",
+        "Count of pits on the wooden board used in Vamana Guntalu"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "48c1200a1e158b9bdd68d7cc3b299fbd3c1cb81afe9af70a3dfbc8b0b01a964a"
+    },
+    {
+      "query_id": "large_text_023",
+      "question_sha256": "2fd439e47538fedd8d2aaa553b55b32dfde130c28d9871a4cf7a6ac9901798f6",
+      "queries": [
+        "Which deity is ceremonially married to the Tulsi plant in Tulsi Vivah?",
+        "Which deity is married to the Tulsi plant in the Tulsi Vivah ceremony?",
+        "Tulsi Vivah: which god is ceremonially married to the Tulsi plant?",
+        "Deity married to Tulsi plant during Tulsi Vivah"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "e857abe991f041cf147c53f4d34ba5a92c3747943b1a97f4d5da9b1da58bcbfa"
+    },
+    {
+      "query_id": "large_text_024",
+      "question_sha256": "d98342d55c5998373a2c6a3898a5fa2d55d3e3b537608fd30d8a994bd1bbff0b",
+      "queries": [
+        "What alternative name is given to the Bilaspuri dialect?",
+        "What is another name for the Bilaspuri dialect?",
+        "What alternative name is used for the Bilaspuri dialect?",
+        "What other name is given to the Bilaspuri dialect?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "23e09a84ecb60dfae20f1908fe45b65c39af11104b870ca2430108cdf7fc785e"
+    },
+    {
+      "query_id": "large_text_025",
+      "question_sha256": "5a8db36530c25a397512eccd71d40b645a3405203c929d888b397799b43a4d43",
+      "queries": [
+        "What traditional Tamil Nadu puppetry uses large wooden puppets controlled by rods and strings?",
+        "Tamil Nadu traditional puppetry with large wooden puppets operated by rods and strings",
+        "What is the name of the Tamil Nadu puppetry that uses large wooden puppets controlled by rods and strings?",
+        "Tamil Nadu wooden puppet theatre using rods and strings"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "a8e4b7ff3f78722dc4292e930d7c9ec07b871ebc494b17f7ee3079ccc2b85029"
+    },
+    {
+      "query_id": "large_text_026",
+      "question_sha256": "4ed5c387368f58dc8dfa15d79889ad792a7c2bed9549d7f559eaf73fa0952bd3",
+      "queries": [
+        "Which necklace of black glass beads symbolizes marriage among Mangalorean Catholics?",
+        "Mangalorean Catholic black glass bead necklace symbol of marriage",
+        "black glass bead necklace used in Mangalorean Catholic wedding",
+        "Mangalorean Catholic marriage necklace black glass beads"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "9779281bbf5420712a9ca946d829f25353ff8821407a0c45ebd0b98332debb40"
+    },
+    {
+      "query_id": "large_text_027",
+      "question_sha256": "10de97cb72b88e23a3782a62ba7a705b4df8617e7e0c0d266e1908feb68eb733",
+      "queries": [
+        "What city contains Sana Konung, the Royal Palace of Manipur?",
+        "Which city houses Sana Konung, the Royal Palace of Manipur?",
+        "In which city is Sana Konung, the Royal Palace of Manipur located?",
+        "Where can one find Sana Konung, the Royal Palace of Manipur?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "f0c32f4b5e41b1cd3abe46331a77054f918015dc9c704aee0573eec0aa4a3025"
+    },
+    {
+      "query_id": "large_text_028",
+      "question_sha256": "4f392660ce414ac3a7fba9473d960c17e412c4d3e98b2ac14f3352135feb4a78",
+      "queries": [
+        "Which two ingredients make the Solkadhi drink described in the collection?",
+        "What are the two ingredients that make up Solkadhi?",
+        "Which two ingredients are used to prepare Solkadhi?",
+        "Solkadhi is made from which two ingredients?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "583ae3793f2316b539610c61e7a9569bfbf8d4833f3e0f089edae73ad2360a4e"
+    },
+    {
+      "query_id": "large_text_029",
+      "question_sha256": "0042b303a234f4a361a99338e5359c0953b8436804d03abe8cc0e2105dae2375",
+      "queries": [
+        "Which Uttarakhand temple is associated with medieval architecture in the collection?",
+        "What Uttarakhand temple in the collection features medieval architecture?",
+        "Which temple in Uttarakhand is known for its medieval architecture?",
+        "Which temple in the Uttarakhand collection is associated with medieval architecture?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "abc77996ec31b2f7bd12996a48047fa9d3c882cdd6d98023e4f13b88702cd540"
+    },
+    {
+      "query_id": "large_text_030",
+      "question_sha256": "e27f329f2d7f8dd81f13e3bfea5081c87db37bf0cd27569df2e2336cb1f6c710",
+      "queries": [
+        "What dish is described as the State Food of Uttarakhand?",
+        "What is the state food of Uttarakhand?",
+        "Which dish is Uttarakhand's state food?",
+        "Uttarakhand state food dish"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "41dac0e8224d29dd21089f0787ca242d5ce38a8abaf36dd3b06b44a9feb30e90"
+    },
+    {
+      "query_id": "large_text_031",
+      "question_sha256": "dff7a068470b7abd9ba28cf0d4c94de5a412ccb967230bcedb92c45f25332979",
+      "queries": [
+        "Which Nellore-region textile combines cotton and silk with jamdani weaving?",
+        "Nellore textile cotton silk jamdani weaving",
+        "Nellore cotton silk jamdani textile"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "841bebb9a09451dd2a07a77b33a71ec1fd73c90c176810259f6149ad2eda0279"
+    },
+    {
+      "query_id": "large_text_032",
+      "question_sha256": "ca90464e30b9b09c03378fbca80da0d45382c4e5919e09b5cf3e04d171bc2b26",
+      "queries": [
+        "What traditional festive clothing do young girls in Rayalaseema wear?",
+        "Traditional festive attire for young girls in Rayalaseema",
+        "Festive clothing worn by young girls in the Rayalaseema region",
+        "What traditional clothes do girls in Rayalaseema wear during festivals?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "e9a308b47bf44e79d8945a8589b0c7070a37d93b83619028d394d8dba446e0a2"
+    },
+    {
+      "query_id": "large_text_033",
+      "question_sha256": "39780fd2391cb9a0959134c64ba32aca955f8b215c1c37714866dc7fab007a26",
+      "queries": [
+        "Name the Araku Valley tribal dance with chain formations and rhythmic foot movements.",
+        "Araku Valley tribal dance chain formations rhythmic foot movements name",
+        "Name of the Araku Valley tribal dance with chain formations and rhythmic footwork",
+        "Araku Valley tribal dance featuring chain formations and rhythmic foot movements"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "1abce103efae4013422ac0caac4f923123ad429774207f2cff8826b18525bd31"
+    },
+    {
+      "query_id": "large_text_034",
+      "question_sha256": "c40e7b2c5dcb721bbc1c1b71d6720d06b58f887167c34f6a1cdbe263db600f7a",
+      "queries": [
+        "Which culture makes rice-paste floor patterns during Lakshmi Puja?",
+        "Which culture creates rice paste floor designs for Lakshmi Puja?",
+        "Which community makes rice paste floor patterns during Lakshmi Puja?",
+        "Which tradition uses rice paste floor patterns in Lakshmi Puja?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "9bc4a3ffd82e3782d89fe5f8b7a9371c7f33235e97b6b83d47cab5f31647e772"
+    },
+    {
+      "query_id": "large_text_035",
+      "question_sha256": "d082c968c27de3a9b54f40b9414a5c159efd2f5d5d7f7ea2a5993515c98ae209",
+      "queries": [
+        "What alternative name is used for Manipuri dance?",
+        "Alternative name for Manipuri dance",
+        "What is another name for Manipuri dance",
+        "Manipuri dance also known as"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "c42b2a0f3810e8d3f7555edbb9333bfe70491bbd0939bbbc84ee465ace6f7d8f"
+    },
+    {
+      "query_id": "large_text_036",
+      "question_sha256": "20e37f7d2d1c4d727c1a0fbd859aba1977aad0a43b4b412913b32b915ba5530d",
+      "queries": [
+        "Whom does the Kang festival in Manipur honor?",
+        "Who is honored at the Kang festival in Manipur?",
+        "Which deity is celebrated during the Kang festival in Manipur?",
+        "The Kang festival in Manipur is dedicated to whom?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "2f5b1c35f26aac8038397beb6fbd408f0fff4bfe34b23645fbd07a71bc6d2d26"
+    },
+    {
+      "query_id": "large_text_037",
+      "question_sha256": "597732588e06c317783d59a9dba310c69a6296b4dfc2a7dfa8e7db3f96b35771",
+      "queries": [
+        "What Vishnu temple is located in Vishnupur?",
+        "Vishnu temple in Vishnupur",
+        "Temple of Vishnu located in Vishnupur",
+        "Which Vishnu temple is in Vishnupur"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "73d2f7543039a932c4f164fb5e94558c2b35c19add0737566e02474ff0d43bfa"
+    },
+    {
+      "query_id": "large_text_038",
+      "question_sha256": "39c60ead40074ac647ef43cf345beb4319c04fdb466eaf8082889f5abd42ffaf",
+      "queries": [
+        "Which spice is known as Chinese pepper in Naga cuisine?",
+        "What spice is referred to as Chinese pepper in Naga cuisine?",
+        "Which spice is called Chinese pepper in Naga cuisine?",
+        "In Naga cuisine, which spice is known as Chinese pepper?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "074933a8ca6c805deb1f744a1c71f1d9c1a8348c84823853f62e759ee328780e"
+    },
+    {
+      "query_id": "large_text_039",
+      "question_sha256": "dbb1c6f487d5c0a554b58faf9a31da328b44b0b9d34710480a1bf4b8be6ffce2",
+      "queries": [
+        "What Naga sweet is made from rice flour, bananas, and jaggery?",
+        "Naga sweet made from rice flour, bananas, and jaggery",
+        "Naga dessert using rice flour, bananas, and jaggery",
+        "Naga sweet recipe with rice flour, bananas, and jaggery"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "ba0438710c55ed42cd7dc172486b690b0f6372dd4ecee155ff835526f894c6ea"
+    },
+    {
+      "query_id": "large_text_040",
+      "question_sha256": "6bc3157fc09a941fd89944e0868c266f4f9530c8bf0dc2ff299f345bddd8be6b",
+      "queries": [
+        "Which pungent allium is paired with chili and ginger in Naga cooking?",
+        "pungent allium used with chili and ginger in Naga cuisine",
+        "allium paired with chili and ginger in Naga cooking",
+        "which allium is commonly used with chili and ginger in Naga dishes"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "8d00fb0004fbb562e5db26ace9eee325272f78d5fc5297a0616fac328659a9f9"
+    },
+    {
+      "query_id": "large_text_041",
+      "question_sha256": "f9881ebef422dc12f20b8e9b91ba22a9db71cec7148c5f2dec5012735563f785",
+      "queries": [
+        "What method preserves meat for long periods in Naga kitchens?",
+        "How do Naga people preserve meat for long periods?",
+        "Traditional Naga meat preservation techniques for long-term storage",
+        "Naga kitchen methods for preserving meat over extended periods"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "2ed3cd75ed7704d1e9ccbc2e1ed1603431560a1cf43b7847b099a1d727de52a4"
+    },
+    {
+      "query_id": "large_text_042",
+      "question_sha256": "bee80b0a2f5d62a50e47dac43ab6e3e58164caaeca504583017b6f2368fa29d7",
+      "queries": [
+        "Who helped defend Ladakh in 1948 and later became India's ambassador to Mongolia?",
+        "Who assisted in defending Ladakh in 1948 and later served as India's ambassador to Mongolia?",
+        "Which Indian officer helped defend Ladakh in 1948 and later became ambassador to Mongolia?",
+        "Name the person who defended Ladakh in 1948 and later was India's ambassador to Mongolia."
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "4b537f2a397d0d3b13126281d60291a7ea500b58eafcfab0216b1800bbb8c895"
+    },
+    {
+      "query_id": "large_text_043",
+      "question_sha256": "882687358c8521891a15073f90c1220f28a914c63a8dc5f6e895c92d8fafdebb",
+      "queries": [
+        "Who translated the collection's volume of The Ramayana of Valmiki?",
+        "Who is the translator of the volume of Valmiki's Ramayana in the collection?",
+        "Which translator worked on the collection's volume of Valmiki's Ramayana?",
+        "Name the translator of the Ramayana volume by Valmiki in the collection."
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "e3cb81bab81d073159bc7fb1a2956caa4f80625eb1cb930700f15979fb5b512f"
+    },
+    {
+      "query_id": "large_text_044",
+      "question_sha256": "50b42fc93b61fd5a8f9de659cff0fd634e99a3df27819703c8d42d5802650dd9",
+      "queries": [
+        "Who coauthored Traditional games in India: Their origin and status in progressive era with Dr. Rajesh Dhauta?",
+        "Who co-authored 'Traditional Games in India: Their Origin and Status in Progressive Era' with Dr. Rajesh Dhauta?",
+        "Which co-author worked with Dr. Rajesh Dhauta on 'Traditional Games in India: Their Origin and Status in Progressive Era'?",
+        "Name the co-author of the book 'Traditional Games in India: Their Origin and Status in Progressive Era' alongside Dr. Rajesh Dhauta?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "907b5b39cf724bd411cce9b587b5b46eb30231eb3c0dfba373de0864c11b1fc4"
+    },
+    {
+      "query_id": "large_text_045",
+      "question_sha256": "e6949c9cbdd1cd5f9b2ad2fcdbd833b226d87d0eb33fc770af7fa37cfd0ed5f2",
+      "queries": [
+        "Who wrote Human Sacrifice in Colonial Central India: Myth, Agency and Representation?",
+        "author of Human Sacrifice in Colonial Central India: Myth, Agency and Representation",
+        "who is the author of Human Sacrifice in Colonial Central India: Myth, Agency and Representation",
+        "Human Sacrifice in Colonial Central India: Myth, Agency and Representation author"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "d03976f157a562d4e31b22689256bbfbcd2cb35f6ff57b583184f4d15acce8bd"
+    },
+    {
+      "query_id": "large_text_046",
+      "question_sha256": "b46513e1f7f05cbf75ae2323b7c37d41e409a80ee4999c520ed3ce50d756da17",
+      "queries": [
+        "What is the name of Rama's bow in the source overview?",
+        "What is the name of Rama's bow mentioned in the source overview?",
+        "Which bow does Rama use, as referenced in the source overview?",
+        "What is the bow name of Rama in the source overview?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "68a1cf65d07b95c5a9424d5b88eee69000b27ad8b95bde7a2f4a7c3da78b07ef"
+    },
+    {
+      "query_id": "large_text_047",
+      "question_sha256": "882844f094ad073fd42320557b91328fc5295ca720bb4b84404d2dae7f598680",
+      "queries": [
+        "What is the illusionary duplicate of Sita abducted by Ravana called?",
+        "What is the name of the illusionary duplicate of Sita that Ravana abducted?",
+        "What is the illusionary duplicate of Sita called in the Ramayana?",
+        "What is the term for the duplicate Sita that Ravana abducted?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "f25f83b2fa1d2f363a6084033b7c776ed1fc47c4efab720afd39bfe183c0f206"
+    },
+    {
+      "query_id": "large_text_048",
+      "question_sha256": "c1d8db2e07444dea346cde8a83915d6e11c35a48bda7587cfb67dd1f2f502c6d",
+      "queries": [
+        "Who gave Karna his Kavacha armour at birth?",
+        "Who gave Karna his Kavacha armor at birth?",
+        "Who gave Karna his Kavacha at birth?",
+        "Who gave Karna his Kavacha armor when he was born?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "db68db3b7044b88c38521d54fe9ae7ebe94c97bf497294c6f62b73367580d048"
+    },
+    {
+      "query_id": "large_text_049",
+      "question_sha256": "55cf3d808cd82445a3375f0373fbd72d8485e6d9a05f1948dbae4185f21e8e02",
+      "queries": [
+        "What classroom subject is discussed in the article on folk tales of North East India?",
+        "Which subject is covered in the article about folk tales of North East India?",
+        "What subject is discussed in the article on folk tales of North East India?",
+        "Which classroom subject is mentioned in the article on folk tales of North East India?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "0c67a138a00896c8edb890808294f9ef6e20a179ab70ea43598d0cc0afda3380"
+    },
+    {
+      "query_id": "large_text_050",
+      "question_sha256": "f64dec2364574f5e7d3704ac079dab52b59fd899e3e84f3adbe6931eede2cba4",
+      "queries": [
+        "Who wrote the story The Trinity in the collection?",
+        "Who is the author of the story 'The Trinity' in the collection?",
+        "Who wrote the story 'The Trinity' in the collection?",
+        "Who authored the story titled The Trinity in the collection?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "359b1f0bc74762a439644f2cabdf84715c06428a2aecb2cbc5cd93394819b5d9"
+    },
+    {
+      "query_id": "large_text_051",
+      "question_sha256": "3aff4ece057d31eb6051de90b2ba18928cb29465532f73be139ef55e0e98cc33",
+      "queries": [
+        "In which city was Dr. Swati Kela's Traditional Indian Games presentation at the April 2024 World Forum held?",
+        "Dr. Swati Kela Traditional Indian Games presentation April 2024 World Forum city",
+        "Where was Dr. Swati Kela's Traditional Indian Games talk at the April 2024 World Forum held?",
+        "April 2024 World Forum Traditional Indian Games Dr. Swati Kela location"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "5634bc6c75725acb1bf415a063572530642ca83db93deda88a3c6dbc817dbf38"
+    },
+    {
+      "query_id": "large_text_052",
+      "question_sha256": "3edebfa7f2ce22b9a6594fe1c95b79e2f8a86d2340e0e708d09ad760f39c9305",
+      "queries": [
+        "Who edited the Amar Chitra Katha Mahabharata comic series?",
+        "Amar Chitra Katha Mahabharata comic series editor",
+        "Editor of Amar Chitra Katha Mahabharata comics",
+        "Who edited Amar Chitra Katha's Mahabharata comic series?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "b4494a768939d04390ad1a3a19ac2d7917ae72b0e0b5da63d8fe7742649cb52a"
+    },
+    {
+      "query_id": "large_text_053",
+      "question_sha256": "958fdfa9ee735c5ae54cb13f85c7cd75fa70a50cee1138e4b8309b41c55a162b",
+      "queries": [
+        "What leaf did Sati eat during her penance before giving up food altogether?",
+        "Which leaf did Sati consume during her penance before renouncing food?",
+        "What leaf did Sati eat while in penance before she gave up all food?",
+        "During her penance, which leaf did Sati eat before abandoning food entirely?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "57747a9971d772b60c343ee1bde8193bde1512dbab40c1ad6985659ad1bc2a14"
+    },
+    {
+      "query_id": "large_text_054",
+      "question_sha256": "126234c0ce22b5915523df7907c92285c372e3a7ed4dc5d4b62a802babed19ff",
+      "queries": [
+        "Who is named as King Bharata's mother in the Mahabharata account?",
+        "Name of King Bharata's mother in the Mahabharata",
+        "Who is the mother of King Bharata according to the Mahabharata",
+        "Mahabharata mother of King Bharata"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "8327fc869ae01bd318272d216101d0b1cae435dac5df462164c5df94b756453a"
+    },
+    {
+      "query_id": "large_text_055",
+      "question_sha256": "8a45d2b5eb4a9e506768878f6c194fb8dda91c05d210f664f351095dc46254a2",
+      "queries": [
+        "Who was Uttara's husband in the Mahabharata?",
+        "Uttara husband Mahabharata",
+        "Who married Uttara in the Mahabharata?",
+        "Uttara spouse in Mahabharata"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "697c9410b07c1f4994e39a112f31a6ae8643e5f0630531d954ba3844d6a3b27d"
+    },
+    {
+      "query_id": "large_text_056",
+      "question_sha256": "a139cbb29ec07c6bb8ca87e3a26716db1c946d96a8d99606249cf8243735db2e",
+      "queries": [
+        "Who is named as Bhanumati's father in the source?",
+        "Who is listed as Bhanumati's father in the source?",
+        "Which person is named as Bhanumati's father in the source?",
+        "Who is identified as Bhanumati's father in the source?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "66e1af0efbde8ad741c614fc66ab1650be847cbd5d477bc3d8d958db97ba8102"
+    },
+    {
+      "query_id": "large_text_057",
+      "question_sha256": "db4104888cd009815498ce5a68e60b27b23e44ae68c42bc49035dc81e00d7625",
+      "queries": [
+        "What Hindi translation does the collection give for assamese japi?",
+        "Hindi translation of Assamese japi according to the collection",
+        "Collection's Hindi equivalent for Assamese japi",
+        "What Hindi word does the collection list for Assamese japi"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "431b8be94f4041bf03c86fea01602c355fbc1b5f6ce6a360238d19d7913fc02b"
+    },
+    {
+      "query_id": "large_text_058",
+      "question_sha256": "a0beebf71e25f47f52fa4e4b3d107eb4b0ed6b539db4aa4b06a92c13ef04825d",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'अरुणाचल प्रदेश का गाले पाचा' in the collection?",
+        "Which item in the collection matches the Hindi phrase 'अरुणाचल प्रदेश का गाले पाचा'?",
+        "What item in the collection corresponds to the Hindi wording 'अरुणाचल प्रदेश का गाले पाचा'?",
+        "Which item in the collection is associated with the Hindi phrase 'अरुणाचल प्रदेश का गाले पाचा'?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "6e4f3e89b06f1c8e34dad605f58a3176a42b0b156febc256b5b79deeb975a7cb"
+    },
+    {
+      "query_id": "large_text_059",
+      "question_sha256": "93c866b607ef67a2d2c297fc2c99671009c0334644716d70a34ccf4eeaa135c6",
+      "queries": [
+        "What Hindi translation does the collection give for jalfrezi?",
+        "Hindi translation of jalfrezi according to the collection",
+        "What does the collection translate jalfrezi into Hindi?",
+        "Hindi equivalent of jalfrezi as per the collection"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "c8fe4ef79cb88cea0e718733076129cefec54e937385f6354d893b7c2824fbf8"
+    },
+    {
+      "query_id": "large_text_060",
+      "question_sha256": "ce59b19157803c89a860f28c0688403ba55ea068e9ad7f40f47b558b330f177f",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'खुरमा' in the collection?",
+        "What item in the collection matches the Hindi term 'खुरमा'?",
+        "Which item in the collection is labeled 'खुरमा' in Hindi?",
+        "Which item corresponds to the Hindi word 'खुरमा' in the collection?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "5d5b07219bb8808f87f78b198caecf4ceac0973c0198f6b349513d0a66fbe92e"
+    },
+    {
+      "query_id": "large_text_061",
+      "question_sha256": "eb568c70803b4a2f1e3dd88bfb8dba7a90267344a28b0d67b2dc940f676c6328",
+      "queries": [
+        "What Hindi translation does the collection give for november 2015 south indian floods?",
+        "Hindi translation of 'November 2015 South Indian floods' in the collection",
+        "What is the Hindi translation for November 2015 South Indian floods according to the collection?",
+        "How does the collection translate 'November 2015 South Indian floods' into Hindi?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "143f294ba19cf5128b8da343b941d62eb183f82fdcd72ce4b95052a77585fc59"
+    },
+    {
+      "query_id": "large_text_062",
+      "question_sha256": "b01e8740699a47d075c1de1b1fedb8b01fc190b3b9dc45197e7be6647b81cd6c",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'जजाऊ की लड़ाई' in the collection?",
+        "Which item in the collection has the Hindi title 'जजाऊ की लड़ाई'?",
+        "Search for the collection item titled 'जजाऊ की लड़ाई' in Hindi.",
+        "Locate the item in the collection that corresponds to the Hindi wording 'जजाऊ की लड़ाई'."
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "5a94f334c93647a045ac9e501abefa94db9c7af775c0aff18100e73689b14f61"
+    },
+    {
+      "query_id": "large_text_063",
+      "question_sha256": "b50e9d13941adac7146419b4366ba09af2b0a94f67b3badf49fea6d18a524096",
+      "queries": [
+        "What Hindi translation does the collection give for rama navami?",
+        "Which Hindi translation does the collection provide for Rama Navami?",
+        "What Hindi version does the collection offer for Rama Navami?",
+        "How does the collection translate Rama Navami into Hindi?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "d38d6413b6f154d47dc3875968d91ede0554dfc9260bba58e62b1c77ee228416"
+    },
+    {
+      "query_id": "large_text_064",
+      "question_sha256": "9677306c919b8f7d7dbafbf35675902ce4f26da0d4c9e3cbb87c3dc876ea77e0",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'गुरु नानक गुरुपर्व' in the collection?",
+        "Which item in the collection matches the Hindi phrase 'गुरु नानक गुरुपर्व'?",
+        "What item corresponds to the Hindi wording 'गुरु नानक गुरुपर्व' in the collection?",
+        "Which item is associated with the Hindi phrase 'गुरु नानक गुरुपर्व' in the collection?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "8776b04aadf58e0623dfb75325f5f5c523c0f8e5a6a0824d9fe99c9818aea897"
+    },
+    {
+      "query_id": "large_text_065",
+      "question_sha256": "047362dd6fe1f5b2c91e58003c329a47b4f4013e6d4bcb83c0f61c912ba9aa41",
+      "queries": [
+        "What Hindi translation does the collection give for summer palace of maharaja ranjit singh?",
+        "Hindi translation of 'summer palace' as given by the collection for Maharaja Ranjit Singh",
+        "What Hindi translation does the collection provide for Maharaja Ranjit Singh's summer palace?",
+        "How does the collection translate 'summer palace' into Hindi for Maharaja Ranjit Singh?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "22c35dedf05c3f9b223592d1be14987a1b142d0947baa0be34a9db817e58b98d"
+    },
+    {
+      "query_id": "large_text_066",
+      "question_sha256": "361e61f254f1f18fac6845c0ba257ca53a1d42134fd1ea4bb264298924c0869a",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'हवा महल' in the collection?",
+        "Which item in the collection is labeled 'हवा महल'?",
+        "What is the item corresponding to the Hindi term 'हवा महल' in the collection?",
+        "Which collection item matches the Hindi wording 'हवा महल'?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "43eafabc4b2058b987fcbd062bc8096fc43b294015423771f2d15537f24960a3"
+    },
+    {
+      "query_id": "large_text_067",
+      "question_sha256": "49e64225afa5a3bac2fee1794cffa184f6e0ef6f6052aa62c7dca050e061254e",
+      "queries": [
+        "What Hindi translation does the collection give for lili das?",
+        "Which Hindi translation does the collection provide for lili das?",
+        "What Hindi version does the collection offer for lili das?",
+        "What Hindi translation is given by the collection for lili das?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "0b845238bdce3bc5a68e8a9c4ae0b6790a61716dded9c2af8c186cafa7b36862"
+    },
+    {
+      "query_id": "large_text_068",
+      "question_sha256": "b4de89754011294b3d733019716f42977e6379f775da9f7c1b3d57e090544db4",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'अराता इज़ुमी' in the collection?",
+        "Which item in the collection is associated with the Hindi term 'अराता इज़ुमी'?",
+        "What item corresponds to the Hindi wording 'अराता इज़ुमी' in the collection?",
+        "Which item matches the Hindi phrase 'अराता इज़ुमी' in the collection?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "836f0ef2df54550505df951835ebe8bc31d7b506c88332f2182db458ce607c1d"
+    },
+    {
+      "query_id": "large_text_069",
+      "question_sha256": "948d7f4bfc63f10e47ccfaa8d1cba477f56ae55563df6c40f2ae7dc74f2b61f2",
+      "queries": [
+        "What Hindi translation does the collection give for bhawanipore f.c.?",
+        "Hindi translation provided by the collection for Bhawanipore FC",
+        "What Hindi translation does the collection list for Bhawanipore F.C.?",
+        "Which Hindi translation does the collection offer for Bhawanipore FC?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "a649895c7980bfa471942f0647db8c8a1367b71cd1b520e4904716f3dddd9e59"
+    },
+    {
+      "query_id": "large_text_070",
+      "question_sha256": "396a6edf2d7e0519a315c94a3b6cdd7ece84b4ba43961097b5893e52215eab35",
+      "queries": [
+        "Which item corresponds to the Hindi wording 'हैदराबाद एफसी' in the collection?",
+        "Which item in the collection matches the Hindi phrase 'हैदराबाद एफसी'?",
+        "What is the item that corresponds to the Hindi wording 'हैदराबाद एफसी' in the collection?",
+        "Which entry in the collection is associated with the Hindi term 'हैदराबाद एफसी'?"
+      ],
+      "reused_existing_cache": false,
+      "cache_sha256": "ce0d0aa32a6098e08e87cd53f595c54d956cea293daff02634c0c4bf8edb29e1"
+    }
+  ]
+}

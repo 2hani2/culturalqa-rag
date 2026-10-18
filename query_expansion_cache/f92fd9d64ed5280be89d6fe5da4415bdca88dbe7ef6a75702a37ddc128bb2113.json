@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "How is likcham written in the Hindi translation field?",
+    "What is the Hindi translation of likcham?",
+    "How is likcham spelled in Hindi?",
+    "In Hindi, how do you write likcham?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

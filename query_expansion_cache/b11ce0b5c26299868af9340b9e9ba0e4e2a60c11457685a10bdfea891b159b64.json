@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Gujarati newborn ritual involves feeding the baby jaggery water?",
+    "Which Gujarati newborn ritual includes feeding the baby jaggery water?",
+    "What is the Gujarati newborn ceremony where the baby is given jaggery water?",
+    "Which Gujarati baby ritual involves feeding the infant jaggery water?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,40 @@
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+.vscode/
+.idea/
+
+# Python environments and generated caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.plot_cache/
+
+# Dataset downloads and local search artifacts
+/data/
+/faiss_store/
+/image_embedding_cache/
+tmp/
+code_backups/
+*.log
+*.zip
+
+# Include only the documented small checkpoints and required provenance cache
+*.pt
+!checkpoints/moe_fusion.pt
+!checkpoints/simple_fusion.pt
+!experiments/moe_improvement/moe_existing_checkpoint_tau0.05_fusion.pt
+!research/training_features_38d9b10c8f24ecb6.pt
+
+# User-generated runs
+my_validation*/
+batch_results_*
+image_results_*
+previous_runs/

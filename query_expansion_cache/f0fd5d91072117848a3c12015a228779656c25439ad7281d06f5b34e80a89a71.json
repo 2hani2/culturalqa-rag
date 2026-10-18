@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who is named as King Bharata's mother in the Mahabharata account?",
+    "Name of King Bharata's mother in the Mahabharata",
+    "Who is the mother of King Bharata according to the Mahabharata",
+    "Mahabharata mother of King Bharata"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

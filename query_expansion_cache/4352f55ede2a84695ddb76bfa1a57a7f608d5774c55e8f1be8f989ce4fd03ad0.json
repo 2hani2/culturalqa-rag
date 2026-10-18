@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What names does the collection give for a rice wine from Assam?",
+    "What are the names used by the collection for a rice wine from Assam?",
+    "Which names does the collection assign to a rice wine from Assam?",
+    "How does the collection refer to a rice wine from Assam?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

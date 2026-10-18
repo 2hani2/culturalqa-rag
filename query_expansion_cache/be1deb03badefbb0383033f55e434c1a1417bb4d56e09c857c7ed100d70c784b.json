@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "In which city was Dr. Swati Kela's Traditional Indian Games presentation at the April 2024 World Forum held?",
+    "Dr. Swati Kela Traditional Indian Games presentation April 2024 World Forum city",
+    "Where was Dr. Swati Kela's Traditional Indian Games talk at the April 2024 World Forum held?",
+    "April 2024 World Forum Traditional Indian Games Dr. Swati Kela location"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

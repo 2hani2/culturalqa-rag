@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which dance does the collection associate with Assam tea cultivators?",
+    "What dance is linked to Assam tea growers in the collection?",
+    "Which dance is connected to tea cultivators in Assam according to the collection?",
+    "Which dance does the collection associate with Assam tea plantation workers?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,6 @@
+{
+  "distinct_file_contents": 1536,
+  "cross_fold_duplicate_groups_before_merge": 8,
+  "cross_fold_duplicate_groups_after_merge": 0,
+  "rule": "Exact image bytes share one group. Aliases are promoted to the furthest-held-out fold; no test target is moved into training."
+}

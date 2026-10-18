@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Jaipur monument is described as having many windows?",
+    "Which monument in Jaipur is known for its many windows?",
+    "What Jaipur monument is described as having many windows?",
+    "Which Jaipur monument is famous for its numerous windows?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

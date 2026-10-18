@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'गुरु नानक गुरुपर्व' in the collection?",
+    "Which item in the collection matches the Hindi phrase 'गुरु नानक गुरुपर्व'?",
+    "What item corresponds to the Hindi wording 'गुरु नानक गुरुपर्व' in the collection?",
+    "Which item is associated with the Hindi phrase 'गुरु नानक गुरुपर्व' in the collection?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

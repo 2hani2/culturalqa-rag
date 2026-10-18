@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What traditional Tamil Nadu puppetry uses large wooden puppets controlled by rods and strings?",
+    "Tamil Nadu traditional puppetry with large wooden puppets operated by rods and strings",
+    "What is the name of the Tamil Nadu puppetry that uses large wooden puppets controlled by rods and strings?",
+    "Tamil Nadu wooden puppet theatre using rods and strings"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

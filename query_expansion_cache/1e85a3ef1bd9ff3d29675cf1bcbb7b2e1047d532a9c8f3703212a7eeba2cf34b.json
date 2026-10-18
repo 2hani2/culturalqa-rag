@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Indian state is associated with the Sherdukpen Shawl?",
+    "Sherdukpen shawl Indian state",
+    "Sherdukpen shawl origin state",
+    "Sherdukpen shawl from which Indian state"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

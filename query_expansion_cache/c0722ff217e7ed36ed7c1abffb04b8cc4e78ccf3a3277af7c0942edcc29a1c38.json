@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for summer palace of maharaja ranjit singh?",
+    "Hindi translation of 'summer palace' as given by the collection for Maharaja Ranjit Singh",
+    "What Hindi translation does the collection provide for Maharaja Ranjit Singh's summer palace?",
+    "How does the collection translate 'summer palace' into Hindi for Maharaja Ranjit Singh?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

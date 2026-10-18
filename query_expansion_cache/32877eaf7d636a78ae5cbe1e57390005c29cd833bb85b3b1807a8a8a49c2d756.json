@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for november 2015 south indian floods?",
+    "Hindi translation of 'November 2015 South Indian floods' in the collection",
+    "What is the Hindi translation for November 2015 South Indian floods according to the collection?",
+    "How does the collection translate 'November 2015 South Indian floods' into Hindi?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

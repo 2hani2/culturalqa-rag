@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Whom does the Kang festival in Manipur honor?",
+    "Who is honored at the Kang festival in Manipur?",
+    "Which deity is celebrated during the Kang festival in Manipur?",
+    "The Kang festival in Manipur is dedicated to whom?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

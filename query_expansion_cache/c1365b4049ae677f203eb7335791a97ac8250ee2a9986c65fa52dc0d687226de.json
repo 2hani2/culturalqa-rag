@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which beach in Visakhapatnam is described as a venue for Navy air shows?",
+    "Which beach in Visakhapatnam hosts Navy air shows?",
+    "What beach in Visakhapatnam is used for Navy air shows?",
+    "Name the beach in Visakhapatnam that serves as a venue for Navy air shows."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

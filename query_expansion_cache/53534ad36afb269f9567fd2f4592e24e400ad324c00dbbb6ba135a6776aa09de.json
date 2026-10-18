@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What alternative style name is given to Pedana Kalamkari?",
+    "What is another name for Pedana Kalamkari style?",
+    "Which alternative style name is used for Pedana Kalamkari?",
+    "What alternative name is given to the Pedana Kalamkari style?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

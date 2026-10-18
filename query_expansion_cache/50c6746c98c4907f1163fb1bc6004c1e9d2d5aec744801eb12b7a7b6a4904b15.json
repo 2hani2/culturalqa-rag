@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What long robe is traditionally worn by Sikh men during religious ceremonies?",
+    "long robe worn by Sikh men in religious ceremonies",
+    "Sikh men's traditional long robe",
+    "Sikh religious ceremony robe"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

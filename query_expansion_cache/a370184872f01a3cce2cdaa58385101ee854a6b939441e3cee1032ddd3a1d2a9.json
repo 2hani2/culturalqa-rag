@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which spice is known as Chinese pepper in Naga cuisine?",
+    "What spice is referred to as Chinese pepper in Naga cuisine?",
+    "Which spice is called Chinese pepper in Naga cuisine?",
+    "In Naga cuisine, which spice is known as Chinese pepper?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

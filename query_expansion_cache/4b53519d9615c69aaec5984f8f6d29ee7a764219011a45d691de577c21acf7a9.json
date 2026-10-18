@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Name the two rivers whose confluence at Devprayag forms the Ganges.",
+    "Which rivers meet at Devprayag to form the Ganges?",
+    "What are the two rivers that converge at Devprayag to create the Ganges?",
+    "Identify the rivers that merge at Devprayag to form the Ganges."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

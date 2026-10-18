@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Naga sweet is made from rice flour, bananas, and jaggery?",
+    "Naga sweet made from rice flour, bananas, and jaggery",
+    "Naga dessert using rice flour, bananas, and jaggery",
+    "Naga sweet recipe with rice flour, bananas, and jaggery"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

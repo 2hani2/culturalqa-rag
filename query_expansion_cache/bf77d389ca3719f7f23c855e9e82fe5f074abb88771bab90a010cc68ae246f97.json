@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the name of Rama's bow in the source overview?",
+    "What is the name of Rama's bow mentioned in the source overview?",
+    "Which bow does Rama use, as referenced in the source overview?",
+    "What is the bow name of Rama in the source overview?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

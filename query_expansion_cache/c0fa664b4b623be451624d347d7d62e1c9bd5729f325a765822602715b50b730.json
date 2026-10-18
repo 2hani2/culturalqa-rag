@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which minimalist Bihu celebration takes place in October with prayers for a good harvest?",
+    "What minimalist Bihu festival occurs in October and includes prayers for a bountiful harvest?",
+    "Which Bihu celebration in October is minimalistic and involves prayers for a good harvest?",
+    "Which October Bihu festival is minimalistic and features prayers for a good harvest?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

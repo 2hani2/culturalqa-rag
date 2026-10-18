@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "How does the collection translate the festival name karva chauth into Hindi?",
+    "What is the Hindi translation of the festival name Karva Chauth?",
+    "How is Karva Chauth translated into Hindi in the collection?",
+    "In the collection, how is the festival name Karva Chauth rendered in Hindi?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

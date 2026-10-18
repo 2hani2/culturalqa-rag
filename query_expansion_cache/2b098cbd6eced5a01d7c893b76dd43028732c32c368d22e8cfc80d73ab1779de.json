@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who illustrated the 42-issue Amar Chitra Katha Mahabharata comic series?",
+    "Amar Chitra Katha Mahabharata comic series illustrator",
+    "Illustrator of the 42-issue Amar Chitra Katha Mahabharata series",
+    "Who drew the 42-issue Amar Chitra Katha Mahabharata comics?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

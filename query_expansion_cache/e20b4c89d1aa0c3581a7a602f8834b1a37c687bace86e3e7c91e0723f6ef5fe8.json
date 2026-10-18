@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What traditional festive clothing do young girls in Rayalaseema wear?",
+    "Traditional festive attire for young girls in Rayalaseema",
+    "Festive clothing worn by young girls in the Rayalaseema region",
+    "What traditional clothes do girls in Rayalaseema wear during festivals?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

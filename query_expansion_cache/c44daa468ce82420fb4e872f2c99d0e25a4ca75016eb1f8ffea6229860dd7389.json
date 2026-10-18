@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What alternative name is given to the Bilaspuri dialect?",
+    "What is another name for the Bilaspuri dialect?",
+    "What alternative name is used for the Bilaspuri dialect?",
+    "What other name is given to the Bilaspuri dialect?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

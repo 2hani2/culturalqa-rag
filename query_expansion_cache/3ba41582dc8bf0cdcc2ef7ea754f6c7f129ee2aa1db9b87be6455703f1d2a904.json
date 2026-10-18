@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What instruments are predominantly used during Bhuta Kola performances?",
+    "Bhuta Kola instruments used",
+    "Instruments used in Bhuta Kola performances",
+    "Which instruments are predominantly used during Bhuta Kola"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

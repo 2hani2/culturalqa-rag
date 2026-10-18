@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the name of the fort near Tirupati in the artifact collection?",
+    "Which fort near Tirupati is included in the artifact collection?",
+    "Name the fort close to Tirupati that is part of the artifact collection.",
+    "What fort near Tirupati is featured in the artifact collection?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

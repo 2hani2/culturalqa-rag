@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'अराता इज़ुमी' in the collection?",
+    "Which item in the collection is associated with the Hindi term 'अराता इज़ुमी'?",
+    "What item corresponds to the Hindi wording 'अराता इज़ुमी' in the collection?",
+    "Which item matches the Hindi phrase 'अराता इज़ुमी' in the collection?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who edited the Amar Chitra Katha Mahabharata comic series?",
+    "Amar Chitra Katha Mahabharata comic series editor",
+    "Editor of Amar Chitra Katha Mahabharata comics",
+    "Who edited Amar Chitra Katha's Mahabharata comic series?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

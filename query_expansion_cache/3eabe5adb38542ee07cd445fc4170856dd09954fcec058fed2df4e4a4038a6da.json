@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which two ingredients make the Solkadhi drink described in the collection?",
+    "What are the two ingredients that make up Solkadhi?",
+    "Which two ingredients are used to prepare Solkadhi?",
+    "Solkadhi is made from which two ingredients?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

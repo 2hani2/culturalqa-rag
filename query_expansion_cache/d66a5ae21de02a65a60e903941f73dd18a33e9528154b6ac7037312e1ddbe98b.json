@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who translated the collection's volume of The Ramayana of Valmiki?",
+    "Who is the translator of the volume of Valmiki's Ramayana in the collection?",
+    "Which translator worked on the collection's volume of Valmiki's Ramayana?",
+    "Name the translator of the Ramayana volume by Valmiki in the collection."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

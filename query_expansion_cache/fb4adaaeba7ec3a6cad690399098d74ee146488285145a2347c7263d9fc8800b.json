@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "How many pits are on the wooden board used for Vamana Guntalu?",
+    "Number of pits on the wooden board used in Vamana Guntalu",
+    "How many holes are there on the wooden board used for Vamana Guntalu?",
+    "Count of pits on the wooden board used in Vamana Guntalu"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

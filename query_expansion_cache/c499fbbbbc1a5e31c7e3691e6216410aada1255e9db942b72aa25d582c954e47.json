@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What is the Ladakhi dance performed with wooden shields and swords called?",
+    "Ladakhi dance with wooden shields and swords",
+    "Ladakhi shield and sword dance name",
+    "Ladakhi traditional dance using wooden shields and swords"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

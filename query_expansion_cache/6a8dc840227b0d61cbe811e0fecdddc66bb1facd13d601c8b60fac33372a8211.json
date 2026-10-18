@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Who taught music and dance to Uttara before her marriage to Abhimanyu?",
+    "Uttara music dance teacher before marriage to Abhimanyu",
+    "Who taught Uttara music and dance before she married Abhimanyu",
+    "Music and dance instructor of Uttara prior to her marriage to Abhimanyu"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

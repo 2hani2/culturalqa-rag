@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Hindi translation does the collection give for rama navami?",
+    "Which Hindi translation does the collection provide for Rama Navami?",
+    "What Hindi version does the collection offer for Rama Navami?",
+    "How does the collection translate Rama Navami into Hindi?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

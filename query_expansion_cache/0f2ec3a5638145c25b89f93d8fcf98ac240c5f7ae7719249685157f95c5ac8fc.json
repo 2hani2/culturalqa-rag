@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which Odisha festival celebrates womanhood and the onset of the monsoon?",
+    "Odisha festival celebrating womanhood and monsoon onset",
+    "Which festival in Odisha marks womanhood and monsoon arrival",
+    "Odisha festival for women and monsoon season"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

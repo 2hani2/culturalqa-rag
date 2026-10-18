@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'हवा महल' in the collection?",
+    "Which item in the collection is labeled 'हवा महल'?",
+    "What is the item corresponding to the Hindi term 'हवा महल' in the collection?",
+    "Which collection item matches the Hindi wording 'हवा महल'?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

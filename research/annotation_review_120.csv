@@ -1,0 +1,228 @@
+query_id,question,accepted_answers,positive_evidence,source_evidence,human_reviewed,reviewer,additional_relevant_refs,notes,relevance_complete
+test_text_01,Which beach in Visakhapatnam is described as a venue for Navy air shows?,"[""Rushi konda beach""]",DOSA#2,"Artifact: Rushi konda beach. State: Andhra Pradesh (original). Description: A tourist beach in Vishakhapatnam.
+Navy air show takes place",False,,,,False
+test_text_02,What is the name of the fort near Tirupati in the artifact collection?,"[""chandragiri fort""]",DOSA#13,Artifact: chandragiri fort. State: Andhra Pradesh (original). Description: A fort near Tirupati,False,,,,False
+test_text_03,What are the dolls called whose heads move while their bodies remain still?,"[""Buttabomma""]",DOSA#19,Artifact: Buttabomma. State: Andhra Pradesh (expanded). Description: The dolls whose head moves while body is still.,False,,,,False
+test_text_04,Name the two-piece Assamese garment worn in Muga silk during Bihu.,"[""Mekhla Chador""]",DOSA#34,"Artifact: Mekhla Chador. State: Assam (original). Description: The most popular two piece garment in Assam.
+The ones made of Muga silk is worn on Bihu.
+Brides wear it in white shade w",False,,,,False
+test_text_05,Which minimalist Bihu celebration takes place in October with prayers for a good harvest?,"[""kati bihu""]",DOSA#67,"Artifact: kati bihu. State: Assam (expanded). Description: This occurs in October when people pray for good harvest.
+The most minimalist Bihu.",False,,,,False
+test_text_06,What names does the collection give for a rice wine from Assam?,"[""xaaj and rohi""]",DOSA#74,Artifact: xaaj and rohi. State: Assam (expanded). Description: This is a rice wine made in Assam,False,,,,False
+test_text_07,What alternative style name is given to Pedana Kalamkari?,"[""Machilipatnam style""]",DIWALI#7,"Concept: Pedana Kalamkari. Facet: textiles. State: Andhra Pradesh. Description: Also known as Machilipatnam style, this form of Kalamkari involves vegetable-dyed block-painting on fabric. It is produced in Pedana town and is known for its intricate designs and natural colo",False,,,,False
+test_text_08,Which drawing tool is used for hand-painted Srikalahasti Kalamkari designs?,"[""kalam"", ""pen"", ""kalam (pen)""]",DIWALI#8,Concept: Srikalahasti Kalamkari. Facet: textiles. State: Andhra Pradesh. Description: This style of Kalamkari is characterized by hand-painted designs using a kalam (pen). Originating fro,False,,,,False
+test_text_09,Which Indian state is associated with the Sherdukpen Shawl?,"[""Arunachal Pradesh""]",DIWALI#12,"Concept: Sherdukpen Shawl. Facet: textiles. State: Arunachal Pradesh. Description: The Sherdukpen community weaves shawls known for their unique patterns and vibrant colors, often incorporating symbolic motifs that represent the",False,,,,False
+test_text_10,Which silk is also called Endi or Errandi and is produced without killing the silkworm?,"[""Eri Silk""]",DIWALI#20,"Concept: Eri Silk. Facet: textiles. State: Assam. Description: Also known as Endi or Errandi, Eri silk is soft, warm, and durable. It is often referred to as 'Ahimsa silk' becau",False,,,,False
+test_text_11,What is the Assamese garment worn under the Mekhela and over the upper body?,"[""Riha""]",DIWALI#24,"Concept: Riha. Facet: textiles. State: Assam. Description: Part of the traditional three-piece attire worn by Assamese women, the Riha is worn under the Mekhela and over the",False,,,,False
+test_text_12,Which plant supplies the roots used to dye Aal-Dyed Handloom Fabrics?,"[""Morinda citrifolia""]",DIWALI#37,"sgarh. Description: Dating back to the 16th century, these textiles are dyed using the roots of the Morinda citrifolia plant, known locally as 'aal'. Predominantly produced in the Bastar region, these fabrics are traditionally used as saris by tribal women and as turbans or sho",False,,,,False
+test_text_13,Name the two rivers whose confluence at Devprayag forms the Ganges.,"[""Alaknanda-Bhagirathi"", ""Alaknanda and Bhagirathi""]",DRISHTIKON#27,n Sense): Which two rivers meet at Devprayag to form the Ganges as referenced in the image? Answer: Alaknanda-Bhagirathi,False,,,,False
+test_text_14,What instruments are predominantly used during Bhuta Kola performances?,"[""Drum (Dolu) and Cymbals (Taal)""]",DRISHTIKON#1462,ch instruments depicted in the image are predominantly used during Bhuta Kola performances? Answer: Drum (Dolu) and Cymbals (Taal),False,,,,False
+test_text_15,What is the Ladakhi dance performed with wooden shields and swords called?,"[""Shondol""]",DRISHTIKON#1676,ich dance form depicted in the image in Ladakh is performed with wooden shields and swords? Answer: Shondol,False,,,,False
+test_text_16,Which state is associated with folk theatre about migration and caste and with the ancient educational centre Nalanda?,"[""Bihar""]",DRISHTIKON#2468,"Question (English, Bihar, Dance and Music): Consider the Indian region, historically associated with rich traditions and myths, where the distinctive folk theater, as referenced in the",False,,,,False
+test_text_17,What is the southern Indian international township associated with forest conservation and a vision of harmony?,"[""Auroville""]",DRISHTIKON#2817,is pioneering ecologically-conscience community that cherishes its diverse green ecosystem? Answer: Auroville,False,,,,False
+test_text_18,In which Indian state is the ancient university Nalanda located?,"[""Bihar""]",DRISHTIKON#3195,"Question (English, Bihar, Cultural Commonsense): What is the name of the Indian state, referenced in the image as the location of the renowned ancient university that significantly con",False,,,,False
+test_text_19,Who illustrated the 42-issue Amar Chitra Katha Mahabharata comic series?,"[""Dilip Kadam""]",Indian Cultural Dataset#3,dra • Mihir Lal Mitra • Sumona Roy • Mohan Swaminathan • Shubha Kandhekar • Margie Sastry Artist(s) Dilip Kadam Editor(s) Anant Pai Collected editions Volume 1 ISBN 978-81-905990-4-7 Volume 2 ISBN 978-81-905990-2-3 Volume 3 ISBN 978-81-905990-3-0 Mahabharata (also known ,False,,,,False
+test_text_20,Who was Sati's father in the story of Shiva and Sati?,"[""Daksha Prajāpati"", ""Daksha""]",Indian Cultural Dataset#4,"ook human birth at 
+the suggestion of Brahmā, the Lord of Creation.   She was born as a daughter of Daksha Prajāpati, a son 
+of Brahmā .  In asking the Goddess Sati to take human birth, Brahmā's plan was that she would entice 
+Shiva with humble devotions bringing him out of h",False,,,,False
+test_text_21,Who is named as the father of King Bharata in the Mahabharata account?,"[""Dushyanta""]",Indian Cultural Dataset#26,"ahabharata. Category: mahabharata
+Content: Bharata Painting of Bharata, Raja Ravi Varma Predecessor Dushyanta Successor Bhumanyu Texts Mahabharata Genealogy Parents Dushyanta (father), Shakuntala (mother) Spouse Sunanda Two unnamed wives Children Bhumanyu , Bharadvaja ",False,,,,False
+test_text_22,Who taught music and dance to Uttara before her marriage to Abhimanyu?,"[""Arjuna""]",Indian Cultural Dataset#48,"ent a year in concealment during their exile.
+
+During this period, she learned music and dance from Arjuna , the third Pandava, and later married his son, Abhimanyu .
+
+Uttarā was widowed at a young age during the Kurukshetra War .
+
+Following the Pandavas' victory in",False,,,,False
+test_text_23,What was Bhanumati's home kingdom before she married Duryodhana?,"[""Kalinga""]",Indian Cultural Dataset#72,"ly Chitrangada (father) Spouse Duryodhana Children Lakshmana Kumara (son) Lakshmana (daughter) Home Kalinga (by birth) Hastinapur (by marriage) Bhanumati is folk name of the wife of Duryodhana —the main antagonist of the Hindu epic Mahabharata .
+
+In the epic itself, ",False,,,,False
+test_text_24,Who is credited with writing Betaal Pachisi in the Vikram and Betaal collection?,"[""Somdev Bhatt""]",Indian Cultural Dataset#90,"ies  Stories  Stories  Stories        
+Betaal Pachisi written nearly 2,500 years ago by Ma hakavi  
+Somdev Bhatt, are spellbinding stories told to the wise King 
+Vikramaditya by the wily ghost Betaal. The tales of  Vikram 
+and Betaal possess a wealth of pageantry and sple",False,,,,False
+test_text_25,How is likcham written in the Hindi translation field?,"[""लिक्चम""]",SCALE#8,Item: likcham. Translation: लिक्चम. Domain: Clothing And Accessories,False,,,,False
+test_text_26,Give the Hindi wording for the dish matar mushroom.,"[""मटर मशरूम""]",SCALE#96,Item: matar mushroom. Translation: मटर मशरूम. Domain: Cuisine,False,,,,False
+test_text_27,What Hindi translation is supplied for bandaya movement?,"[""बंदया आंदोलन""]",SCALE#199,Item: bandaya movement. Translation: बंदया आंदोलन. Domain: Historical Events,False,,,,False
+test_text_28,How does the collection translate the festival name karva chauth into Hindi?,"[""करवा चौथ""]",SCALE#296,Item: karva chauth. Translation: करवा चौथ. Domain: Holidays And Festivals,False,,,,False
+test_text_29,What is the Hindi rendering of the landmark tarpan ghat park?,"[""तर्पण घाट पार्क""]",SCALE#400,Item: tarpan ghat park. Translation: तर्पण घाट पार्क. Domain: Landmarks,False,,,,False
+test_text_30,How is the sports-person name deepak amarnath represented in Hindi?,"[""दीपक अमरनाथ""]",SCALE#504,Item: deepak amarnath. Translation: दीपक अमरनाथ. Domain: Sports People,False,,,,False
+large_text_001,What material is called Baith in Assamese?,"[""Cane""]",DOSA#45,Artifact: Baith. State: Assam (expanded). Description: The assamese name for Cane,False,,,,False
+large_text_002,Which dance does the collection associate with Assam tea cultivators?,"[""Jhumur Dance""]",DOSA#79,Artifact: Jhumur Dance. State: Assam (expanded). Description: The most common dance done by the tea cultivators,False,,,,False
+large_text_003,Which Bihar freedom fighter founded the Janata Party in the collection?,"[""jayaprakash narayan""]",DOSA#100,"Artifact: jayaprakash narayan. State: Bihar (original). Description: this person is a freedom fighter hailing from bihar
+this person formed a political party by the name of janata party",False,,,,False
+large_text_004,What Bihar folk song is sung by women to celebrate the birth of a child?,"[""sohar""]",DOSA#109,"Artifact: sohar. State: Bihar (expanded). Description: this folk song is sung to celebrate the birth of a new-born child
+this song is usually sung by women",False,,,,False
+large_text_005,"What name does the collection give to the heritage well in Patan, Gujarat?","[""raan ki vav""]",DOSA#157,Artifact: raan ki vav. State: Gujarat (original). Description: A famous well in Patan which is a world heritage site.,False,,,,False
+large_text_006,Which Gujarati newborn ritual involves feeding the baby jaggery water?,"[""Galthuthi""]",DOSA#180,Artifact: Galthuthi. State: Gujarat (expanded). Description: A ritual where jaggery water is given to a newborn so that they may get the characteristics of the person who fed them.,False,,,,False
+large_text_007,What Haryana wedding ritual invites the maternal uncle to the wedding?,"[""Bhaat Nautna""]",DOSA#206,Artifact: Bhaat Nautna. State: Haryana (expanded). Description: A wedding ritual where mama (mother's brother) is invited to the wedding,False,,,,False
+large_text_008,Which national park in Ormanjhi is named after a freedom fighter?,"[""Birsa Munda National Park""]",DOSA#221,"Artifact: Birsa Munda National Park. State: Jharkhand (original). Description: It is a National Park.
+It is located in Ormanjhi
+It is named after a famous freedom fighter as a tribute to that freedom fighter",False,,,,False
+large_text_009,What mined material helped Dhanbad become an industrial area?,"[""Coal""]",DOSA#234,"Artifact: Coal. State: Jharkhand (original). Description: Dhanbad has mines of this material.
+It allowed Dhanbad to become an industrialized area.",False,,,,False
+large_text_010,Which Karnataka dish prepared for Ugadi has both sweet and savoury variants?,"[""kadbu""]",DOSA#275,"Artifact: kadbu. State: Karnataka (expanded). Description: this dish is prepared during ugadi
+this dish has both sweet and savoury variants",False,,,,False
+large_text_011,Which alcoholic drink in Kerala is made using coconut?,"[""toddy""]",DOSA#303,"Artifact: toddy. State: Kerala (original). Description: this is a famous alcoholic drink in kerala
+this drink is made using coconut",False,,,,False
+large_text_012,What percussion instrument is used in Pala theatre?,"[""Khanjoni""]",DOSA#367,Artifact: Khanjoni. State: Odisha (expanded). Description: A percussion instrument mostly used in Pala.,False,,,,False
+large_text_013,Which Jaipur monument is described as having many windows?,"[""hawa mahal""]",DOSA#443,"Artifact: hawa mahal. State: Rajasthan (original). Description: this monument is situated in jaipur
+this monument has lot of windows",False,,,,False
+large_text_014,What material are the vegetable-coloured blankets from Warangal made of?,"[""Cotton""]",DOSA#514,"Artifact: durries from Warangal. State: Telangana (original). Description: Cotton blankets made in Warangal.
+These blankets are usually made of vegetable colors.",False,,,,False
+large_text_015,What is the tie-dye technique used for Sambalpuri Ikat called?,"[""Bandha""]",DIWALI#143,"articularly in districts like Sambalpur, Bargarh, and Sonepur. It features intricate patterns created through a tie-dye technique known as 'Bandha,' where both warp and weft threads are tie-dyed before weaving. Common motifs include shankha (conch), chakra (wheel), and phula (flower), deeply rooted in Odia culture.",False,,,,False
+large_text_016,What long robe is traditionally worn by Sikh men during religious ceremonies?,"[""Chola""]",DIWALI#156,"Concept: Chola. Facet: textiles. State: Punjab. Description: The Chola is a traditional long robe worn by Sikh men, especially during religious ceremonies. It is often made from handwoven fabrics and can feature mi",False,,,,False
+large_text_017,During which festival is Rathwa Ni Gher performed?,"[""Holi""]",DIWALI#523,"Concept: Rathwa Ni Gher. Facet: dance. State: Gujarat. Description: Traditional dance of the Rathwa tribe, performed during Holi, involving group formations.",False,,,,False
+large_text_018,Which high-altitude lake in Ladakh is described as known for birdlife?,"[""Tso Moriri""]",DIWALI#1896,Concept: Tso Moriri. Facet: places. State: Ladakh. Description: High-altitude lake known for birdlife.,False,,,,False
+large_text_019,What other name is given to Eid ul-Azha?,"[""Bakrid""]",DIWALI#2628,"Concept: Eid ul-Azha. Facet: festivals. State: Jammu And Kashmir. Description: Also known as Bakrid, commemorates Prophet Ibrahim's sacrifice.",False,,,,False
+large_text_020,Which Odisha festival celebrates womanhood and the onset of the monsoon?,"[""Raja""]",DIWALI#2390,"Concept: Raja. Facet: festivals. State: Odisha. Description: Celebrates womanhood and onset of monsoon; swings, pithas, and new attire prevail.",False,,,,False
+large_text_021,What Sikkim food consists of fermented bamboo shoot?,"[""Mesu""]",DIWALI#3497,Concept: Mesu. Facet: food. State: Sikkim. Description: Fermented bamboo shoot; used in various dishes.,False,,,,False
+large_text_022,How many pits are on the wooden board used for Vamana Guntalu?,"[""14""]",DIWALI#4399,"alu. Facet: games. State: Telangana. Description: Also known as Pallanghuzi, this traditional mancala game is played on a wooden board with 14 pits. Players distribute seeds, shells, or stones across the pits, aiming to capture more than the opponent. It enhances mathematical skills and strategic thinking and is enjoyed in various parts of ",False,,,,False
+large_text_023,Which deity is ceremonially married to the Tulsi plant in Tulsi Vivah?,"[""Vishnu""]",DIWALI#4939,Concept: Tulsi Vivah. Facet: traditions. State: Uttar Pradesh. Description: Ceremonial marriage of the Tulsi plant to Vishnu.,False,,,,False
+large_text_024,What alternative name is given to the Bilaspuri dialect?,"[""Kahluri""]",DIWALI#5153,"Concept: Bilaspuri. Facet: languages. State: Himachal Pradesh. Description: Also known as Kahluri, this dialect is spoken in the Bilaspur district. It is part of the Western Pahari group and reflects the local traditions of Bilaspur.",False,,,,False
+large_text_025,What traditional Tamil Nadu puppetry uses large wooden puppets controlled by rods and strings?,"[""Bommalattam""]",DIWALI#5738,"Concept: Puppetry (Bommalattam). Facet: arts. State: Tamil Nadu. Description: Bommalattam is a traditional form of puppetry in Tamil Nadu, where large wooden puppets are manipulated by rods and strings. Performances often depict s",False,,,,False
+large_text_026,Which necklace of black glass beads symbolizes marriage among Mangalorean Catholics?,"[""Pirduk""]",DIWALI#6022,Concept: Pirduk. Facet: jwellery. State: Karnataka. Description: Necklace of black glass beads; symbol of married state among Mangalorean Catholics.,False,,,,False
+large_text_027,"What city contains Sana Konung, the Royal Palace of Manipur?","[""Imphal""]",DIWALI#7670,"t: Sana Konung (Royal Palace). Facet: architectures. State: Manipur. Description: Also known as the Royal Palace of Manipur, Sana Konung in Imphal was constructed in 1908 after the British took over the original Kangla Palace. It showcases a blend of Mongol, Hindu, and English architectural styles and remains the residence of the royal family.",False,,,,False
+large_text_028,Which two ingredients make the Solkadhi drink described in the collection?,"[""Kokum and coconut milk""]",DIWALI#7969,Concept: Solkadhi. Facet: drinks. State: Karnataka. Description: Kokum and coconut milk drink.,False,,,,False
+large_text_029,Which Uttarakhand temple is associated with medieval architecture in the collection?,"[""Kedarnath""]",DRISHTIKON#35,"nd, Cultural Common Sense): Which temple in Uttarakhand complex showcases the medieval architectural style referenced in the image? Answer: Kedarnath",False,,,,False
+large_text_030,What dish is described as the State Food of Uttarakhand?,"[""Kafuli""]",DRISHTIKON#95,"uestion (English, Uttarakhand, Cuisine): Which dish as referenced in the image is popularly known as the State Food of Uttarakhand? Answer: Kafuli",False,,,,False
+large_text_031,Which Nellore-region textile combines cotton and silk with jamdani weaving?,"[""Uppada""]",DRISHTIKON#176,"sh, Costume): Which Nellore-region fabric combines cotton and silk to create the sarees with jamdani weaving as shown in the image? Answer: Uppada",False,,,,False
+large_text_032,What traditional festive clothing do young girls in Rayalaseema wear?,"[""Langa Voni""]",DRISHTIKON#177,", Andhra Pradesh, Costume): What traditional attire as referenced in the image do young girls in Rayalaseema wear during festivals? Answer: Langa Voni",False,,,,False
+large_text_033,Name the Araku Valley tribal dance with chain formations and rhythmic foot movements.,"[""Dhimsa""]",DRISHTIKON#210, dance from the Araku Valley of AP as shown in the image features dancers moving in a chain formation with rhythmic foot movements? Answer: Dhimsa,False,,,,False
+large_text_034,Which culture makes rice-paste floor patterns during Lakshmi Puja?,"[""Bengali""]",DRISHTIKON#424,ture do women draw the patterns referenced in the image using rice paste during Lakshmi Puja to invite prosperity and good fortune? Answer: Bengali,False,,,,False
+large_text_035,What alternative name is used for Manipuri dance?,"[""Jagoi dance""]",DRISHTIKON#715,"Question (English, Manipur, Music): Which alternative name for Manipuri dance is depicted in the image? Answer: Jagoi dance",False,,,,False
+large_text_036,Whom does the Kang festival in Manipur honor?,"[""Lord Krishna"", ""Honoring Lord Krishna""]",DRISHTIKON#725,"Question (English, Manipur, Festivals): What is the Hindu festival of Kang known for in Manipur, as shown in the image? Answer: Honoring Lord Krishna",False,,,,False
+large_text_037,What Vishnu temple is located in Vishnupur?,"[""Vishnu Temple of Vishnupur""]",DRISHTIKON#743,"Question (English, Manipur, Tourism): Which famous temple dedicated to Vishnu, located in Vishnupur, is depicted in the image? Answer: Vishnu Temple of Vishnupur",False,,,,False
+large_text_038,Which spice is known as Chinese pepper in Naga cuisine?,"[""SichuanPepper"", ""Sichuan pepper""]",DRISHTIKON#857,"n (English, Nagaland, Cuisine): Which aromatic spice, also called Chinese pepper, depicted in the image, is common in Naga cooking? Answer: SichuanPepper",False,,,,False
+large_text_039,"What Naga sweet is made from rice flour, bananas, and jaggery?","[""KoatPitha"", ""Koat Pitha""]",DRISHTIKON#859,"(English, Nagaland, Cuisine): Which sweet dish, depicted in the image, is made of rice flour, bananas, and jaggery in Naga cuisine? Answer: KoatPitha",False,,,,False
+large_text_040,Which pungent allium is paired with chili and ginger in Naga cooking?,"[""Garlic""]",DRISHTIKON#861,"uestion (English, Nagaland, Cuisine): Which pungent allium, portrayed in the image, do Nagas frequently pair with chili and ginger? Answer: Garlic",False,,,,False
+large_text_041,What method preserves meat for long periods in Naga kitchens?,"[""Smoking""]",DRISHTIKON#864,"Question (English, Nagaland, Cuisine): Which technique, depicted in the image, preserves meat for long durations in Naga kitchens? Answer: Smoking",False,,,,False
+large_text_042,Who helped defend Ladakh in 1948 and later became India's ambassador to Mongolia?,"[""Kushok Bakula Rinpoche""]",DRISHTIKON#1690,"mage, played a crucial role in defending Ladakh during the 1948 Pakistani invasion and later became India's Ambassador to Mongolia? Answer: Kushok Bakula Rinpoche",False,,,,False
+large_text_043,Who translated the collection's volume of The Ramayana of Valmiki?,"[""Hari Prasad Shastri""]",Indian Cultural Dataset#20,"Category: ramayan. Category: ramayan
+Content: The IIIDIJIII Ol VIIIDiki 
+<2Yf CC?any>kie @9lt<Ukn @~ :!Tuuu~auoa 
+!!Twdakd 821; 
+Hari Prasad Shastri 
+
+THE 
+RAMAYANA 
+OF 
+VALMIKI 
+TratulaUtl by 
+HARI PRASAD SHASTRI 
+VoL I. 
+BALAKANDA 
+AYDOHYA KANDA 
+SHANTI SADAN 
+29 CBBPSTOW VILLAS 
+LONDON, W.11 
+1952 
+Pri---- .. IM Bvaunoa -l.oMiu MN4, Bmm>L 
+DBD",False,,,,False
+large_text_044,Who coauthored Traditional games in India: Their origin and status in progressive era with Dr. Rajesh Dhauta?,"[""Satish Gulia""]",Indian Cultural Dataset#22,"SSN: 2456 -0057  
+IJPNPE 2019; 4(1): 1252 -1254  
+© 2019 IJPNPE  
+www.journalofsports.com  
+Received: 17-11-2018  
+Accepted: 19-12-2018  
+ 
+Satish Gulia  
+Ph.D.  Research  Scholar   
+ASPESS, Amity University,   
+Noida Campus , Uttar Pradesh , 
+India  
+ 
+Dr. Rajesh Dhau ta 
+Assistant Professor , 
+ASPESS, Amity University,  
+Noida Campus , Uttar Prades",False,,,,False
+large_text_045,"Who wrote Human Sacrifice in Colonial Central India: Myth, Agency and Representation?","[""Crispin Bates""]",Indian Cultural Dataset#23," Constructions of Indian Identity (New Delhi: OUP, 2006).    Human Sacrifice in Colonial Central India:   Myth, Agency and Representation  Crispin Bates  (University of Edinburgh)   The sanguinary nature of early contacts with the tribals, or adivasis, of central India did not bode well for their future reputation. The first expedition into Bastar by ",False,,,,False
+large_text_046,What is the name of Rama's bow in the source overview?,"[""Sharanga""]",Indian Cultural Dataset#51,va (North Kosala) Kusha (South Kosala) Abode Ayodhya Saketa Vaikuntha Mantra Jai Shri Ram Jai Siya Ram Hare Rama Ramanama repetition Weapon Sharanga (bow) and arrows Army Vanara Sena Ayodhyan Army Symbol Sharanga (bow) Arrows Day Thursday Texts Ramayana and its other versions Padma Purana Vishnu Purana Varaha Purana Kurma Purana Garuda Purana Val,False,,,,False
+large_text_047,What is the illusionary duplicate of Sita abducted by Ravana called?,"[""Maya Sita""]",Indian Cultural Dataset#52,"y duplicate of the Hindu goddess Sita A painting of Ravana kidnapping Sita by Raja Ravi Varma .
+
+Some versions of the Ramayana narrate that Maya Sita was kidnapped by Ravana instead of the real Sita.
+
+In some adaptations of the Hindu epic Ramayana , Maya Sita ( Sanskrit : माया सीता , ""illusional Sita"") or Chaya Sita ( छाया सीता , ""shadow Sita"") is",False,,,,False
+large_text_048,Who gave Karna his Kavacha armour at birth?,"[""Surya""]",Indian Cultural Dataset#61,"Category: mythology. Category: mythology
+Content: Armour
+Karna Kavacha - The armour of Karna that was granted to him by his father Surya at birth, offering him virtual invulnerability.
+Brahma Kavacha - The armour of Brahma which will make its wielder couldn't harm by any weapon. In Ramayana Ravana and Atikaya, in Mahabharata, * Arjuna",False,,,,False
+large_text_049,What classroom subject is discussed in the article on folk tales of North East India?,"[""Environmental Studies""]",Indian Cultural Dataset#62,"ure to understand the environment around us. The
+paper witnesses a variety of folk tales of North East India and how these are reflected
+in Environmental Studies classrooms.
+Keywords : Folk t ales, North E ast India, En vironmen tal Studie s, Cla ssroom T ransaction
+Introduction
+Arts are as old as mankind and therefore have history; they are region specific a",False,,,,False
+large_text_050,Who wrote the story The Trinity in the collection?,"[""Nisha Susan""]",Indian Cultural Dataset#68,"Category: stories. Category: stories
+Content: Nisha Susan
+
+The Trinity
+November 1, 2013
+
+Tags
+Fiction and Drama
+Share and Save
+TwitterFacebookInstapaper
+Email Newsletter
+Get n+1 in your inbox.
+
+Email Address
+email address
+
+When had I started carrying a whit",False,,,,False
+large_text_051,In which city was Dr. Swati Kela's Traditional Indian Games presentation at the April 2024 World Forum held?,"[""Vancouver""]",Indian Cultural Dataset#94,"ments. Category: Cultural Elements
+Content: Traditional Indian Game s – Dr. Swati Kela           World Forum On Early Care and Education -  Vancouver, April 2024                  1 | Page  
+ Traditional Indian Games  
+Dr. Swati Kela, India  
+  ""GAME"" is universal and has no cultural or linguistic boundaries. Games appear to be the common property ",False,,,,False
+large_text_052,Who edited the Amar Chitra Katha Mahabharata comic series?,"[""Anant Pai""]",Indian Cultural Dataset#3,ya Sharma • Lopamudra • Mihir Lal Mitra • Sumona Roy • Mohan Swaminathan • Shubha Kandhekar • Margie Sastry Artist(s) Dilip Kadam Editor(s) Anant Pai Collected editions Volume 1 ISBN 978-81-905990-4-7 Volume 2 ISBN 978-81-905990-2-3 Volume 3 ISBN 978-81-905990-3-0 Mahabharata (also known as Amar Chitra Katha 's Mahabharata ) is a comic adaptation ,False,,,,False
+large_text_053,What leaf did Sati eat during her penance before giving up food altogether?,"[""bilva leaf""]",Indian Cultural Dataset#4,"Category: shiva. Category: shiva
+Content: The Story of Shiva and Sati 
+Neil Edsall  
+Once upon a time,  the Goddess Sati, a personification of the divine female energy, took human birth at 
+the suggestion of Br",False,,,,False
+large_text_054,Who is named as King Bharata's mother in the Mahabharata account?,"[""Shakuntala""]",Indian Cultural Dataset#26,"arata Painting of Bharata, Raja Ravi Varma Predecessor Dushyanta Successor Bhumanyu Texts Mahabharata Genealogy Parents Dushyanta (father), Shakuntala (mother) Spouse Sunanda Two unnamed wives Children Bhumanyu , Bharadvaja (adopted) Dynasty Chandravamsha King featured in the Mahabharata This article is about legendary king Bharata of Mahabharata.
+",False,,,,False
+large_text_055,Who was Uttara's husband in the Mahabharata?,"[""Abhimanyu""]",Indian Cultural Dataset#48,"Category: mahabharata. Category: mahabharata
+Content: Wife of Abhimanyu in epic Mahabharata For the brother of Uttarā, see Uttara (Mahabharata) .
+
+Fictional character Uttarā Abhimanyu consoles Uttarā before leaving for the war, illustration by S.N.
+
+Das Information Famil",False,,,,False
+large_text_056,Who is named as Bhanumati's father in the source?,"[""Chitrangada""]",Indian Cultural Dataset#72, an antagonist of the epic Mahabharata Fictional character Bhanumati An illustration of Bhanumati Information Affiliation Kuru queen Family Chitrangada (father) Spouse Duryodhana Children Lakshmana Kumara (son) Lakshmana (daughter) Home Kalinga (by birth) Hastinapur (by marriage) Bhanumati is folk name of the wife of Duryodhana —the main antagonist ,False,,,,False
+large_text_057,What Hindi translation does the collection give for assamese japi?,"[""असमिया टोपी""]",SCALE#12,Item: assamese japi. Translation: असमिया टोपी. Domain: Clothing And Accessories,False,,,,False
+large_text_058,Which item corresponds to the Hindi wording 'अरुणाचल प्रदेश का गाले पाचा' in the collection?,"[""arunachal pradesh gale pacha""]",SCALE#25,Item: arunachal pradesh gale pacha. Translation: अरुणाचल प्रदेश का गाले पाचा. Domain: Clothing And Accessories,False,,,,False
+large_text_059,What Hindi translation does the collection give for jalfrezi?,"[""जालफ़्रेज़ी""]",SCALE#101,Item: jalfrezi. Translation: जालफ़्रेज़ी. Domain: Cuisine,False,,,,False
+large_text_060,Which item corresponds to the Hindi wording 'खुरमा' in the collection?,"[""khurma""]",SCALE#116,Item: khurma. Translation: खुरमा. Domain: Cuisine,False,,,,False
+large_text_061,What Hindi translation does the collection give for november 2015 south indian floods?,"[""नवंबर 2015 दक्षिण भारतीय बाढ़""]",SCALE#201,Item: november 2015 south indian floods. Translation: नवंबर 2015 दक्षिण भारतीय बाढ़. Domain: Historical Events,False,,,,False
+large_text_062,Which item corresponds to the Hindi wording 'जजाऊ की लड़ाई' in the collection?,"[""battle of jajau""]",SCALE#227,Item: battle of jajau. Translation: जजाऊ की लड़ाई. Domain: Historical Events,False,,,,False
+large_text_063,What Hindi translation does the collection give for rama navami?,"[""राम नवमी""]",SCALE#313,Item: rama navami. Translation: राम नवमी. Domain: Holidays And Festivals,False,,,,False
+large_text_064,Which item corresponds to the Hindi wording 'गुरु नानक गुरुपर्व' in the collection?,"[""guru nanak gurpurab""]",SCALE#317,Item: guru nanak gurpurab. Translation: गुरु नानक गुरुपर्व. Domain: Holidays And Festivals,False,,,,False
+large_text_065,What Hindi translation does the collection give for summer palace of maharaja ranjit singh?,"[""महाराजा रणजीत सिंह का ग्रीष्मकालीन महल""]",SCALE#406,Item: summer palace of maharaja ranjit singh. Translation: महाराजा रणजीत सिंह का ग्रीष्मकालीन महल. Domain: Landmarks,False,,,,False
+large_text_066,Which item corresponds to the Hindi wording 'हवा महल' in the collection?,"[""hawa mahal""]",SCALE#411,Item: hawa mahal. Translation: हवा महल. Domain: Landmarks,False,,,,False
+large_text_067,What Hindi translation does the collection give for lili das?,"[""लिली दास""]",SCALE#516,Item: lili das. Translation: लिली दास. Domain: Sports People,False,,,,False
+large_text_068,Which item corresponds to the Hindi wording 'अराता इज़ुमी' in the collection?,"[""arata izumi""]",SCALE#518,Item: arata izumi. Translation: अराता इज़ुमी. Domain: Sports People,False,,,,False
+large_text_069,What Hindi translation does the collection give for bhawanipore f.c.?,"[""भवानीपुर एफ.सी.""]",SCALE#601,Item: bhawanipore f.c.. Translation: भवानीपुर एफ.सी.. Domain: Sports Teams,False,,,,False
+large_text_070,Which item corresponds to the Hindi wording 'हैदराबाद एफसी' in the collection?,"[""hyderabad fc""]",SCALE#609,Item: hyderabad fc. Translation: हैदराबाद एफसी. Domain: Sports Teams,False,,,,False
+test_image_01,Find a photograph of the Devprayag river valley.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Alaknanda_devprayag.jpg,,False,,,,False
+test_image_02,Find a Bhuta Kola ritual performer wearing a large ornate gold costume.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/bhuta_kola.jpg,,False,,,,False
+test_image_03,Find Shondol dancers performing outdoors in Ladakh.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Shondol.jpg,,False,,,,False
+test_image_04,Find a photograph of a traditional Indian wedding with a bride and groom.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/thali_ceremony.jpg,,False,,,,False
+test_image_05,Find an aerial photograph of forest buildings with solar panels at Sadhana Forest.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Sadhna_Forest.jpg,,False,,,,False
+test_image_06,Find a photograph of ancient Nalanda red-brick ruins.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Nalanda_Mahavihara_01.jpg,,False,,,,False
+large_image_01,Find a photograph of a stone Himalayan temple surrounded by snow-covered mountains.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/kedarnath.jpg,"Stone temple, colorful entrance, snow-covered roof and mountain slopes.",False,,,,False
+large_image_02,Find an interior photograph of Borra Caves showing a lit rocky passage with metal railings.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/borra_caves.jpg,"Rocky cave passage, a walkway and railings, artificial yellow lighting.",False,,,,False
+large_image_03,Find the front entrance of Cellular Jail with two yellow round towers and green balcony railings.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Cellular_Jail.jpg,"CELLULAR JAIL entrance text, paired yellow towers and green railings.",False,,,,False
+large_image_04,"Find a close-up of chickpea curry garnished with onion, coriander, and a lemon slice.",[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Amritsari_Chole_Bhature_01.jpg,"Bowl of chickpea curry; lemon, onion, coriander and spoon. No bhature bread is visible.",False,,,,False
+large_image_05,Find a frontal photograph of the white Taj Mahal dome and its minarets under a cloudy blue sky.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Taj_Mahal.jpg,"White domed monument, four minarets, frontal perspective and cloudy blue sky.",False,,,,False
+large_image_06,Find the red sandstone entrance to Agra Fort with visitors walking across the entrance bridge.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/agra_fort_01.jpg,"Red sandstone gateway, rounded defensive walls, arched entrance and visitors.",False,,,,False
+large_image_07,Find the carved stone chariot at Hampi with large stone wheels and elephant sculptures.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Hampi.jpg,"Ornate stone chariot, carved wheels, stone elephants and surrounding ruins.",False,,,,False
+large_image_08,Find a photograph of broad Jog Falls cascading down several channels between green cliffs.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/jog_falls.jpg,"Several large waterfalls, white spray and green vegetation.",False,,,,False
+large_image_09,Find an ornate Mysore-style painting of a seated deity playing a string instrument with gold decorative details.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Mysore_Painting.jpg,"Painted seated deity with string instrument, rich gold detailing and ornate frame.",False,,,,False
+large_image_10,Find a brightly coloured circular sand mandala with geometric squares and a central multicoloured flower.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Sand_Mandala.jpg,"Circular mandala, colored geometric motifs and a central flower pattern.",False,,,,False
+large_image_11,Find a photograph of seated male musicians singing into microphones and playing harmonium under coloured stage lights.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/qutub.jpg,"Musicians seated in a row, microphones, harmonium and colored lights; the image is not a tower photograph.",False,,,,False
+large_image_12,Find a photograph looking down the deep steps of Agrasen ki Baoli with arches along both side walls.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Agrasen_ki_Baoli_01.jpg,"Deep rectangular stepwell, descending stairs and arched wall recesses.",False,,,,False
+large_image_13,"Find India Gate photographed at night with orange, white, and green lighting and an empty central road.",[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/The_India_Gate_01.jpg,"Lit memorial arch at night, colored lighting and central road with lamps.",False,,,,False
+large_image_14,Find a photograph of Kerala backwaters with houseboats on the water and coconut palms along the shore.,[],data/raw/DRISHTIKON/All_Images_formatted_final_dataset/Vembanad_Lake.jpg,"Several houseboats, broad waterway and palm-lined banks.",False,,,,False

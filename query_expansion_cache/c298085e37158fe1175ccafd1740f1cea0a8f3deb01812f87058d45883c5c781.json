@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Give the Hindi wording for the dish matar mushroom.",
+    "Hindi name for matar mushroom dish",
+    "Hindi translation of matar mushroom dish",
+    "How to say matar mushroom in Hindi"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

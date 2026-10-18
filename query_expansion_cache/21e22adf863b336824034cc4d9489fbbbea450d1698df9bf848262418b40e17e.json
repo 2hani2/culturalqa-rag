@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'खुरमा' in the collection?",
+    "What item in the collection matches the Hindi term 'खुरमा'?",
+    "Which item in the collection is labeled 'खुरमा' in Hindi?",
+    "Which item corresponds to the Hindi word 'खुरमा' in the collection?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

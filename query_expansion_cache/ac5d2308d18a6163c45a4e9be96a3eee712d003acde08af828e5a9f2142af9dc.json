@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What was Bhanumati's home kingdom before she married Duryodhana?",
+    "Where was Bhanumati from before marrying Duryodhana?",
+    "What kingdom did Bhanumati belong to before her marriage to Duryodhana?",
+    "Which kingdom was Bhanumati's home before she married Duryodhana?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

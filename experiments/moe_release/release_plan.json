@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-15T18:35:52.033705+00:00",
+  "purpose": "Repair learned reranking without changing the baseline, corpus, reader, or historical results.",
+  "selection": "Existing development-selected text checkpoint and alpha; no fitting or selection from evaluation labels.",
+  "text_policy": "z(cross_encoder) + 0.25 * z(selected MoE cosine)",
+  "simple_policy": "Existing development selection alpha=0, explicitly baseline fallback",
+  "image_policy": "Preserve CLIP order pending image-specific development validation; this is baseline fallback, not a MoE image gain.",
+  "evaluation": "Replay the SAME saved 120-question candidate pools and reader outputs. Recompute text fusion features. Existing benchmark has been seen before and is not a fresh blind test.",
+  "source_hashes": {
+    "main.py": "b4160ec8ab178da7ebf31bbc628c562e01ab1411478de6976bf56b1d473a993d",
+    "main_with_moe.py": "db43a66bfef4db409ed4195c45e4b005e8b92338de55709cff9b25eaf80221d7",
+    "main_without_moe.py": "93f28c739f110c22a42296d1887da519ef8ecc2ff71136bc8afc98c476cb1910",
+    "pipeline.py": "24661b412d3f829970f2c8a5da0883b6172682c6b061e1fa126653df23c42933",
+    "image_retrieval.py": "12282e411c9e71f89d7b497c5d637472153022c418329a04eab6ba4ca2463646",
+    "moe_fusion.py": "6d2f5ac116793ad36fabe7a447495e4646319311109d742595dc793b17df63a7",
+    "retrieval.py": "d5e4112484b30b773f4746107590fdb6ec1c337c7cdabe81eb33b69240fa777e",
+    "reader.py": "939ed510fb93bf97e1af940069ccb03544f32fe69867219ca17068c1dc24bc07",
+    "research_train.py": "ab107f9b1c103c8060520405acbfff331525deddf9a2cd3b317ba72fadbe3e26",
+    "reranker_models.py": "3758c7d7e462d4ee50fa10d9eef51c19ee65a09af924b1cf89383609ee3c78df",
+    "validation.py": "e9c857614801f3ba38ccec633100520457734f23b960625cbecdc6b279a48d3b",
+    "checkpoints/moe_fusion.pt": "4ddf09052aaa799f9e912c987749486627637f25ca97a548ccb68bd391746242",
+    "checkpoints/simple_fusion.pt": "752361c349451add9033c0151b3d7db105a70795454a9869dbae85d404cea0c9",
+    "validation_large_120/validation_report.json": "7a382a77a06fcd772618f83411a0a03cf62b526a6d6e3557d8f727a5d7ecaf56",
+    "validation_queries_120.json": "6b56c133d05512c4ff5e040383e9cc62d5b18a387c2a6e70f70330e0415e3289",
+    "research/split_manifest.json": "61c0a137fd054c185af87440cf3644f57d503c3add2801e2aceff96419f40b2f",
+    "research/training_pairs.json": "bd649708e73d8e6b4dc94657cf2100c68830729b6182a82883e5911b9348745f",
+    "experiments/moe_improvement/global_selection.json": "8925ecd9c76090a6453ca9afdf03c1e13d7f9fcac94dd8f8dbe6c8ded4f41b66"
+  },
+  "publication_note": "Local path strings were redacted in the published historical report. Numeric results and predictions are unchanged. Original hashes are in PUBLIC_EXPORT.json."
+}

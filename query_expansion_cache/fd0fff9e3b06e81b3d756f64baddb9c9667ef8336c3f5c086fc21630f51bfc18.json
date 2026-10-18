@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which item corresponds to the Hindi wording 'जजाऊ की लड़ाई' in the collection?",
+    "Which item in the collection has the Hindi title 'जजाऊ की लड़ाई'?",
+    "Search for the collection item titled 'जजाऊ की लड़ाई' in Hindi.",
+    "Locate the item in the collection that corresponds to the Hindi wording 'जजाऊ की लड़ाई'."
+  ],
+  "model": "openai/gpt-oss-20b"
+}

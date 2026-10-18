@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "What Sikkim food consists of fermented bamboo shoot?",
+    "Sikkim dish with fermented bamboo shoots",
+    "Sikkim food containing fermented bamboo shoots",
+    "What is the Sikkim dish that uses fermented bamboo shoots?"
+  ],
+  "model": "openai/gpt-oss-20b"
+}

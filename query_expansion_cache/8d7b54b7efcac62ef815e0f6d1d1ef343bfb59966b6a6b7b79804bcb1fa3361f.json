@@ -1,0 +1,9 @@
+{
+  "queries": [
+    "Which alcoholic drink in Kerala is made using coconut?",
+    "Kerala alcoholic beverage made from coconut",
+    "Coconut-based alcoholic drink in Kerala",
+    "Which coconut drink is alcoholic in Kerala"
+  ],
+  "model": "openai/gpt-oss-20b"
+}
