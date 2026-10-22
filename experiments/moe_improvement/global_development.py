@@ -1,7 +1,7 @@
 """Evaluate residual rerankers on global retrieval for development queries only.
 
 No gold records are injected. The original 120-question benchmark is never read.
-Use --ask TEXT for the selected experimental model; historical CLI stays intact.
+Use --ask TEXT for the selected experimental model; the public CLI uses the same selected unrestricted model.
 """
 from run_experiment import HERE, ROOT, PLAN, dump, zscore
 import argparse
@@ -74,7 +74,7 @@ def evaluate():
             'global_candidate_k': 12, 'branch_k': 8, 'query_expansion': False,
             'image_features_enabled': True, 'positive_injection': False,
             'candidate_pool_shared': True, 'all_five_datasets_searched': True,
-            'models': 'Existing MoE/simple plus each of 8 listwise trials selected by fusion-only and residual diagnostic development metrics.',
+            'models': 'Initial MoE plus four listwise training trials, selected by diagnostic fusion and combined-score development metrics.',
             'residual_alphas': PLAN['residual_alphas'],
             'selection': 'Maximum dev MRR@12, then Hit@3, then prefer smaller alpha. Dev was used for candidate training selection too; no unbiased test claim.'}
     dump('global_development_plan.json', plan)
@@ -113,8 +113,8 @@ def evaluate():
     baseline_scores = [r['cross_encoder_scores'] for r in records]
     baseline = metrics(baseline_scores, records)
     ce_z = [zscore(s[None])[0] for s in baseline_scores]
-    all_models = [('existing_'+kind, ROOT/'checkpoints'/f'{kind}_fusion.pt') for kind in ('simple', 'moe')]
-    all_models += [(p.stem, p) for p in sorted(HERE.glob('*_tau*.pt'))]
+    all_models = [('existing_'+kind, ROOT/'checkpoints'/f'{kind}_fusion.pt') for kind in ('moe',)]
+    all_models += [(p.stem, p) for p in sorted(HERE.glob('moe_*_tau*.pt'))]
     trials = []
     for label, path in all_models:
         model, payload = load_experiment(path)
@@ -132,7 +132,7 @@ def evaluate():
         print('[global model]', label, {k:v for k,v in best.items() if k!='ranks'}, flush=True)
     selected = {kind: max((t for t in trials if t['kind'] == kind),
                          key=lambda t: (t['best']['mrr_at_12'], t['best']['hit_at_3'], -t['best']['alpha']))
-                for kind in ('simple', 'moe')}
+                for kind in ('moe',)}
     summary = {'plan': plan, 'cross_encoder_baseline': baseline, 'trials': trials,
                'selected': selected, 'features_cache_sha256': sha256_file(cache_path),
                'input_hashes': input_hashes,
@@ -174,7 +174,7 @@ if __name__ == '__main__':
     torch.set_num_threads(2)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--ask')
-    parser.add_argument('--kind', choices=['moe', 'simple'], default='moe')
+    parser.add_argument('--kind', choices=['moe'], default='moe')
     parser.add_argument('--top_k', type=int, choices=[3, 6], default=3)
     args = parser.parse_args()
     if args.ask:

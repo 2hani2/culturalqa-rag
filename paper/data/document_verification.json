@@ -1,0 +1,17 @@
+{
+  "pdf_pages": 10,
+  "figures": 5,
+  "results_graphs": 3,
+  "tables": 5,
+  "conditions": [
+    "Without MoE",
+    "Unrestricted Cross-encoder + MoE"
+  ],
+  "affiliation": "omitted at user request",
+  "compilation": "success; no overfull boxes or undefined references",
+  "visual_review": "all 10 rendered pages inspected",
+  "source_metrics": "unchanged verified saved-candidate replay; no new evaluation",
+  "main_tex_sha256": "7c18b64b4c230dae323dada1c65077ec7be156fdc416f9a3ef934ac0266f75d6",
+  "main_pdf_sha256": "047f90cb23c1a04bf11c9c2b006198eb2a89e7b4ccdfee37c2956e0e71069718",
+  "source_attachment_sha256": "2a3a2af039f4921d269a3c6ad690c37dc291feddf065559d29714cdab8c59a44"
+}

@@ -1,8 +1,0 @@
-{
-  "verified_on": "2026-10-17",
-  "reason": "The running evaluation had loaded the previous display label for the simple alpha-zero condition. Correct that label and explicitly record the already-selected alpha values. No predictions, scores, metrics, timings or labels changed.",
-  "original_report_sha256": "74d897010c3262815cc09a17224c4da4ad515ab4448475955b37f43f77ddcd48",
-  "backup": "experiments/moe_release/before/live_report_before_policy_label_correction.json",
-  "all_numeric_results_and_predictions_unchanged": true,
-  "corrected_report_sha256": "5b17a1b59d57a4093353fb108db63094de6c834b101d3e4a97e3de286044be72"
-}

@@ -127,7 +127,7 @@ class ProtocolTests(unittest.TestCase):
     def test_artifact_original_expanded_same_group(self):
         self.assertEqual(group_key({'dataset':'DOSA','artifact':'Temple','split':'original'}),group_key({'dataset':'DOSA','artifact':'TEMPLE','split':'expanded'}))
     def test_checkpoint_requires_provenance_and_roundtrips(self):
-        for kind in ('moe','simple'):
+        for kind in ('moe',):
             model=create_model(kind)
             with tempfile.TemporaryDirectory() as folder:
                 path=Path(folder)/'model.pt';save_model(model,kind,path,{'split_sha256':'hash'})
@@ -137,15 +137,14 @@ class ProtocolTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             path=Path(folder)/'old.pt';torch.save(create_model('moe').state_dict(),path)
             with self.assertRaises(ValueError):load_model('moe',path)
-    def test_single_network_parameter_count_matches_moe(self):
-        counts=[sum(p.numel() for p in create_model(k).parameters()) for k in ('moe','simple')]
-        self.assertLess(abs(counts[0]-counts[1])/counts[0],.02)
+    def test_moe_parameter_count_is_unchanged(self):
+        self.assertEqual(sum(p.numel() for p in create_model('moe').parameters()),1200451)
     @unittest.skipUnless((ROOT/'faiss_store/raw_records_cache.json').is_file(),
                          'Full-corpus integration test requires the unbundled original data and FAISS index.')
     def test_actual_split_and_provenance_checks(self):
-        cases=load_suite(ROOT/'validation_queries.json');split=json.loads((RESEARCH/'split_manifest.json').read_text())
-        p={k:load_model(k)[1] for k in ('moe','simple')};checks=check_protocol(cases,split,p,load_records())
-        self.assertEqual(len(checks),2);self.assertTrue(all(c['test_refs_in_training']==0 for c in checks))
+        cases=load_suite(ROOT/'validation_queries_120.json');split=json.loads((RESEARCH/'split_manifest.json').read_text())
+        p={k:load_model(k)[1] for k in ('moe',)};checks=check_protocol(cases,split,p,load_records())
+        self.assertEqual(len(checks),1);self.assertTrue(all(c['test_refs_in_training']==0 for c in checks))
         q=dict(cases[0]);q['gold_record_ref']=p['moe']['training_refs'][0]
         with self.assertRaises(ValueError):check_protocol([q],split,p,load_records())
 
@@ -163,7 +162,7 @@ class ReportTests(unittest.TestCase):
     def test_missing_labels_and_conditions(self):
         case={'id':'q','task':'text','question':'q'}
         with contextlib.redirect_stdout(io.StringIO()):report=evaluate_cases([case],self.result,self.result)
-        self.assertEqual(len(report['per_question']),6);self.assertIsNone(report['per_question'][0]['precision'])
+        self.assertEqual(len(report['per_question']),4);self.assertIsNone(report['per_question'][0]['precision'])
         with contextlib.redirect_stdout(io.StringIO()):bad=evaluate_cases([case],lambda q:{},self.result)
         self.assertTrue(all(r['status']=='error' for r in bad['per_question']))
     def test_reader_errors_block_affected_quality_scores(self):

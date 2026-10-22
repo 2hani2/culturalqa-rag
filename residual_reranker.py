@@ -1,8 +1,4 @@
-"""Development-selected MoE correction to the existing relevance score.
-
-This module never uses reference answers or relevance labels. The historical
-fusion-only models and pipeline remain available for reproducibility.
-"""
+"""Unrestricted development-selected cross-encoder + MoE reranking."""
 import json
 import math
 from pathlib import Path
@@ -13,7 +9,6 @@ from project_paths import ROOT
 from reranker_models import create_model, sha256_file
 
 SELECTION = ROOT / 'experiments/moe_improvement/global_selection.json'
-CONSERVATIVE_SELECTION = ROOT / 'experiments/moe_release/conservative_selection.json'
 
 
 def standardize(values):
@@ -35,33 +30,10 @@ def combine_scores(baseline, fusion, alpha):
     return standardize(baseline) + alpha * standardize(fusion)
 
 
-def conservative_order(baseline, fusion, alpha, max_span, protected_cutoffs=(3,6)):
-    """Reorder near ties while preserving the baseline evidence at each cutoff.
-
-    Bands have bounded total score range, rather than chaining adjacent ties
-    into a large band. This is an inference rule, not a relevance-label filter.
-    """
-    if not math.isfinite(max_span) or max_span < 0:
-        raise ValueError('Near-tie span must be finite and nonnegative.')
-    base = standardize(baseline)
-    scores = combine_scores(baseline, fusion, alpha)
-    order = base.argsort(descending=True, stable=True).tolist()
-    result = []
-    boundaries = sorted(set([0,len(order)] + [k for k in protected_cutoffs if 0 < k < len(order)]))
-    for left,right in zip(boundaries,boundaries[1:]):
-        start = left
-        while start < right:
-            end = start + 1
-            while end < right and float(base[order[start]]-base[order[end]]) <= max_span:
-                end += 1
-            band = order[start:end]
-            result.extend(sorted(band, key=lambda j: -float(scores[j])))
-            start = end
-    return result
-
-
 class ResidualReranker:
     def __init__(self, kind='moe', selection_path=SELECTION):
+        if kind != 'moe':
+            raise ValueError('Only the MoE reranker is supported.')
         self.kind = kind
         self.selection = json.loads(Path(selection_path).read_text())[kind]
         if self.selection['selection_fold'] != 'dev' or self.selection['test_used']:
@@ -71,6 +43,29 @@ class ResidualReranker:
         if sha256_file(path) != self.selection['checkpoint_sha256']:
             raise ValueError('Selected reranker checkpoint changed.')
         payload = torch.load(path, map_location='cpu', weights_only=True)
+        if 'input_fingerprints' in payload:
+            if payload.get('test_fold_used', True):
+                raise ValueError('Selected checkpoint must declare test_fold_used=False.')
+            for name in ('moe_fusion.py', 'checkpoints/moe_fusion.pt',
+                         'research/training_pairs.json', 'research/split_manifest.json'):
+                if sha256_file(ROOT / name) != payload['input_fingerprints'][name]:
+                    raise ValueError(f'Selected training input changed: {name}')
+            initial = torch.load(ROOT / 'checkpoints/moe_fusion.pt', map_location='cpu', weights_only=True)
+            self.provenance = initial['provenance']
+        else:
+            # A future development search can select the initial MoE checkpoint.
+            # Its inference still uses the same unrestricted combined-score rule.
+            self.provenance = payload.get('provenance', {})
+            if self.provenance.get('test_fold_used', True) or self.provenance.get('training_fold') != 'train':
+                raise ValueError('MoE checkpoint needs documented train-only supervision.')
+            expected = {
+                'moe_fusion.py': self.provenance['code_sha256']['moe_fusion.py'],
+                'research/split_manifest.json': self.provenance['split_sha256'],
+                'research/training_pairs.json': self.provenance['training_pairs_sha256'],
+            }
+            for name, fingerprint in expected.items():
+                if sha256_file(ROOT / name) != fingerprint:
+                    raise ValueError(f'Selected training input changed: {name}')
         if payload['model_kind'] != kind:
             raise ValueError('Checkpoint kind does not match selection.')
         self.model = create_model(kind)
@@ -108,17 +103,3 @@ class ResidualReranker:
 
     def order(self, baseline, fusion, combined):
         return combined.argsort(descending=True, stable=True).tolist()
-
-
-class ConservativeReranker(ResidualReranker):
-    policy_name = 'baseline_evidence_moe_near_ties'
-
-    def __init__(self, kind='moe', selection_path=CONSERVATIVE_SELECTION):
-        super().__init__(kind, selection_path)
-        self.max_span = float(self.selection['max_span'])
-        self.protected_cutoffs = tuple(self.selection['protected_cutoffs'])
-        if self.protected_cutoffs != (3,6):
-            raise ValueError('This release protects the declared top-3 and top-6 evidence budgets.')
-
-    def order(self, baseline, fusion, combined):
-        return conservative_order(baseline, fusion, self.alpha, self.max_span, self.protected_cutoffs)

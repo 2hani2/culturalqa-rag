@@ -1,71 +1,60 @@
 # CulturalQA RAG
 
-**Cultural question answering and image retrieval with hybrid search, cross-encoder ranking, and Mixture-of-Experts (MoE) experiments.**
+**Two versions of cultural question answering: Without MoE and unrestricted Cross-encoder + MoE.**
 
-Python · PyTorch · Hugging Face Transformers · Sentence Transformers · LangChain · FAISS · BM25 · CLIP · Groq
+Python · PyTorch · Transformers · Sentence Transformers · LangChain · FAISS · BM25 · CLIP · Groq
 
-The project searches across **DOSA, SCALE, DRISHTIKON, DIWALI, and Indian Cultural Dataset**. Durga QA and GIMMICK are excluded. Text answers are extracted from retrieved evidence. Image queries return matching images; the QA reader itself is text-only.
+Search covers **DOSA, SCALE, DRISHTIKON, DIWALI, and Indian Cultural Dataset**. Durga QA and GIMMICK are excluded. Answers are extracted from retrieved text. Standalone image requests use shared CLIP retrieval and return existing images, not generated visual answers.
 
-## What the system does
+## The two versions
 
-1. Optionally expand a text question into cached search paraphrases using the Groq API.
-2. Search all five available datasets with FAISS dense retrieval and BM25 lexical retrieval.
-3. Merge candidates with reciprocal-rank fusion and score them with a cross-encoder.
-4. Keep 12 candidate records and select the final 3 or 6 evidence records.
-5. Extract an answer using a shared question-answering reader, recording evidence and errors.
+| Version | Entry point | Final text ranking |
+|---|---|---|
+| **Without MoE** | `main_without_moe.py` | Cross-encoder score |
+| **Cross-encoder + MoE (unrestricted)** | `main_with_moe.py` | `Z(cross_encoder_score) + 0.25 * Z(moe_similarity)` |
 
-Exact record-ID lookup follows a separate deterministic path. Dataset hints do not restrict ordinary search to only one dataset.
+Both versions use the original question and optional cached paraphrases, search all available datasets with FAISS and BM25, merge rankings, and use a cross-encoder to produce the **same shortlist of up to 12 distinct evidence references**. They select the final **3 or 6** contexts for the same extractive reader. Dataset hints adjust weights and budgets without excluding other datasets. Exact-ID lookup is a separate application path outside the factual benchmark.
 
-### MoE architecture and the conservative repair
+`Z` standardizes scores within one question's shortlist. Unrestricted MoE can change any candidate's position and top-K membership. There are **no protected rank bands or near-tie restrictions**.
 
-The fusion network has a shared concatenation expert and three routed experts: attention, low-rank tensor fusion, and element-wise multiplication. A learned gate mixes the top two routed outputs alongside the shared expert. Frozen BERT text features and CLIP image features feed this network.
+The expert architecture is unchanged: frozen BERT/CLIP features, projections, one always-active concatenation expert, and three routed experts (attention, low-rank tensor interaction, and element-wise product). The gate contributes the top two routed outputs alongside the shared expert. All routed outputs are computed before selection. Text-only records use zero image input, which becomes a learned constant after projection. The reader consumes text only.
 
-The original MoE ranked candidates by fusion-vector similarity alone. The current default combines standardized cross-encoder and MoE scores:
+The selected inference checkpoint is **`moe_existing_checkpoint_tau0.1_fusion.pt`**, refinement epoch **20**, with development-selected mixing weight **0.25**. The `_fusion` filename describes its diagnostic checkpoint-selection metric; inference combines its score with the cross-encoder.
 
-```text
-score = z(cross_encoder_score) + 0.25 * z(moe_similarity)
-```
+`main.py` defaults to Without MoE. Standalone image retrieval uses the same CLIP component through either launcher; it is not a third text version or a measured MoE image improvement.
 
-It protects the baseline's top-3 and top-6 evidence membership and reorders only bounded near ties within those groups. The maximum near-tie span is 0.05 standardized cross-encoder score units. Reader tie handling follows baseline order. The network architecture remains unchanged; scoring policy and selected trained weights differ.
+## Recorded results and graphs
 
-**This is a conservative regression repair, not evidence that MoE outperforms the baseline.** Image-only retrieval uses explicitly labelled CLIP fallback. The simple-fusion selection currently has weight zero and also falls back to baseline ranking. `--legacy_moe` preserves the original fusion-only inference behavior.
+These are **saved-candidate replay measurements from 15 October 2026**, not a new end-to-end run. The text benchmark contains **100 questions across 95 source groups**, with 20 questions per target dataset. Retrieval candidates, cached expansions, and per-context reader outputs are shared. There are also 20 image queries.
 
-## Recorded evaluation
+| K | Version | Hit (%) | MRR | nDCG | EM (%) | Answer F1 (%) |
+|---|---|---:|---:|---:|---:|---:|
+| 3 | Without MoE | 95.00 | 0.9267 | 0.9326 | 65.00 | 68.57 |
+| 3 | Cross-encoder + MoE | 95.00 | 0.9200 | 0.9276 | 63.00 | 66.57 |
+| 6 | Without MoE | 98.00 | 0.9323 | 0.9439 | 60.00 | 63.62 |
+| 6 | Cross-encoder + MoE | 98.00 | 0.9262 | 0.9394 | 60.00 | 63.62 |
 
-The benchmark contains **100 text questions** (20 per dataset) and **20 image queries**, evaluated at K=3 and K=6. Conditions share retrieval budgets, cached query expansions, available image features, and reader behavior. Training used 300 source-derived anchors, with 60 development anchors; model and conservative-policy selection used development data.
+**The current MoE configuration does not improve this measured benchmark.** At top 3, EM and F1 decrease by two percentage points. At top 6, aggregate EM and F1 match. Equal aggregate scores do not imply identical rankings or answers: the full shortlist order changes for 99/100 questions and top-3 membership for 39/100.
 
-Text results at top 3:
+![Answer quality](paper/figures/01_answer_quality.png)
 
-| Metric | Without MoE | Original MoE | Conservative MoE |
-|---|---:|---:|---:|
-| Evidence Hit@3 | 95.00% | 37.00% | 95.00% |
-| Exact match | 65.00% | 28.00% | 65.00% |
-| Answer token F1 | 68.57% | 30.67% | 68.57% |
+![Evidence ranking](paper/figures/02_evidence_ranking.png)
 
-Original MoE results are from the historical run; baseline and conservative results were freshly evaluated on the same questions. Baseline quality matched between runs. The fresh run produced 720 condition/cutoff rows with zero evaluation errors. The local research project passed 43 regression tests.
+![Dataset and source-modality breakdown](paper/figures/03_subgroup_quality.png)
 
-![Text quality comparison](paper_figures_repaired_120/png/01_text_quality.png)
+- [Revised paper PDF](paper/main.pdf) · [LaTeX source](paper/main.tex)
+- [All graphs: PNG, PDF, SVG](paper/figures/) · [Graph data and provenance](paper/data/)
+- [Validation matrix](validation_moe_residual_120/validation_matrix.csv)
+- [Per-question predictions and metrics](validation_moe_residual_120/per_question.csv)
+- [Complete recorded traces](validation_moe_residual_120/validation_report.json)
 
-- [All eight figures in PDF](paper_figures_repaired_120/culturalqa_repaired_results.pdf)
-- [Validation matrix](validation_conservative_live_120/validation_matrix.csv)
-- [Per-question answers and metrics](validation_conservative_live_120/per_question.csv)
-- [Example answer output](paper_figures_repaired_120/png/08_example_output.png)
-- [Detailed repair explanation](MOE_REPAIR.txt)
+Shared CLIP image Hit is 85% at K=3 and 95% at K=6. The report stores these identical shared-component image rows under both mode names for schema consistency; they are not separate image models. The report contains 400 text and 80 image condition/cutoff rows.
 
-At top 6, text Hit is 98%, exact match is 60%, and answer F1 is 63.62% for both baseline and conservative mode. Image Hit@3 is 85% and Hit@6 is 95% through CLIP fallback. Conservative text reranking adds about 1.73 seconds per question in measured processing components on the evaluation machine; this excludes model startup and is not an independent end-to-end latency benchmark.
+Fusion-feature extraction averages approximately 0.971 seconds and learned reranking 0.009 seconds per text query in the saved replay. This approximately 0.98-second component cost is not an independently measured end-to-end latency difference.
 
-### Research limitations
+## Setup and data
 
-- Equality of answer quality follows from preserving baseline evidence; it does not isolate a benefit from expert mixing.
-- The benchmark was inspected during diagnosis and is not a new blind test. Labels were source-checked by an AI assistant and have not received independent human expert review.
-- Relevance annotations contain known positives rather than exhaustive judgements across the corpus.
-- Training labels are weak/source-derived, and only one training seed is represented.
-- Long-document index coverage is incomplete, especially for Indian Cultural Dataset. See [coverage measurements](research/index_coverage_summary.json).
-- The image fallback is not a learned MoE image improvement or a reproduction of a visual answer-generation model.
-
-## Setup
-
-Use Python 3.11 or newer. The recorded local experiment used Python 3.14; dependency versions are listed in `requirements-tested.txt`. Dependency compatibility on another machine may require a separate environment.
+Use a separate Python environment. The recorded environment used Python 3.14; installed versions are in [requirements-tested.txt](requirements-tested.txt). Other platforms or Python versions require compatible dependencies.
 
 ```bash
 python3 -m venv .venv
@@ -74,13 +63,9 @@ python -m pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Set `GROQ_API_KEY` locally only if generating new query expansions. No API key is needed when expansion is disabled. Pretrained encoder and reader models must be downloaded from their upstream providers or already cached.
+Set `GROQ_API_KEY` locally for new query expansions. No key is needed with expansion disabled or when the question's expansion is cached. Encoder and reader weights must be downloaded from their providers or already cached.
 
-### Data and search index
-
-**Downloaded datasets, images, FAISS indexes, and the Python environment are not bundled.** The repository includes source code, small trained fusion checkpoints, labels, provenance, cached benchmark paraphrases, and recorded evaluation outputs.
-
-Obtain datasets from their publishers and preserve their terms:
+**Raw datasets, image downloads, FAISS indexes, and environments are not bundled.** Obtain data under the providers' terms:
 
 - [DOSA](https://github.com/microsoft/DOSA)
 - [SCALE Cultural Data](https://github.com/google-research-datasets/SCALE-Cultural-Data)
@@ -88,7 +73,7 @@ Obtain datasets from their publishers and preserve their terms:
 - [DRISHTIKON](https://huggingface.co/datasets/13ari/DRISHTIKON)
 - [Indian Cultural Dataset](https://huggingface.co/datasets/ombhojane/indian-cultural-dataset)
 
-The loaders expect files under:
+Expected layout:
 
 ```text
 data/raw/DOSA/<state>/*.csv
@@ -98,69 +83,90 @@ data/raw/DRISHTIKON/*.csv
 data/raw/Indian Cultural Dataset/*.json
 ```
 
-DRISHTIKON image files must also be available at the paths resolved by its loader. After preparing the data, build a local index:
+DRISHTIKON images must be present at paths resolved by its loader. Then build the index:
 
 ```bash
 python main.py --build
 ```
 
-The bundled research manifests fingerprint the original source files and index. A rebuild can change those fingerprints or record IDs. Strict validation deliberately rejects a mismatched corpus: do not bypass its checks. To conduct a new experiment on changed data, regenerate the research split, review/update evidence labels, retrain, and rerun development selection. Existing saved results remain records of the original experiment, not measurements of a newly built index.
+Strict research validation checks the corpus, labels, split, and model provenance. A rebuilt index can change fingerprints or record IDs. Changed data require a new documented split, reviewed labels, training, and development selection. Historical results are not measurements of a newly built index. See [index coverage](research/index_coverage_summary.json).
 
-### Ask questions
+## Run both versions
 
-Once the data, search index, and model dependencies are available:
+Use identical settings. These examples enable available candidate image features in both pipelines, matching the paper's modality setting:
 
 ```bash
-python main_without_moe.py --ask "Which beach in Visakhapatnam is described as a venue for Navy air shows?" --candidate_k 12 --top_k 3 --no_query_expansion
-python main_with_moe.py --ask "Which beach in Visakhapatnam is described as a venue for Navy air shows?" --candidate_k 12 --top_k 3 --no_query_expansion
+python main_without_moe.py --ask "Which beach in Visakhapatnam is described as a venue for Navy air shows?" --candidate_k 12 --top_k 3 --enable_images
+python main_with_moe.py --ask "Which beach in Visakhapatnam is described as a venue for Navy air shows?" --candidate_k 12 --top_k 3 --enable_images
 ```
 
-Use `--top_k 6` for six contexts. Omit `--no_query_expansion` to enable expansion. Use identical settings for comparisons; add `--enable_images` to both commands when enabling image-associated text features.
+Use `--top_k 6` for six contexts. Add `--no_query_expansion` to both commands for an expansion-disabled comparison. Omitting `--enable_images` from both produces a text-feature-only experiment, which differs from the recorded paper configuration.
 
 ```bash
+python main_without_moe.py --questions_file questions_100.txt --enable_images --output my_answers.json
 python main_with_moe.py --image_query "Find Shondol dancers performing outdoors in Ladakh." --output my_images.csv
-python main_with_moe.py --legacy_moe --ask "What is Bihu?" --no_query_expansion
 ```
 
-The first command explicitly reports CLIP fallback. Retrieval can still return incorrect images; a returned result is not proof of correctness.
+## Validation and checks
 
-### Validate and test
-
-With the matching original corpus/index available:
+With the matching original corpus/index available, run a **fresh two-condition evaluation**:
 
 ```bash
-python validation_conservative.py --suite validation_queries_120.json --candidate_k 12 --output_dir my_validation_conservative
+python validation.py --suite validation_queries_120.json --candidate_k 12 --output_dir my_validation_two_versions
 ```
 
-This saves aggregate metrics, per-question results, complete traces, and paired source-group bootstrap intervals. `--max_queries 2` provides a small integration check. `validation.py` retains the historical unrestricted three-condition comparison.
+Images are enabled by default in `validation.py`. `--text_only` disables image features for text reranking; image queries still use CLIP. `--max_queries 2` provides a small integration check. Reports contain aggregate metrics, per-question traces, visible reader errors, and paired source-group bootstrap intervals. Fresh runs are saved separately from the paper results.
 
-The fixture-based regression tests can run without the full datasets. One
-full-corpus integration test is explicitly skipped when the original data/index
-is absent; it remains enabled in the complete research environment:
+Verify saved paper measurements **without downloading models or datasets**:
 
 ```bash
-python -m unittest test_residual test_research
+python verify_results.py
 ```
+
+Run regression tests after installing the model libraries:
+
+```bash
+python -m unittest test_research test_two_versions
+python -m unittest discover -s experiments/moe_improvement -p 'test_*.py'
+```
+
+The full-corpus test is skipped when the unbundled data/index are absent. Fixture tests and saved-result verification are not a new end-to-end benchmark.
+
+## Training and provenance
+
+The cross-encoder baseline is pretrained, not locally trained. MoE training uses 300 weak source-derived anchors and 60 development anchors. Source-group and exact-image-alias splitting separate supervision; appropriate knowledge documents remain searchable, including evidence for held-out questions.
+
+```bash
+python research_train.py
+python experiments/moe_improvement/run_experiment.py
+python experiments/moe_improvement/global_development.py
+```
+
+These are the triplet-training, listwise-refinement, and global development-selection stages. They require the matching data, encoders, and frozen features. Multiple MoE development settings are training candidates, not additional published inference versions. Run new training in a separate checkout: these commands write new training artifacts and selection metadata and can change the model used by `main_with_moe.py`.
+
+`checkpoints/moe_fusion.pt` is the initial training checkpoint needed by refinement and provenance checks, not an alternative CLI ranker. The selected refined checkpoint's bytes and historical metadata are preserved. Embedded historical fingerprints may mention artifacts from the original development work; these describe provenance, not active runtime dependencies. Training helpers now support MoE only. The expert architecture, selected weights, and ranking formula are unchanged. Earlier source versions remain recoverable from commit `7977962` and Git history.
+
+## Limitations
+
+- The benchmark was inspected previously and is not a new blind test. Source verification used AI assistance; independent human expert review is not recorded.
+- Relevance annotations identify known positives, not exhaustive corpus-wide judgments.
+- Training uses weak supervision and one seed. The comparison does not isolate expert mixing from extra parameters, training, and image access.
+- Indian Cultural Dataset indexing covers only 4.24% of source characters; 11/96 records are fully indexed.
+- Image-associated and text-only targets are source strata, not a controlled image-masking experiment.
+- The paired top-3 F1 interval reaches zero. This study does not establish general superiority of either architecture.
+- Image retrieval is related to [RetVQA's image-pool setting](https://arxiv.org/abs/2306.16713), but does not reproduce its full visual-answer generation method.
 
 ## Main files
 
-| File or folder | Purpose |
+| Location | Purpose |
 |---|---|
-| `retrieval.py` | Global FAISS/BM25 retrieval, query expansion, cross-encoder scoring |
-| `moe_fusion.py` | Shared/routed expert network |
-| `residual_reranker.py` | Combined scores and evidence-preserving ranking constraints |
-| `residual_pipeline.py` | Conservative inference and matched comparison |
-| `reader.py` | Extractive reader, span selection, visible errors |
-| `validation_conservative.py` | Fresh paired validation |
-| `research/` | Split, training examples, coverage, and annotation review |
-| `experiments/moe_improvement/` | Listwise training and development experiments |
-| `experiments/moe_release/` | Frozen conservative selection, replay/audit tools, and original launcher backups |
-| `paper_figures_repaired_120/` | PNG/SVG/PDF figures and plotting inputs |
+| `main_without_moe.py`, `main_with_moe.py` | The two supported text versions |
+| `pipeline.py`, `retrieval.py`, `reader.py` | Shared retrieval and answer extraction |
+| `moe_fusion.py`, `residual_reranker.py` | Expert architecture and unrestricted score combination |
+| `image_retrieval.py` | Shared CLIP retrieval |
+| `validation.py`, `verify_results.py` | Fresh paired evaluation and saved-result verification |
+| `validation_moe_residual_120/` | Only the two reported conditions |
+| `research/`, `experiments/moe_improvement/` | Labels, splits, coverage, and MoE training/development provenance |
+| `paper/` | Corrected paper, three graphs, editable source, and plotting data |
 
-The initial provenance experiment and its older 36-question suite are documented in `RESEARCH_PROTOCOL.txt`; the newer conservative policy and 120-question evaluation are documented above and in `MOE_REPAIR.txt`.
-
-## Publication copy
-
-This repository was exported from a separate research project. API keys, local environments, raw datasets, large generated caches, and machine-recovery logs were excluded. Local path strings in selected report copies were redacted; predictions and numerical results were preserved. `PUBLIC_EXPORT.json` maps original and published file hashes. Embedded historical hashes identify their original measurement artifacts and may differ from a redacted public copy.
-
-The pretrained encoder/reader weights are supplied by their upstream publishers and are not bundled here. Dataset and model terms remain with their respective providers.
+Only the two requested inference versions are maintained in this tree. Superseded comparison files remain in Git history. Credentials and local data are excluded. Dataset and pretrained-model terms remain with their providers. Numerical results have not been improved or remeasured as part of this cleanup.

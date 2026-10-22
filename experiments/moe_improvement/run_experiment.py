@@ -1,7 +1,7 @@
 """Development-only listwise fusion experiment; never reads the 120-question suite.
 
 Run from the project root with ./venv/bin/python experiments/moe_improvement/run_experiment.py.
-All new artifacts stay beside this script. Original models are immutable inputs.
+All new artifacts stay beside this script. The initial MoE checkpoint is an immutable input.
 """
 import os
 os.environ['HF_HUB_OFFLINE'] = '1'
@@ -30,7 +30,7 @@ PLAN = {
     'diagnostic_candidate_policy': 'Positive injected plus top 11 eligible frozen-BERT-cosine negatives, separately within train/dev. This evaluates conditional reranking, NOT end-to-end retrieval.',
     'epochs': 20, 'learning_rate': 0.0001, 'seed': 42,
     'temperatures': [0.05, 0.1], 'initializations': ['existing_checkpoint', 'fresh'],
-    'model_kinds': ['simple', 'moe'], 'load_balance_weight': 0.01,
+    'model_kinds': ['moe'], 'load_balance_weight': 0.01,
     'residual_alphas': [0.0, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0],
     'residual_formula': 'z(cross_encoder_score) + alpha * z(fusion_cosine), per query over identical candidates.',
     'selection': 'Highest development MRR@12, then Hit@3; ties prefer alpha=0 and earlier epochs. Separate best configuration reported per model kind.',
@@ -69,7 +69,7 @@ def main():
     dump('experiment_plan.json', {**PLAN, 'created_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat()})
     original_hashes = source_hash()
     original_hashes.update({name: sha256_file(ROOT / name) for name in (
-        'checkpoints/moe_fusion.pt', 'checkpoints/simple_fusion.pt',
+        'checkpoints/moe_fusion.pt',
         'research/training_pairs.json', 'research/split_manifest.json')})
     pairs = json.loads((ROOT / 'research/training_pairs.json').read_text())
     split = json.loads((ROOT / 'research/split_manifest.json').read_text())

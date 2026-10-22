@@ -1,9 +1,0 @@
-{
-  "created_at": "2026-10-16T07:36:40.304773+00:00",
-  "cache": "experiments/moe_release/evaluation_features.pt",
-  "questions": 100,
-  "before_bytes": 612253607,
-  "after_bytes": 6777687,
-  "all_tensor_values_bitwise_equal": true,
-  "cache_key_and_timings_unchanged": true
-}

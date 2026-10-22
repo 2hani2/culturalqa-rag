@@ -1,5 +1,6 @@
 """Shared global candidate retrieval, documented rerankers and extractive QA."""
 import csv,datetime,json,time
+from pathlib import Path
 import torch
 from langchain_core.documents import Document
 from project_paths import ROOT,INDEX,CHECKPOINTS
@@ -8,7 +9,7 @@ from retrieval import load_faiss_index,build_full_retriever,build_faiss_index
 from encoders import MultimodalEncoder
 from image_retrieval import ImageSearch
 from reader import ExtractiveReader,READER_VERSION
-from reranker_models import load_model
+from residual_reranker import ResidualReranker
 from validation_metrics import evidence_ref,evidence_rows
 from structured_store import build_record_index,format_record_answer,load_all_raw_records,records_to_documents
 from query_router import is_lookup_query,parse_lookup,is_filter_query
@@ -24,7 +25,7 @@ def build_index(data_dir=str(ROOT/'data')):
     from ingestion import load_all_documents
     from chunking import chunk_documents
     reports=[d for d in load_all_documents(data_dir) if is_active_dataset(d.metadata.get('dataset'))]
-    records=[r for r in load_all_raw_records(str(ROOT/'data/raw')) if is_active_dataset(r.get('dataset'))]
+    records=[r for r in load_all_raw_records(str(Path(data_dir)/'raw')) if is_active_dataset(r.get('dataset'))]
     docs=(chunk_documents(reports) if reports else [])+records_to_documents(records)
     build_faiss_index(docs);(INDEX/'raw_records_cache.json').write_text(json.dumps(records,ensure_ascii=False))
     print('[index] Re-run research_protocol.py and refresh gold labels after changing the corpus.')
@@ -35,29 +36,26 @@ def print_answer(result):
     if result.get('datasets_searched'):print('[search] '+', '.join(result['datasets_searched']))
     for r in result.get('retrieved_candidates',[]):print(f"[context] {r['rank']}: {r['ref']} | score={r.get('ranking_score') if r.get('ranking_score') is not None else r.get('cross_encoder_score')}")
     if result.get('reader_errors'):print('[reader errors]',result['reader_error_details'])
-    for r in result.get('retrieved_images',[]):print(f"[image] {r['rank']}: {r['image_ref']} | CLIP={r['clip_score']:.4f} | reranker={r.get('moe_score')}")
+    for r in result.get('retrieved_images',[]):print(f"[image] {r['rank']}: {r['image_ref']} | CLIP={r['clip_score']:.4f}")
 
 class CulturalQAPipeline:
     def __init__(self,dataset_filter=None,enable_images=False,force_moe_rescore=None,image_top_k=3,image_candidate_k=6,
-                 top_k=3,candidate_k=6,use_query_expansion=True,load_rerankers=False,branch_k=8):
+                 top_k=3,candidate_k=12,use_query_expansion=True,load_rerankers=False,branch_k=8):
         validate_dataset_filter(dataset_filter)
         if not 1<=top_k<=candidate_k:raise ValueError('Require 1 <= top_k <= candidate_k.')
         self.top_k=top_k;self.candidate_k=candidate_k;self.use_query_expansion=use_query_expansion;self.enable_images=enable_images
         self.vectordb=load_faiss_index();self.chunks=[self.vectordb.docstore.search(key) for key in self.vectordb.index_to_docstore_id.values() if is_active_dataset(self.vectordb.docstore.search(key).metadata.get('dataset'))]
         self.retriever=build_full_retriever(self.vectordb,self.chunks,dataset_filter=dataset_filter,candidate_k=candidate_k,use_query_expansion=use_query_expansion,branch_k=branch_k)
         self.datasets_searched=self.retriever.datasets_searched;self.encoder=MultimodalEncoder(enable_live_fetch=enable_images)
-        self.models={};self.provenance={}
-        for kind in ('moe','simple'):
-            path=CHECKPOINTS/f'{kind}_fusion.pt'
-            if path.exists() and (load_rerankers or kind=='moe'):
-                self.models[kind],self.provenance[kind]=load_model(kind,path)
-        if load_rerankers and set(self.models)!={'moe','simple'}:raise FileNotFoundError('Train both comparison models with research_train.py first.')
-        self.moe=self.models.get('moe');self.moe_is_trained=self.moe is not None
-        if force_moe_rescore is True and not self.moe_is_trained:raise FileNotFoundError('Train a documented MoE checkpoint with research_train.py.')
-        self.force_moe_rescore=force_moe_rescore;self.reader=ExtractiveReader();records=_load_raw_records_cache();self.record_index=build_record_index(records)
-        self.image_search=ImageSearch(self.encoder.image_encoder,records,text_encoder=self.encoder.text_encoder,moe=self.moe,top_k=image_top_k,candidate_k=image_candidate_k) if enable_images else None
+        self.force_moe_rescore = bool(force_moe_rescore)
+        self.residual = ResidualReranker() if (self.force_moe_rescore or load_rerankers) else None
+        self.provenance = {'moe': self.residual.provenance} if self.residual else {}
+        self.reader=ExtractiveReader();records=_load_raw_records_cache();self.record_index=build_record_index(records)
+        self.image_search=ImageSearch(self.encoder.image_encoder,records,top_k=image_top_k,candidate_k=image_candidate_k) if enable_images else None
 
-    def _resolve_use_moe_rescore(self,explicit=None):return explicit if explicit is not None else self.force_moe_rescore if self.force_moe_rescore is not None else self.moe_is_trained
+    def _resolve_use_moe_rescore(self,explicit=None):
+        return self.force_moe_rescore if explicit is None else bool(explicit)
+
     def _try_exact_lookup(self,question):
         if not is_lookup_query(question):return None
         ds,rid=parse_lookup(question)
@@ -72,21 +70,21 @@ class CulturalQAPipeline:
         di=torch.stack([self.encoder.image_encoder.encode(d.metadata.get("image_url") if self.enable_images and d.metadata.get("has_image") else None)[0] for d in candidates]) if candidates else torch.zeros(0,512)
         return (qt,torch.zeros(1,512),dt,di),(time.perf_counter()-started)*1000
 
-    @staticmethod
-    def rank_with_model(model,features,candidates):
-        if not candidates:return []
-        qt,qi,dt,di=features
-        scores=model.score_relevance(qt.expand(len(candidates),-1),qi.expand(len(candidates),-1),dt,di)
-        if not torch.isfinite(scores).all():raise ValueError('Nonfinite reranker score.')
-        return [Document(page_content=d.page_content,metadata={**d.metadata,'ranking_score':float(s)}) for d,s in sorted(zip(candidates,scores),key=lambda x:float(x[1]),reverse=True)]
-
     def _moe_rescore(self,question,candidates):
-        if self.moe is None:raise RuntimeError('Documented trained MoE required.')
-        features,_=self.encode_candidates(question,candidates);return self.rank_with_model(self.moe,features,candidates)
+        if self.residual is None:
+            self.residual=ResidualReranker()
+            self.provenance={'moe':self.residual.provenance}
+        features,_=self.encode_candidates(question,candidates)
+        return self.residual.rank(candidates,features)
+
     def _trace(self,result,docs):
         result.update(datasets_searched=self.datasets_searched,search_scope='all_available_datasets',
             top_k_requested=self.top_k,candidate_k=self.candidate_k,retrieved_candidates=evidence_rows(docs),
             retrieval_trace=self.retriever.last_trace)
+        result['ranking_policy']='ce_plus_moe_residual' if result.get('moe_rescore_used') else 'cross_encoder_baseline'
+        if result.get('moe_rescore_used'):
+            result['residual_alpha']=self.residual.alpha
+            result['reranker_checkpoint']=self.residual.selection['checkpoint']
         return result
     def _rag_answer(self,question,use_moe_rescore=None,top_k_for_reader=None):
         use=self._resolve_use_moe_rescore(use_moe_rescore);docs=self.retriever.invoke(question)
@@ -107,7 +105,7 @@ class CulturalQAPipeline:
         exact=self._try_exact_lookup(question)
         if exact is not None:return exact
         result=self._filter_answer(question) if is_filter_query(question) else self._rag_answer(question,**kwargs)
-        result['retrieved_images']=self.image_search.search(question,use_moe=self._resolve_use_moe_rescore(),verbose=False) if self.image_search else []
+        result['retrieved_images']=self.image_search.search(question,verbose=False) if self.image_search else []
         result['image_retrieval_used']=self.image_search is not None;return result
     def run_batch(self,questions,show_progress=True):
         results=[]
@@ -123,16 +121,19 @@ class CulturalQAPipeline:
         if self._try_exact_lookup(question) is not None:raise ValueError("Exact-ID lookup is not a retrieval evaluation.")
         docs=self.retriever.invoke(question);features,feature_ms=self.encode_candidates(question,docs)
         ranking={'without_moe':docs};timing={'without_moe':0.}
-        for kind,mode in [('simple','simple_fusion'),('moe','with_moe')]:
-            started=time.perf_counter();ranking[mode]=self.rank_with_model(self.models[kind],features,docs)
-            timing[mode]=(time.perf_counter()-started)*1000
+        if self.residual is None:
+            self.residual=ResidualReranker()
+            self.provenance={'moe':self.residual.provenance}
+        started=time.perf_counter();ranking['with_moe']=self.residual.rank(docs,features)
+        timing['with_moe']=(time.perf_counter()-started)*1000
         # Extract once per context; all conditions use the same cached results.
         # Reader time is reported as a sum of measured per-context times for each
         # selected subset, not the cheaper wall time of replaying cached answers.
         outputs=self.reader.evaluate_contexts(question,docs);by_ref={r['ref']:r for r in outputs};conditions={}
         for mode,ranked in ranking.items():
             answers={str(k):self.reader.select_answer([by_ref[evidence_ref(d)] for d in ranked[:k]]) for k in (3,6)}
-            conditions[mode]={'ranked':evidence_rows(ranked),'answers':answers,'fusion_features_ms':feature_ms if mode!='without_moe' else 0.,'reranker_ms':timing[mode]}
+            conditions[mode]={'ranked':evidence_rows(ranked),'answers':answers,'fusion_features_ms':feature_ms if mode!='without_moe' else 0.,'reranker_ms':timing[mode],
+                'ranking_policy':'cross_encoder_baseline' if mode=='without_moe' else self.residual.policy_name}
         return {'conditions':conditions,'reader_context_results':outputs,'candidate_texts':{evidence_ref(d):d.page_content for d in docs},**self.retriever.last_trace,'reader_version':READER_VERSION,'image_features_enabled':self.enable_images}
 
 def ask(question,**settings):

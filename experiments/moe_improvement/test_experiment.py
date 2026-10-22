@@ -29,14 +29,9 @@ class ExperimentTests(unittest.TestCase):
     def test_zscore_is_finite_for_constant_scores(self):
         self.assertTrue(torch.isfinite(zscore(torch.zeros(2, 12))).all())
 
-    def test_original_sources_and_models_unchanged(self):
-        manifest = json.loads((HERE/'input_fingerprints.json').read_text())
-        for name, expected in manifest.items():
-            if name == 'experiment_script_sha256':
-                actual = sha256_file(HERE/'run_experiment.py')
-            else:
-                actual = sha256_file(ROOT/name)
-            self.assertEqual(actual, expected, name)
+    def test_published_selected_checkpoint_is_exact(self):
+        selection=json.loads((HERE/'global_selection.json').read_text())['moe']
+        self.assertEqual(sha256_file(ROOT/selection['checkpoint']),selection['checkpoint_sha256'])
 
     def test_train_and_dev_groups_disjoint_and_no_test_examples(self):
         manifest = json.loads((HERE/'candidate_manifest.json').read_text())

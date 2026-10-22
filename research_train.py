@@ -1,4 +1,4 @@
-"""Matched training for MoE and single-network fusion using train groups only."""
+"""Initial MoE triplet training using train groups only."""
 import argparse,datetime,importlib.metadata,json,random,time
 from collections import Counter
 from pathlib import Path
@@ -89,7 +89,7 @@ def train(train_per_dataset=60,dev_per_dataset=12,epochs=8,seed=42,enable_images
         torch.save(features,cache)
     versions={name:importlib.metadata.version(name) for name in ('torch','transformers','faiss-cpu','sentence-transformers')}
     results={}
-    for kind in ('simple','moe'):
+    for kind in ('moe',):
         model=create_model(kind,seed);optimizer=torch.optim.Adam(model.parameters(),lr=settings['learning_rate']);history=[]
         best=float('inf');started=time.perf_counter()
         def loss_on(data,indices,balance):

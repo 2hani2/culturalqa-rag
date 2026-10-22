@@ -1,4 +1,4 @@
-"""Three-condition held-out validation with shared pools and error-aware metrics."""
+"""Two-condition validation: cross-encoder baseline versus unrestricted cross-encoder + MoE."""
 import argparse,csv,datetime,json,random,shutil,time
 from collections import defaultdict
 from pathlib import Path
@@ -9,7 +9,7 @@ from validation_metrics import ranking_metrics,answer_metrics,normalize_answer
 from research_protocol import canonical,digest,record_ref,load_records,image_digest
 from reranker_models import sha256_file
 
-MODES=('without_moe','simple_fusion','with_moe')
+MODES=('without_moe','with_moe')
 QUALITY=('hit_rate','recall','precision','mrr','ndcg','exact_match','answer_f1','answer_evidence_hit')
 
 def load_suite(path):
@@ -80,9 +80,6 @@ def check_protocol(cases,split,provenance,records):
                 if split['assignments'][ref]['group'] in train_groups:raise ValueError('Shared image/subject leaked into training.')
                 if digest(canonical(q['question'])) in p['train_query_sha256']:raise ValueError('Evaluation question was a training query.')
         checks.append({'model':kind,'training_refs':len(p['training_refs']),'test_refs_in_training':0,'shared_test_groups_in_training':0,'query_overlap':0})
-    if provenance['moe']['training_pairs_sha256']!=provenance['simple']['training_pairs_sha256']:raise ValueError('The two models used different training data.')
-    for key in ('seed','epochs','batch_size','learning_rate','margin','enable_images'):
-        if provenance['moe'][key]!=provenance['simple'][key]:raise ValueError(f'Training control mismatch: {key}')
     recovery=verify_corpus_sources(split)
     for check in checks:check['knowledge_index_reembedded']=recovery is not None
     for q in cases:
@@ -95,33 +92,19 @@ def check_protocol(cases,split,provenance,records):
     return checks
 
 def compare_images(pipe,question,candidate_k):
-    started=time.perf_counter();hits=pipe.image_search.pool.retrieve(question,top_k=candidate_k);retrieval_ms=(time.perf_counter()-started)*1000
-    text_started=time.perf_counter();qt=pipe.encoder.text_encoder.encode(question);feature_data=[]
+    import copy
+    started=time.perf_counter();hits=pipe.image_search.pool.retrieve(question,top_k=candidate_k)
+    elapsed=(time.perf_counter()-started)*1000;ranked=[]
     for hit in hits:
-        from structured_store import record_to_text
-        texts=[record_to_text(r)[:2000] for r in hit['_records']]
-        vectors=[]
-        for start in range(0,len(texts),32):vectors.append(pipe.encoder.text_encoder.encode(texts[start:start+32]))
-        dt=torch.cat(vectors);di=pipe.encoder.image_encoder.encode(hit['image_ref']).expand(len(dt),-1) if pipe.enable_images else torch.zeros(len(dt),512)
-        feature_data.append((dt,di))
-    feature_ms=(time.perf_counter()-text_started)*1000;conditions={}
-    for mode in MODES:
-        started=time.perf_counter();ranked=[]
-        model=pipe.models['simple' if mode=='simple_fusion' else 'moe'] if mode!='without_moe' else None
-        for hit,(dt,di) in zip(hits,feature_data):
-            row={k:v for k,v in hit.items() if k!='_records'}
-            row['ref']='image:'+image_digest(hit['image_ref'])
-            if model is None:score=hit['clip_score']
-            else:
-                scores=model.score_relevance(qt.expand(len(dt),-1),torch.zeros(len(dt),512),dt,di)
-                if not torch.isfinite(scores).all():raise ValueError('Nonfinite image reranking score.')
-                score=float(scores.max())
-            row['ranking_score']=score;ranked.append(row)
-        ranked.sort(key=lambda r:r['ranking_score'],reverse=True)
-        conditions[mode]={'ranked':ranked,'answers':{},'fusion_features_ms':feature_ms if model else 0.,'reranker_ms':(time.perf_counter()-started)*1000 if model else 0.}
+        row={k:v for k,v in hit.items() if k!='_records'}
+        row.update(ref='image:'+image_digest(hit['image_ref']),ranking_score=hit['clip_score'],
+                   moe_rescore_used=False,ranking_policy='clip_shared')
+        ranked.append(row)
+    conditions={mode:{'ranked':copy.deepcopy(ranked),'answers':{},'fusion_features_ms':0.,
+                      'reranker_ms':0.,'ranking_policy':'clip_shared'} for mode in MODES}
     return {'conditions':conditions,'datasets_searched':pipe.image_search.pool.datasets_searched,
             'datasets_with_images':pipe.image_search.pool.datasets_with_images,'query_expansion':False,
-            'phrasings':[question],'retrieval_ms':retrieval_ms,'image_features_enabled':pipe.enable_images,'candidate_k':candidate_k}
+            'phrasings':[question],'retrieval_ms':elapsed,'candidate_k':candidate_k,'image_features_enabled':pipe.enable_images}
 
 def evaluate_cases(cases,evaluate_text,evaluate_image):
     rows=[];raw=[]
@@ -182,7 +165,7 @@ def summarize(rows):
 def paired_differences(rows):
     lookup={(r['query_id'],r['mode'],r['k']):r for r in rows};out=[]
     for task in ('text','image'):
-        for mode in ('simple_fusion','with_moe'):
+        for mode in ('with_moe',):
             for k in (3,6):
                 for metric in ('mrr','answer_f1'):
                     pairs=[];grouped=defaultdict(list)
@@ -218,7 +201,7 @@ def write_report(report,output_dir):
                 w.writerows({key:json.dumps(value,ensure_ascii=False) if isinstance(value,(list,dict)) else value for key,value in row.items()} for row in data)
     (directory/'validation_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print('[validation] saved',directory,flush=True);return report
 
-def run_validation(input_path='validation_queries.json',output_dir='validation_results',candidate_k=12,use_query_expansion=True,enable_images=True,max_queries=None):
+def run_validation(input_path=ROOT/'validation_queries_120.json',output_dir='validation_results',candidate_k=12,use_query_expansion=True,enable_images=True,max_queries=None):
     if candidate_k<6:raise ValueError('K=6 evaluation needs a shared candidate pool of at least six.')
     cases=load_suite(input_path);cases=cases[:max_queries] if max_queries else cases
     for q in cases:
@@ -239,16 +222,18 @@ def run_validation(input_path='validation_queries.json',output_dir='validation_r
         result['answer_supporting_refs']=[ref for ref,body in result['candidate_texts'].items() if any(normalize_answer(a) and normalize_answer(a) in normalize_answer(body) for a in labels)]
         return result
     report=evaluate_cases(cases,text,lambda q:compare_images(pipe,q,candidate_k))
-    report.update(protocol_checks=checks,checkpoints=pipe.provenance,split_counts=split['counts'],image_duplicate_audit=split.get('image_duplicate_audit'),
+    report.update(protocol_checks=checks,selected_checkpoint=pipe.residual.selection,checkpoints=pipe.provenance,split_counts=split['counts'],image_duplicate_audit=split.get('image_duplicate_audit'),
         index_recovery=verify_corpus_sources(split),
         current_index_hashes={key:sha256_file(ROOT/key) for key in ('faiss_store/index.faiss','faiss_store/index.pkl')},
-        settings=dict(candidate_k=candidate_k,cutoffs=[3,6],branch_k=8,query_expansion=use_query_expansion,
+        settings=dict(execution="fresh retrieval and reader inference",text_ranking_policy="unrestricted cross-encoder + MoE",image_ranking_policy="shared CLIP; no MoE image comparison",candidate_k=candidate_k,cutoffs=[3,6],branch_k=8,query_expansion=use_query_expansion,
             expansion_model=pipe.retriever.expansion_model,image_features_enabled=enable_images,shared_candidate_pool=True,reader_shared=True,
             reader_timing_policy='Sum measured per-context extraction costs for each subset. Results extracted once per query, shared across conditions.',
             latency_excludes='Model loading and process startup; image-pool initialization may affect first image query.',
             bootstrap_policy='Paired source-group cluster resampling; 1000 resamples, seed 42; query-weighted mean difference.'),
         input_sha256=sha256_file(input_path),index_coverage=json.loads((RESEARCH/'index_coverage_summary.json').read_text()),
-        limitations=['Relevance labels are verified positives, not exhaustive judgements of the full corpus.',
+        limitations=['The benchmark has been inspected previously; this is not a new blind test.',
+            'Standalone image results are the shared CLIP component, not a MoE image improvement.',
+            'Relevance labels are verified positives, not exhaustive judgements of the full corpus.',
             'Source-verified labels are not independent human expert review; human_reviewed flags remain explicit.',
             'Training pairs use weak source-derived positives and sampled negatives.',
             'Partial indexing of long source records is quantified in index_coverage.',
@@ -258,7 +243,7 @@ def run_validation(input_path='validation_queries.json',output_dir='validation_r
 if __name__=='__main__':
     from dotenv import load_dotenv
     load_dotenv(ROOT/'.env');torch.set_num_threads(2)
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--suite',default=str(ROOT/'validation_queries.json'))
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--suite',default=str(ROOT/'validation_queries_120.json'))
     p.add_argument('--output_dir',default='validation_results');p.add_argument('--candidate_k',type=int,default=12)
     p.add_argument('--no_query_expansion',action='store_true');p.add_argument('--text_only',action='store_true');p.add_argument('--max_queries',type=int)
     a=p.parse_args();run_validation(a.suite,a.output_dir,a.candidate_k,not a.no_query_expansion,not a.text_only,a.max_queries)

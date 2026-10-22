@@ -1,4 +1,4 @@
-"""Matched research training replaces the legacy unsplit training script."""
+"""Initial MoE triplet training; listwise refinement follows in experiments/moe_improvement."""
 from research_train import train
 if __name__ == "__main__":
     import argparse

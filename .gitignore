@@ -29,8 +29,7 @@ code_backups/
 # Include only the documented small checkpoints and required provenance cache
 *.pt
 !checkpoints/moe_fusion.pt
-!checkpoints/simple_fusion.pt
-!experiments/moe_improvement/moe_existing_checkpoint_tau0.05_fusion.pt
+!experiments/moe_improvement/moe_existing_checkpoint_tau0.1_fusion.pt
 !research/training_features_38d9b10c8f24ecb6.pt
 
 # User-generated runs
@@ -38,3 +37,7 @@ my_validation*/
 batch_results_*
 image_results_*
 previous_runs/
+validation_results/
+*.aux
+*.xdv
+*.out

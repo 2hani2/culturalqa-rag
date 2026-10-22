@@ -1,0 +1,32 @@
+{
+  "scope": [
+    "Without MoE",
+    "Unrestricted Cross-encoder + MoE"
+  ],
+  "previous_commit": "79779629a22e7f322bb982e0d5cb1c26c1c70aa7",
+  "selected_checkpoint_sha256": "ee3889b2eb7741caa550b093e6b65c237aa4201e4d89badf75c328107dccb2dc",
+  "retained_model_architecture_reader_retrieval": "unchanged",
+  "historical_predictions_metrics_intervals": "retained conditions exactly match the previous report",
+  "unit_tests": {
+    "passed": 47,
+    "skipped": 1,
+    "skip_reason": "Full-corpus integration requires unbundled data/index."
+  },
+  "saved_result_metric_checks": 3508,
+  "cached_feature_parity": {
+    "text_rankings": 100,
+    "moe_answer_selections": 200,
+    "all_match": true
+  },
+  "fresh_end_to_end_evaluation_performed": false,
+  "files_sha256": {
+    "moe_fusion.py": "6d2f5ac116793ad36fabe7a447495e4646319311109d742595dc793b17df63a7",
+    "reader.py": "939ed510fb93bf97e1af940069ccb03544f32fe69867219ca17068c1dc24bc07",
+    "retrieval.py": "d5e4112484b30b773f4746107590fdb6ec1c337c7cdabe81eb33b69240fa777e",
+    "experiments/moe_improvement/moe_existing_checkpoint_tau0.1_fusion.pt": "ee3889b2eb7741caa550b093e6b65c237aa4201e4d89badf75c328107dccb2dc",
+    "experiments/moe_improvement/global_selection.json": "c478740e7e2304065412b381b575849191192a005a5b9a5322d69d3df6237e82",
+    "validation_moe_residual_120/validation_report.json": "0090bcfa500c03fa2458af35104639d4a78df6e66b64eac5d7247ba2d2f50ed0",
+    "paper/main.tex": "7c18b64b4c230dae323dada1c65077ec7be156fdc416f9a3ef934ac0266f75d6",
+    "paper/main.pdf": "047f90cb23c1a04bf11c9c2b006198eb2a89e7b4ccdfee37c2956e0e71069718"
+  }
+}

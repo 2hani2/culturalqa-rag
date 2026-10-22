@@ -1,0 +1,4 @@
+# Preserve exact quoted answer whitespace and CRLF in saved CSV measurements.
+*.csv whitespace=-blank-at-eol,cr-at-eol
+# Matplotlib's vector paths include harmless trailing spacing.
+paper/figures/*.svg whitespace=-blank-at-eol

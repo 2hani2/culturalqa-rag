@@ -9,7 +9,7 @@
   "positive_injection": false,
   "candidate_pool_shared": true,
   "all_five_datasets_searched": true,
-  "models": "Existing MoE/simple plus each of 8 listwise trials selected by fusion-only and residual diagnostic development metrics.",
+  "models": "MoE training candidates only; retained subset of the historical development search.",
   "residual_alphas": [
     0.0,
     0.05,
@@ -19,5 +19,6 @@
     1.0,
     2.0
   ],
-  "selection": "Maximum dev MRR@12, then Hit@3, then prefer smaller alpha. Dev was used for candidate training selection too; no unbiased test claim."
+  "selection": "Maximum dev MRR@12, then Hit@3, then prefer smaller alpha. Dev was used for candidate training selection too; no unbiased test claim.",
+  "publication_note": "Filtered to MoE-related development records; no training or selection was rerun."
 }
